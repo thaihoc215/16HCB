@@ -1,0 +1,16 @@
+com.xdpm.angrybirds.common
+com.xdpm.angrybirds.gamelevel
+com.xdpm.angrybirds.gamelevel.effect
+com.xdpm.angrybirds.gamelevel.object
+com.xdpm.angrybirds.gamelevel.object.arbalest
+com.xdpm.angrybirds.gamelevel.object.barrier
+com.xdpm.angrybirds.gamelevel.object.bird
+com.xdpm.angrybirds.gamelevel.object.pig
+com.xdpm.angrybirds.manager
+com.xdpm.angrybirds.object
+com.xdpm.angrybirds.object.button
+com.xdpm.angrybirds.scene
+com.xdpm.angrybirds.scene.background
+com.xdpm.angrybirds.scene.layer
+com.xdpm.angrybirds.setting
+com.xdpm.angrybirds.utils

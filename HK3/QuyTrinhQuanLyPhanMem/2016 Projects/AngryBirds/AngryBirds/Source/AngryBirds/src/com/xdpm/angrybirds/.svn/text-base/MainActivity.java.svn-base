@@ -1,0 +1,110 @@
+package com.xdpm.angrybirds;
+
+import org.andengine.engine.options.EngineOptions;
+import org.andengine.engine.options.ScreenOrientation;
+import org.andengine.engine.options.resolutionpolicy.FillResolutionPolicy;
+import org.andengine.entity.scene.Scene;
+import org.andengine.ui.activity.BaseGameActivity;
+
+
+import android.view.KeyEvent;
+
+import com.xdpm.angrybirds.manager.ResourceManager;
+import com.xdpm.angrybirds.manager.SceneManager;
+import com.xdpm.angrybirds.setting.Settings;
+
+/**
+ * Main game activity
+ * @author ChuongNK
+ *
+ */
+public class MainActivity extends BaseGameActivity {
+
+	// ===========================================================
+	// Constants
+	// ===========================================================
+	
+	private AngryBirdSmoothCamera mCamera;
+	
+	// ===========================================================
+	// Fields
+	// ===========================================================
+	
+	// ===========================================================
+	// Methods for/from SuperClass/Interfaces
+	// ===========================================================
+		
+		
+	@Override
+	public EngineOptions onCreateEngineOptions() {
+		this.mCamera = new AngryBirdSmoothCamera();
+		EngineOptions engineOption = new EngineOptions(true, ScreenOrientation.LANDSCAPE_FIXED,
+								new FillResolutionPolicy(), this.mCamera);
+		engineOption.getAudioOptions().setNeedsMusic(true);
+		engineOption.getAudioOptions().setNeedsSound(true);
+		return engineOption;
+	}
+	@Override
+	public void onCreateResources(final OnCreateResourcesCallback pOnCreateResourcesCallback)
+			throws Exception {
+		
+		final AsyncTaskLoader gameResourceLoader = new AsyncTaskLoader();
+		final AsyncTaskLoader splashScreenLoader = new AsyncTaskLoader();
+		
+		final IAsyncCallBack loadGameResource = new IAsyncCallBack() {
+			
+			@Override
+			public void onLoad() {
+                ResourceManager.getInstance().loadTitleMenuResource();
+                ResourceManager.getInstance().loadGameResources();
+                ResourceManager.getInstance().loadBackgroundResource(Settings.getInstance().getLastestWorldId());
+			}
+			
+			@Override
+			public void onComplete() {
+				pOnCreateResourcesCallback.onCreateResourcesFinished();
+			}
+		};
+		
+		final IAsyncCallBack loadSplashResource = new IAsyncCallBack() {
+			
+			@Override
+			public void onLoad() {
+				ResourceManager.getInstance().setBaseGameActivity(MainActivity.this);
+				ResourceManager.getInstance().setCamera(MainActivity.this.mCamera);
+				ResourceManager.getInstance().loadSplashSceneResource();
+			}
+			
+			@Override
+			public void onComplete() {
+				SceneManager.getInstance().showSplashScreenScene();
+				gameResourceLoader.execute(loadGameResource);
+			}
+		};
+		
+		splashScreenLoader.execute(loadSplashResource);
+	}
+	
+	@Override
+	public void onCreateScene(OnCreateSceneCallback pOnCreateSceneCallback) throws Exception {
+		
+		pOnCreateSceneCallback.onCreateSceneFinished(null);
+	}
+	
+	@Override
+	public void onPopulateScene(Scene pScene, OnPopulateSceneCallback pOnPopulateSceneCallback)
+			throws Exception {
+
+        SceneManager.getInstance().showMainMenuScene();  
+		pOnPopulateSceneCallback.onPopulateSceneFinished();
+	}
+	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (KeyEvent.KEYCODE_BACK == keyCode && KeyEvent.ACTION_DOWN == event.getAction()) {
+			SceneManager.getInstance().showPreviousScene();
+			return true;
+		}
+		return false;
+	}
+}

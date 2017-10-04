@@ -1,0 +1,524 @@
+
+info.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Background/background
+  rotate: false
+  xy: 1, 483
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+Background/background
+  rotate: false
+  xy: 1, 1
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: 1
+
+info2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Background/background
+  rotate: false
+  xy: 1, 483
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: 2
+Background/background
+  rotate: false
+  xy: 1, 1
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: 3
+
+info3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Background/loading
+  rotate: false
+  xy: 1, 1
+  size: 787, 594
+  orig: 787, 594
+  offset: 0, 0
+  index: -1
+
+info4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Background/background
+  rotate: false
+  xy: 1, 1
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: 4
+
+info5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Bubble/bubble
+  rotate: false
+  xy: 1, 205
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+Bubble/bubble
+  rotate: false
+  xy: 1, 205
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+Bubble/bubble
+  rotate: false
+  xy: 1, 103
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+Bubble/bubble
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 4
+
+info6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+button/play
+  rotate: false
+  xy: 1, 309
+  size: 143, 137
+  orig: 143, 137
+  offset: 0, 0
+  index: -1
+button/menu
+  rotate: false
+  xy: 1, 207
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+button/next
+  rotate: false
+  xy: 146, 346
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+button/replay
+  rotate: false
+  xy: 1, 105
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+button/smallmenu
+  rotate: false
+  xy: 1, 53
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+button/smallreplay
+  rotate: false
+  xy: 1, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+
+info7.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Fish/a2
+  rotate: false
+  xy: 1, 555
+  size: 221, 144
+  orig: 221, 144
+  offset: 0, 0
+  index: -1
+Fish/a1
+  rotate: false
+  xy: 1, 357
+  size: 120, 196
+  orig: 120, 196
+  offset: 0, 0
+  index: -1
+Fish/a3
+  rotate: false
+  xy: 1, 221
+  size: 85, 134
+  orig: 85, 134
+  offset: 0, 0
+  index: -1
+Fish/a7
+  rotate: false
+  xy: 123, 438
+  size: 64, 115
+  orig: 64, 115
+  offset: 0, 0
+  index: -1
+Fish/a6
+  rotate: false
+  xy: 1, 108
+  size: 62, 111
+  orig: 62, 111
+  offset: 0, 0
+  index: -1
+Fish/a5
+  rotate: false
+  xy: 1, 1
+  size: 58, 105
+  orig: 58, 105
+  offset: 0, 0
+  index: -1
+Fish/a4
+  rotate: false
+  xy: 123, 369
+  size: 106, 67
+  orig: 106, 67
+  offset: 0, 0
+  index: -1
+
+info8.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Fishk/a4k
+  rotate: false
+  xy: 1, 527
+  size: 131, 101
+  orig: 131, 101
+  offset: 0, 0
+  index: -1
+Fishk/a3k
+  rotate: false
+  xy: 1, 391
+  size: 91, 134
+  orig: 91, 134
+  offset: 0, 0
+  index: -1
+Fishk/a5k
+  rotate: false
+  xy: 1, 254
+  size: 79, 135
+  orig: 79, 135
+  offset: 0, 0
+  index: -1
+Fishk/a7k
+  rotate: false
+  xy: 1, 119
+  size: 76, 133
+  orig: 76, 133
+  offset: 0, 0
+  index: -1
+Fishk/a6k
+  rotate: false
+  xy: 1, 1
+  size: 65, 116
+  orig: 65, 116
+  offset: 0, 0
+  index: -1
+
+info9.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+object/disk
+  rotate: false
+  xy: 1, 723
+  size: 300, 106
+  orig: 300, 106
+  offset: 0, 0
+  index: -1
+object/target
+  rotate: false
+  xy: 1, 522
+  size: 154, 199
+  orig: 154, 199
+  offset: 0, 0
+  index: -1
+object/turtle
+  rotate: false
+  xy: 303, 717
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 1
+object/turtle
+  rotate: false
+  xy: 303, 717
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 11
+object/turtle
+  rotate: false
+  xy: 1, 408
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 10
+object/turtle
+  rotate: false
+  xy: 1, 408
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 2
+object/turtle
+  rotate: false
+  xy: 1, 408
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 3
+object/turtle
+  rotate: false
+  xy: 1, 294
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 4
+object/turtle
+  rotate: false
+  xy: 1, 294
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 5
+object/turtle
+  rotate: false
+  xy: 1, 294
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 9
+object/turtle
+  rotate: false
+  xy: 1, 180
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 6
+object/turtle
+  rotate: false
+  xy: 1, 180
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 7
+object/turtle
+  rotate: false
+  xy: 1, 180
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 8
+object/seesaw
+  rotate: false
+  xy: 1, 103
+  size: 219, 75
+  orig: 219, 75
+  offset: 0, 0
+  index: -1
+object/character_bubble
+  rotate: false
+  xy: 157, 621
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+object/player
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+object/apple
+  rotate: false
+  xy: 157, 578
+  size: 44, 41
+  orig: 44, 41
+  offset: 0, 0
+  index: -1
+
+info10.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Other/bg1
+  rotate: false
+  xy: 1, 431
+  size: 789, 592
+  orig: 789, 592
+  offset: 0, 0
+  index: -1
+Other/tank1
+  rotate: false
+  xy: 1, 6
+  size: 350, 423
+  orig: 350, 423
+  offset: 0, 0
+  index: -1
+Other/play
+  rotate: false
+  xy: 792, 819
+  size: 221, 204
+  orig: 221, 204
+  offset: 0, 0
+  index: -1
+Other/back
+  rotate: false
+  xy: 792, 691
+  size: 134, 126
+  orig: 134, 126
+  offset: 0, 0
+  index: -1
+Other/setting
+  rotate: false
+  xy: 928, 752
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+Other/replay
+  rotate: false
+  xy: 928, 642
+  size: 62, 108
+  orig: 62, 108
+  offset: 0, 0
+  index: -1
+Other/so1
+  rotate: false
+  xy: 792, 563
+  size: 117, 126
+  orig: 117, 126
+  offset: 0, 0
+  index: -1
+Other/pickafish
+  rotate: false
+  xy: 911, 494
+  size: 105, 146
+  orig: 105, 146
+  offset: 0, 0
+  index: -1
+Other/so1click
+  rotate: false
+  xy: 792, 435
+  size: 117, 126
+  orig: 117, 126
+  offset: 0, 0
+  index: -1
+Other/d
+  rotate: false
+  xy: 911, 433
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+Other/ap
+  rotate: false
+  xy: 792, 319
+  size: 113, 114
+  orig: 113, 114
+  offset: 0, 0
+  index: 1
+Other/ap
+  rotate: false
+  xy: 907, 317
+  size: 113, 114
+  orig: 113, 114
+  offset: 0, 0
+  index: 2
+Other/st
+  rotate: false
+  xy: 353, 336
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 1
+Other/st
+  rotate: false
+  xy: 353, 241
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 2
+Other/st
+  rotate: false
+  xy: 353, 241
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 6
+Other/stringfishhooks
+  rotate: false
+  xy: 755, 56
+  size: 258, 259
+  orig: 258, 259
+  offset: 0, 0
+  index: -1
+Other/st
+  rotate: false
+  xy: 353, 146
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 3
+Other/st
+  rotate: false
+  xy: 353, 146
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 5
+Other/st
+  rotate: false
+  xy: 353, 51
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 4
+Other/i
+  rotate: false
+  xy: 755, 1
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1
+
+info11.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Other/tablefreshwater
+  rotate: false
+  xy: 1, 76
+  size: 773, 394
+  orig: 773, 394
+  offset: 0, 0
+  index: -1
+Other/watch
+  rotate: false
+  xy: 1, 1
+  size: 366, 73
+  orig: 366, 73
+  offset: 0, 0
+  index: -1

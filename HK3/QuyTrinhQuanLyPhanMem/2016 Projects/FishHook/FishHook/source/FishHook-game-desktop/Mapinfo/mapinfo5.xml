@@ -1,0 +1,31 @@
+<Map MapName="level5" MapArea="800,480">
+  <Lego name="0-0.png" cood="0,0" />
+  <Static>
+    <Object name="character_bubble_1-1.png" cood="400,60" angle="0" />
+    <Object name="apple-1.png" cood="220,140" angle="0" />
+    <Object name="seesaw-1.png" cood="400,180" angle="0" />
+    <Object name="apple-1.png" cood="180,240" angle="0" />
+    <Object name="seesaw-1.png" cood="620,320" angle="0" />
+    <Object name="seesaw-1.png" cood="180,320" angle="0" />
+    <Object name="apple-1.png" cood="380,360" angle="0" />
+    <Object name="target-1.png" cood="400,540" angle="0" />
+  </Static>
+  <Dynamic />
+  <Npc />
+  <RevivalPlace />
+  <Background>
+    <Object name="C_FS3MAP_77b2nyHQBNro.png" cood="0,0" angle="0" />
+  </Background>
+  <StaticInf>
+    <Inf name="target-1.png" />
+    <Inf name="seesaw-1.png" />
+    <Inf name="character_bubble_1-1.png" />
+    <Inf name="apple-1.png" />
+  </StaticInf>
+  <DynamicInf />
+  <NpcInf />
+  <RevivalPlaceInf />
+  <BackgroundInf>
+    <Inf name="C_FS3MAP_77b2nyHQBNro.png" />
+  </BackgroundInf>
+</Map>

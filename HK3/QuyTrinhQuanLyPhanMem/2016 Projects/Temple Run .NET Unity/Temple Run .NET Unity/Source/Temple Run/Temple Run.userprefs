@@ -1,0 +1,38 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\UpdateItem.cs">
+    <Files>
+      <File FileName="Assets\RuinRunStarterKit\Scripts\csTempleRun.cs" Line="443" Column="5" />
+      <File FileName="Assets\Upgrade.cs" Line="88" Column="32" />
+      <File FileName="Assets\UpdateItem.cs" Line="10" Column="2" />
+      <File FileName="Assets\Standard Assets\Detonator Explosion Framework\System\DetonatorSpray.cs" Line="63" Column="13" />
+      <File FileName="Assets\Standard Assets\Detonator\System\DetonatorForce.cs" Line="88" Column="8" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="RuinRunStarterKit" expanded="True">
+                <Node name="Scripts" expanded="True" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

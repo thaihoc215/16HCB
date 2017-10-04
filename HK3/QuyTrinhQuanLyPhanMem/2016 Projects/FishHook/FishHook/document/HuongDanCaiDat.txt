@@ -1,0 +1,8 @@
+﻿Chương trình được viết dựa trên bộ thư viện Libgdx.
+Giới thiệu về libgdx:
+- Toàn bộ mã nguồn được viết trong thư mục *-core
+- Chương trình có thể chạy được trên nhiều nền tảng khác nhau: android, desktop, ios, html5
+- Mỗi nền tảng chỉ chứa hàm gọi đến source nằm trong core là có thể thực thi được và cần phải chứa resource của chương trình
+
+Vì vậy để cài đặt thực thi được chương trình ta cần import tất cả project vào eclipse, sau đó muốn chạy trên nền tảng nào thì gọi hàm main tương ứng cho từng nền tảng.
+Để cài đặt vào máy thật, ta chỉ cần chuyển file apk nằm trong thư mục bin vào máy thật, sau đó cài đặt như ứng dụng bình thường.

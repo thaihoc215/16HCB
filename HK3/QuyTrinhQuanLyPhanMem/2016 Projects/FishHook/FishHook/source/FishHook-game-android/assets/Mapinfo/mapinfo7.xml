@@ -1,0 +1,33 @@
+<Map MapName="level8" MapArea="800,480">
+  <Lego name="0-0.png" cood="0,0" />
+  <Static>
+    <Object name="apple-1.png" cood="420,60" angle="0" />
+    <Object name="apple-1.png" cood="680,160" angle="0" />
+    <Object name="apple-1.png" cood="120,160" angle="0" />
+    <Object name="turtle-1.png" cood="740,200" angle="-45" />
+    <Object name="turtle-1.png" cood="80,220" angle="70" />
+    <Object name="turtle-1.png" cood="680,320" angle="-25" />
+    <Object name="turtle-1.png" cood="160,320" angle="50" />
+    <Object name="turtle-1.png" cood="560,380" angle="30" />
+    <Object name="turtle-1.png" cood="280,380" angle="0" />
+    <Object name="target-1.png" cood="420,480" angle="0" />
+    <Object name="character_bubble_1-1.png" cood="160,100" angle="0" />
+  </Static>
+  <Dynamic />
+  <Npc />
+  <RevivalPlace />
+  <Background>
+    <Object name="C_FS3MAP_77b2nyHQBNro.png" cood="0,0" angle="0" />
+  </Background>
+  <StaticInf>
+    <Inf name="target-1.png" />
+    <Inf name="turtle-1.png" />
+    <Inf name="apple-1.png" />
+  </StaticInf>
+  <DynamicInf />
+  <NpcInf />
+  <RevivalPlaceInf />
+  <BackgroundInf>
+    <Inf name="C_FS3MAP_77b2nyHQBNro.png" />
+  </BackgroundInf>
+</Map>

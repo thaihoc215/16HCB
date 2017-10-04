@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/14/trunk/src/libs/x86
+END
+libandengine.so
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/14/trunk/src/libs/x86/libandengine.so
+END
+libandenginephysicsbox2dextension.so
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/14/trunk/src/libs/x86/libandenginephysicsbox2dextension.so
+END

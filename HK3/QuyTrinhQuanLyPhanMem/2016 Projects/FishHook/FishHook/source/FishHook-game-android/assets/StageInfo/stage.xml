@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StageInformation nStageUnlock="1">
+    <stage index="0" nSceneUnlock="1">
+        <scene index="0" nApple="0"></scene>
+        <scene index="1" nApple="0"></scene>
+        <scene index="2" nApple="0"></scene>
+        <scene index="3" nApple="0"></scene>
+        <scene index="4" nApple="0"></scene>
+        <scene index="5" nApple="0"></scene>
+    </stage>
+    <stage index="1" nSceneUnlock="0">
+        <scene index="0" nApple="0"></scene>
+        <scene index="1" nApple="0"></scene>
+        <scene index="2" nApple="0"></scene>
+        <scene index="3" nApple="0"></scene>
+        <scene index="4" nApple="0"></scene>
+        <scene index="5" nApple="0"></scene>
+    </stage>
+    <stage index="2" nSceneUnlock="0">
+        <scene index="0" nApple="0"></scene>
+        <scene index="1" nApple="0"></scene>
+        <scene index="2" nApple="0"></scene>
+        <scene index="3" nApple="0"></scene>
+        <scene index="4" nApple="0"></scene>
+        <scene index="5" nApple="0"></scene>
+    </stage>
+</StageInformation>

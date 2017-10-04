@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/58/trunk/src/src/com/xdpm/angrybirds/scene/layer
+END
+GameLevelFailedLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/58/trunk/src/src/com/xdpm/angrybirds/scene/layer/GameLevelFailedLayer.java
+END
+BaseLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/58/trunk/src/src/com/xdpm/angrybirds/scene/layer/BaseLayer.java
+END
+LoadingLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/57/trunk/src/src/com/xdpm/angrybirds/scene/layer/LoadingLayer.java
+END
+GameLevelPauseLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/58/trunk/src/src/com/xdpm/angrybirds/scene/layer/GameLevelPauseLayer.java
+END
+ConfirmQuitLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/47/trunk/src/src/com/xdpm/angrybirds/scene/layer/ConfirmQuitLayer.java
+END
+GameLevelClearedLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/58/trunk/src/src/com/xdpm/angrybirds/scene/layer/GameLevelClearedLayer.java
+END

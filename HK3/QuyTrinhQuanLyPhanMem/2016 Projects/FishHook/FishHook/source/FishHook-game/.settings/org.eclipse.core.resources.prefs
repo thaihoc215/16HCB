@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/com/G6/Helper/FishHookMapReader.java=UTF-8
+encoding//src/com/G6/Object/Apple.java=UTF-8
+encoding//src/com/G6/Object/Bubble.java=UTF-8
+encoding//src/com/G6/Object/MySprite.java=UTF-8
+encoding//src/com/G6/Object/Player.java=UTF-8
+encoding//src/com/G6/Object/Seesaw.java=UTF-8
+encoding//src/com/G6/Object/Target.java=UTF-8
+encoding//src/com/G6/Object/Turtle.java=UTF-8
+encoding//src/com/G6/Screen/BaseScreen.java=UTF-8
+encoding//src/com/G6/Screen/GameScreen.java=UTF-8
+encoding//src/com/G6/Screen/LoadingScreen.java=UTF-8
+encoding//src/com/G6/assets/Assets.java=UTF-8
+encoding//src/com/G6/assets/Audio.java=UTF-8
+encoding//src/com/G6/assets/Global.java=UTF-8
+encoding//src/com/G6/math/OverlapTester.java=UTF-8

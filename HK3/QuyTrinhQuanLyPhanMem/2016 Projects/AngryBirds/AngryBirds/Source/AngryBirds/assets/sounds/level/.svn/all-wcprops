@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/57/trunk/src/assets/sounds/level
+END
+level_clear_military.mp3
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/57/trunk/src/assets/sounds/level/level_clear_military.mp3
+END
+level_failed.mp3
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/57/trunk/src/assets/sounds/level/level_failed.mp3
+END
+level_start_military.mp3
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/57/trunk/src/assets/sounds/level/level_start_military.mp3
+END

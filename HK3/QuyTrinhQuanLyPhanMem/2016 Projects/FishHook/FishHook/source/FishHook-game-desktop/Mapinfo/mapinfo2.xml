@@ -1,0 +1,25 @@
+<Map MapName="level2" MapArea="800,480">
+  <Lego name="0-0.png" cood="0,0" />
+  <Static>
+    <Object name="character_bubble_1-1.png" cood="220,80" angle="0" />
+    <Object name="apple-1.png" cood="340,160" angle="0" />
+    <Object name="seesaw-1.png" cood="280,240" angle="0" />
+    <Object name="apple-1.png" cood="460,240" angle="0" />
+    <Object name="apple-1.png" cood="560,320" angle="0" />
+    <Object name="target-1.png" cood="580,520" angle="0" />
+  </Static>
+  <Dynamic />
+  <Npc />
+  <RevivalPlace />
+  <Background />
+  <StaticInf>
+    <Inf name="target-1.png" />
+    <Inf name="apple-1.png" />
+    <Inf name="seesaw-1.png" />
+    <Inf name="character_bubble_1-1.png" />
+  </StaticInf>
+  <DynamicInf />
+  <NpcInf />
+  <RevivalPlaceInf />
+  <BackgroundInf />
+</Map>

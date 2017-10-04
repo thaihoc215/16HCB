@@ -1,0 +1,697 @@
+
+info.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+AppleScore/ap0
+  rotate: false
+  xy: 1, 757
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap1
+  rotate: false
+  xy: 1, 673
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap10
+  rotate: false
+  xy: 90, 757
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap11
+  rotate: false
+  xy: 1, 589
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap12
+  rotate: false
+  xy: 90, 673
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap13
+  rotate: false
+  xy: 1, 505
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap14
+  rotate: false
+  xy: 90, 589
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap15
+  rotate: false
+  xy: 1, 421
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap16
+  rotate: false
+  xy: 90, 505
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap17
+  rotate: false
+  xy: 1, 337
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap18
+  rotate: false
+  xy: 90, 421
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap2
+  rotate: false
+  xy: 1, 253
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap3
+  rotate: false
+  xy: 90, 337
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap4
+  rotate: false
+  xy: 1, 169
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap5
+  rotate: false
+  xy: 90, 253
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap6
+  rotate: false
+  xy: 1, 85
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap7
+  rotate: false
+  xy: 90, 169
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap8
+  rotate: false
+  xy: 1, 1
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+AppleScore/ap9
+  rotate: false
+  xy: 90, 85
+  size: 87, 82
+  orig: 87, 82
+  offset: 0, 0
+  index: -1
+
+info2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Background/background
+  rotate: false
+  xy: 1, 483
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+Background/background
+  rotate: false
+  xy: 1, 1
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: 1
+
+info3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Background/background
+  rotate: false
+  xy: 1, 483
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: 2
+Background/background
+  rotate: false
+  xy: 1, 1
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: 3
+
+info4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Background/loading
+  rotate: false
+  xy: 1, 1
+  size: 787, 594
+  orig: 787, 594
+  offset: 0, 0
+  index: -1
+
+info5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Background/background
+  rotate: false
+  xy: 1, 1
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: 4
+
+info6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Bubble/bubble
+  rotate: false
+  xy: 1, 205
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+Bubble/bubble
+  rotate: false
+  xy: 1, 205
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 3
+Bubble/bubble
+  rotate: false
+  xy: 1, 103
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 2
+Bubble/bubble
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 4
+
+info7.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+button/play
+  rotate: false
+  xy: 1, 309
+  size: 143, 137
+  orig: 143, 137
+  offset: 0, 0
+  index: -1
+button/menu
+  rotate: false
+  xy: 1, 207
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+button/next
+  rotate: false
+  xy: 146, 346
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+button/replay
+  rotate: false
+  xy: 1, 105
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+button/smallmenu
+  rotate: false
+  xy: 1, 53
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+button/smallreplay
+  rotate: false
+  xy: 1, 1
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+
+info8.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Fish/a2
+  rotate: false
+  xy: 1, 555
+  size: 221, 144
+  orig: 221, 144
+  offset: 0, 0
+  index: -1
+Fish/a1
+  rotate: false
+  xy: 1, 357
+  size: 120, 196
+  orig: 120, 196
+  offset: 0, 0
+  index: -1
+Fish/a3
+  rotate: false
+  xy: 1, 221
+  size: 85, 134
+  orig: 85, 134
+  offset: 0, 0
+  index: -1
+Fish/a7
+  rotate: false
+  xy: 123, 438
+  size: 64, 115
+  orig: 64, 115
+  offset: 0, 0
+  index: -1
+Fish/a6
+  rotate: false
+  xy: 1, 108
+  size: 62, 111
+  orig: 62, 111
+  offset: 0, 0
+  index: -1
+Fish/a5
+  rotate: false
+  xy: 1, 1
+  size: 58, 105
+  orig: 58, 105
+  offset: 0, 0
+  index: -1
+Fish/a4
+  rotate: false
+  xy: 123, 369
+  size: 106, 67
+  orig: 106, 67
+  offset: 0, 0
+  index: -1
+
+info9.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Fishk/a4k
+  rotate: false
+  xy: 1, 527
+  size: 131, 101
+  orig: 131, 101
+  offset: 0, 0
+  index: -1
+Fishk/a3k
+  rotate: false
+  xy: 1, 391
+  size: 91, 134
+  orig: 91, 134
+  offset: 0, 0
+  index: -1
+Fishk/a5k
+  rotate: false
+  xy: 1, 254
+  size: 79, 135
+  orig: 79, 135
+  offset: 0, 0
+  index: -1
+Fishk/a7k
+  rotate: false
+  xy: 1, 119
+  size: 76, 133
+  orig: 76, 133
+  offset: 0, 0
+  index: -1
+Fishk/a6k
+  rotate: false
+  xy: 1, 1
+  size: 65, 116
+  orig: 65, 116
+  offset: 0, 0
+  index: -1
+
+info10.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+object/disk
+  rotate: false
+  xy: 1, 723
+  size: 300, 106
+  orig: 300, 106
+  offset: 0, 0
+  index: -1
+object/target
+  rotate: false
+  xy: 1, 522
+  size: 154, 199
+  orig: 154, 199
+  offset: 0, 0
+  index: -1
+object/turtle
+  rotate: false
+  xy: 303, 717
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 1
+object/turtle
+  rotate: false
+  xy: 303, 717
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 11
+object/turtle
+  rotate: false
+  xy: 1, 408
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 10
+object/turtle
+  rotate: false
+  xy: 1, 408
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 2
+object/turtle
+  rotate: false
+  xy: 1, 408
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 3
+object/turtle
+  rotate: false
+  xy: 1, 294
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 4
+object/turtle
+  rotate: false
+  xy: 1, 294
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 5
+object/turtle
+  rotate: false
+  xy: 1, 294
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 9
+object/turtle
+  rotate: false
+  xy: 1, 180
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 6
+object/turtle
+  rotate: false
+  xy: 1, 180
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 7
+object/turtle
+  rotate: false
+  xy: 1, 180
+  size: 181, 112
+  orig: 181, 112
+  offset: 0, 0
+  index: 8
+object/seesaw
+  rotate: false
+  xy: 1, 103
+  size: 219, 75
+  orig: 219, 75
+  offset: 0, 0
+  index: -1
+object/character_bubble
+  rotate: false
+  xy: 157, 621
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: 1
+object/player
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+object/apple
+  rotate: false
+  xy: 157, 578
+  size: 44, 41
+  orig: 44, 41
+  offset: 0, 0
+  index: -1
+
+info11.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Other/bg1
+  rotate: false
+  xy: 1, 404
+  size: 789, 592
+  orig: 789, 592
+  offset: 0, 0
+  index: -1
+Other/tablefreshwater
+  rotate: false
+  xy: 1, 8
+  size: 773, 394
+  orig: 773, 394
+  offset: 0, 0
+  index: -1
+Other/play
+  rotate: false
+  xy: 792, 792
+  size: 221, 204
+  orig: 221, 204
+  offset: 0, 0
+  index: -1
+Other/back
+  rotate: false
+  xy: 792, 664
+  size: 134, 126
+  orig: 134, 126
+  offset: 0, 0
+  index: -1
+Other/pickafish
+  rotate: false
+  xy: 792, 516
+  size: 105, 146
+  orig: 105, 146
+  offset: 0, 0
+  index: -1
+Other/ap
+  rotate: false
+  xy: 792, 400
+  size: 113, 114
+  orig: 113, 114
+  offset: 0, 0
+  index: 1
+Other/so4
+  rotate: false
+  xy: 776, 265
+  size: 113, 133
+  orig: 113, 133
+  offset: 0, 0
+  index: -1
+Other/so3
+  rotate: false
+  xy: 776, 129
+  size: 111, 134
+  orig: 111, 134
+  offset: 0, 0
+  index: -1
+Other/so1
+  rotate: false
+  xy: 776, 1
+  size: 117, 126
+  orig: 117, 126
+  offset: 0, 0
+  index: -1
+Other/replay
+  rotate: false
+  xy: 928, 682
+  size: 62, 108
+  orig: 62, 108
+  offset: 0, 0
+  index: -1
+Other/so2
+  rotate: false
+  xy: 899, 530
+  size: 110, 132
+  orig: 110, 132
+  offset: 0, 0
+  index: -1
+Other/so5
+  rotate: false
+  xy: 907, 399
+  size: 111, 129
+  orig: 111, 129
+  offset: 0, 0
+  index: -1
+Other/so1click
+  rotate: false
+  xy: 891, 271
+  size: 117, 126
+  orig: 117, 126
+  offset: 0, 0
+  index: -1
+Other/so6
+  rotate: false
+  xy: 889, 140
+  size: 111, 123
+  orig: 111, 123
+  offset: 0, 0
+  index: -1
+Other/ap
+  rotate: false
+  xy: 895, 24
+  size: 113, 114
+  orig: 113, 114
+  offset: 0, 0
+  index: 2
+
+info12.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Other/tank1
+  rotate: false
+  xy: 1, 329
+  size: 350, 423
+  orig: 350, 423
+  offset: 0, 0
+  index: -1
+Other/stringfishhooks
+  rotate: false
+  xy: 1, 68
+  size: 258, 259
+  orig: 258, 259
+  offset: 0, 0
+  index: -1
+Other/st
+  rotate: false
+  xy: 353, 659
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 1
+Other/st
+  rotate: false
+  xy: 353, 564
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 2
+Other/st
+  rotate: false
+  xy: 353, 564
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 6
+Other/st
+  rotate: false
+  xy: 353, 469
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 3
+Other/st
+  rotate: false
+  xy: 353, 469
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 5
+Other/st
+  rotate: false
+  xy: 353, 374
+  size: 400, 93
+  orig: 400, 93
+  offset: 0, 0
+  index: 4
+Other/watch
+  rotate: false
+  xy: 353, 299
+  size: 366, 73
+  orig: 366, 73
+  offset: 0, 0
+  index: -1
+Other/setting
+  rotate: false
+  xy: 1, 1
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+Other/d
+  rotate: false
+  xy: 755, 693
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+Other/i
+  rotate: false
+  xy: 261, 274
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1

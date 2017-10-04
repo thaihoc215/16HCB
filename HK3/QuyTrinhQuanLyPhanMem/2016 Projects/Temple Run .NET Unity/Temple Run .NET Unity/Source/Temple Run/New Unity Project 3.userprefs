@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js">
+    <Files>
+      <File FileName="Assets\Standard Assets\Detonator\System\Detonator.cs" Line="138" Column="35" />
+      <File FileName="Assets\RuinRunStarterKit\Scripts\csTempleRun.cs" Line="436" Column="13" />
+      <File FileName="Assets\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" Line="40" Column="1" />
+      <File FileName="Assets\Standard Assets\Detonator Explosion Framework\TestScene\DetonatorTest.js" Line="12" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
