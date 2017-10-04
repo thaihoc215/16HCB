@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\classes-eacdc0abb2fbb80df50f05afd8d2e9ffa8496d65.jar" />
+    </item>
+    <item
+        jar="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\classes-daa24737a060d5f2ff091f19010aced0117c6bbe.jar" />
+    </item>
+    <item
+        jar="C:\Users\qttbc\Desktop\SNAPTRANS\app\libs\microsoft-translator-java-api-0.6-mod.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="176df3274c901602fe2b6c345326a6990be557b9">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\microsoft-translator-java-api-0.6-mod-876c690a74a88d689789d7e9c8b7fe5e0a69e304.jar" />
+    </item>
+    <item
+        jar="C:\Users\qttbc\Desktop\SNAPTRANS\app\libs\jtar-1.0.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b6ff62805312c9384c2f4cc21a6367b74fd2bbd7">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\jtar-1.0.4-607fd81c761288ec7008f023535f86b739a5839c.jar" />
+    </item>
+    <item
+        jar="C:\Users\qttbc\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-ecb3cb6465fb503b918b37166ac96629aafc0a04.jar" />
+    </item>
+    <item
+        jar="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\exploded-aar\SNAPTRANS.libraries\tess-two\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c6e65945d835e5a037f0cb0ae8efb07600153784">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\classes-43d895f77294540ae8f75d4aeba8413a30cd022c.jar" />
+    </item>
+    <item
+        jar="C:\Users\qttbc\Desktop\SNAPTRANS\app\libs\google-api-translate-java-0.98-mod2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2eda6905f8b719be023772e5c738d93c6b77210b">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\google-api-translate-java-0.98-mod2-c1440e935894da91f606e4b2dabd004de83ea935.jar" />
+    </item>
+    <item
+        jar="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-da2ec0464c26a40ae98095a9a8a3930daa8fbfec.jar" />
+    </item>
+    <item
+        jar="C:\Users\qttbc\Desktop\SNAPTRANS\app\libs\json_simple-1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="C:\Users\qttbc\Desktop\SNAPTRANS\app\build\intermediates\pre-dexed\debug\json_simple-1.1-c996790651e107b924370ac17142639c6f3a5e0a.jar" />
+    </item>
+
+</items>

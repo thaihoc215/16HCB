@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "quanlyduan_group7.snaptrans.PreferencesActivity"/>
+      <point      
+        x = "1828"      
+        y = "24"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "quanlyduan_group7.snaptrans.CaptureActivity"/>
+      <point      
+        x = "1004"      
+        y = "20"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "quanlyduan_group7.snaptrans.HelpActivity"/>
+      <point      
+        x = "160"      
+        y = "16"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>
