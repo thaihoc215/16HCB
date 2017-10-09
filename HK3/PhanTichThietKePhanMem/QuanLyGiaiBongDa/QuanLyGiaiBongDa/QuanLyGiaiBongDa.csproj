@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{746E6B00-FA2C-4530-B374-1E6C5FB31152}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyGiaiBongDa</RootNamespace>
+    <AssemblyName>QuanLyGiaiBongDa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>DLL\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation">
+      <HintPath>DLL\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>DLL\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.Controls, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Microsoft.TeamFoundation.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Command\SCED010_Nguoidung.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCED010_Nguoidung.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCED030_DangKyDoiBong.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCED030_DangKyDoiBong.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCED040_ThongTinHLV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCED040_ThongTinHLV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCED050_ThongTinSVD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCED050_ThongTinSVD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCED060_ThongTinThePhat.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCED060_ThongTinThePhat.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCED070_ThongTinTrongTai.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCED070_ThongTinTrongTai.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCED080_ThemCauThuDoiBong.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCED080_ThemCauThuDoiBong.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCLG010_Login.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCLG010_Login.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCLG011_DoiMatKhau.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCLG011_DoiMatKhau.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCMN010_MainWindow.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCMN010_MainWindow.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC020_DanhSachChung.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC020_DanhSachChung.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC021_ReportBanThang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC021_ReportBanThang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC030_DanhSachCauThu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC030_DanhSachCauThu.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC050_LichThiDau.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC050_LichThiDau.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC051_KetQuaTranDau.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC051_KetQuaTranDau.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC060_Thongtin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC060_Thongtin.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC061_ReportBXH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC061_ReportBXH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCED020_SwitchThongTinDangKy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCED020_SwitchThongTinDangKy.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC070_ThongTinDoiBong.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC070_ThongTinDoiBong.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC071_DSCauThuDoiBong.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC071_DSCauThuDoiBong.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Command\SCRC080_QuyDinh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCRC080_QuyDinh.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BaseModel.cs" />
+    <Compile Include="Common\BaseViewModel.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\DbAccessor.cs" />
+    <Compile Include="Common\DiContainer.cs" />
+    <Compile Include="Common\MessageBoxUtil.cs" />
+    <Compile Include="Common\Validator.cs" />
+    <Compile Include="Common\PasswordHelper.cs" />
+    <Compile Include="Common\ViewForwarder.cs" />
+    <Compile Include="Common\WindowEventManager.cs" />
+    <Compile Include="Dao\Impl\SCED060Impl.cs" />
+    <Compile Include="Dao\Impl\SCLG011Impl.cs" />
+    <Compile Include="Dao\Impl\SCRC030Impl.cs" />
+    <Compile Include="Dao\Impl\SCRC070Impl.cs" />
+    <Compile Include="Dao\Impl\SCRC080Impl.cs" />
+    <Compile Include="Dao\ISCED060.cs" />
+    <Compile Include="Dao\ISCLG011.cs" />
+    <Compile Include="Dao\ISCRC030.cs" />
+    <Compile Include="Dao\Impl\SCED010Impl.cs" />
+    <Compile Include="Dao\Impl\SCED020Impl.cs" />
+    <Compile Include="Dao\Impl\SCED030Impl.cs" />
+    <Compile Include="Dao\Impl\SCED040Impl.cs" />
+    <Compile Include="Dao\Impl\SCED050Impl.cs" />
+    <Compile Include="Dao\Impl\SCED070Impl.cs" />
+    <Compile Include="Dao\Impl\SCED080Impl.cs" />
+    <Compile Include="Dao\Impl\SCRC020Impl.cs" />
+    <Compile Include="Dao\Impl\SCRC050Impl.cs" />
+    <Compile Include="Dao\Impl\SCRC051Impl.cs" />
+    <Compile Include="Dao\Impl\SCRC060Impl.cs" />
+    <Compile Include="Dao\ISCED010.cs" />
+    <Compile Include="Dao\ISCED030.cs" />
+    <Compile Include="Dao\ISCED040.cs" />
+    <Compile Include="Dao\ISCED050.cs" />
+    <Compile Include="Dao\ISCED070.cs" />
+    <Compile Include="Dao\ISCLG010.cs" />
+    <Compile Include="Dao\Impl\SCLG010Impl.cs" />
+    <Compile Include="Dao\ISCRC020.cs" />
+    <Compile Include="Dao\ISCRC050.cs" />
+    <Compile Include="Dao\ISCRC051.cs" />
+    <Compile Include="Dao\ISCRC060.cs" />
+    <Compile Include="Dao\ISCED020.cs" />
+    <Compile Include="Dao\ISCED080.cs" />
+    <Compile Include="Dao\ISCRC070.cs" />
+    <Compile Include="Dao\ISCRC080.cs" />
+    <Compile Include="Models\BangCapModel.cs" />
+    <Compile Include="Models\BangQuyDinhModel.cs" />
+    <Compile Include="Models\BangXepHangModel.cs" />
+    <Compile Include="Models\BanThangModel.cs" />
+    <Compile Include="Models\CauThuModel.cs" />
+    <Compile Include="Models\DoiBongModel.cs" />
+    <Compile Include="Models\HuanLuyenVienModel.cs" />
+    <Compile Include="Models\KetQuaTranDauModel.cs" />
+    <Compile Include="Models\LichThiDauModel.cs" />
+    <Compile Include="Models\LoaiBanThangModel.cs" />
+    <Compile Include="Models\LoaiNVModel.cs" />
+    <Compile Include="Models\NguoiDungModel.cs" />
+    <Compile Include="Models\QuyDinhModel.cs" />
+    <Compile Include="Models\SanVanDongModel.cs" />
+    <Compile Include="Models\ThePhatModel.cs" />
+    <Compile Include="Models\TranDauModel.cs" />
+    <Compile Include="Models\TrongTaiModel.cs" />
+    <Compile Include="Models\ViTriModel.cs" />
+    <Compile Include="QUANLYGIAIBONGDADataSet1.cs">
+      <DependentUpon>QUANLYGIAIBONGDADataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYGIAIBONGDADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYGIAIBONGDADataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\SCED010VM_Nguoidung.cs" />
+    <Compile Include="ViewModels\SCED030VM_DangKyDoiBong.cs" />
+    <Compile Include="ViewModels\SCED040VM_ThongTinHLV.cs" />
+    <Compile Include="ViewModels\SCED050VM_ThongTinSVD.cs" />
+    <Compile Include="ViewModels\SCED060VM_ThongTinThePhat.cs" />
+    <Compile Include="ViewModels\SCED070VM_ThongTinTrongTai.cs" />
+    <Compile Include="ViewModels\SCED080VM_ThemCauThuDoiBong.cs" />
+    <Compile Include="ViewModels\SCLG010VM_Login.cs" />
+    <Compile Include="ViewModels\SCLG011VM_DoiMatKhau.cs" />
+    <Compile Include="ViewModels\SCMN010VM_MainWindow.cs" />
+    <Compile Include="ViewModels\SCRC020VM_DanhSachChung.cs" />
+    <Compile Include="ViewModels\SCRC021VM_ReportBanThang.cs" />
+    <Compile Include="ViewModels\SCRC030VM_DanhSachCauThu.cs" />
+    <Compile Include="ViewModels\SCRC050VM_LichThiDau.cs" />
+    <Compile Include="ViewModels\SCRC051VM_KetQuaTranDau.cs" />
+    <Compile Include="ViewModels\SCRC060VM_Thongtin.cs" />
+    <Compile Include="ViewModels\SCRC061VM_ReportBXH.cs" />
+    <Compile Include="ViewModels\SCED020VM_SwitchThongTinDangKy.cs" />
+    <Compile Include="ViewModels\SCRC070VM_ThongTinDoiBong.cs" />
+    <Compile Include="ViewModels\SCRC071VM_DSCauThuDoiBong.cs" />
+    <Compile Include="ViewModels\SCRC080VM_QuyDinh.cs" />
+    <Compile Include="Views\SCED010V_Nguoidung.xaml.cs">
+      <DependentUpon>SCED010V_Nguoidung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCED030V_DangKyDoiBong.xaml.cs">
+      <DependentUpon>SCED030V_DangKyDoiBong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCED050V_ThongTinSVD.xaml.cs">
+      <DependentUpon>SCED050V_ThongTinSVD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCED060V_ThongTinThePhat.xaml.cs">
+      <DependentUpon>SCED060V_ThongTinThePhat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCED040V_ThongTinHLV.xaml.cs">
+      <DependentUpon>SCED040V_ThongTinHLV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCED070V_ThongTinTrongTai.xaml.cs">
+      <DependentUpon>SCED070V_ThongTinTrongTai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCED080V_ThemCauThuDoiBong.xaml.cs">
+      <DependentUpon>SCED080V_ThemCauThuDoiBong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCLG010V_Login.xaml.cs">
+      <DependentUpon>SCLG010V_Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCLG011V_DoiMatKhau.xaml.cs">
+      <DependentUpon>SCLG011V_DoiMatKhau.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCMN010V_MainWindow.xaml.cs">
+      <DependentUpon>SCMN010V_MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\SCRC020V_DanhSachChung.xaml.cs">
+      <DependentUpon>SCRC020V_DanhSachChung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC021V_ReportBanThang.xaml.cs">
+      <DependentUpon>SCRC021V_ReportBanThang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC030V_DanhSachCauThu.xaml.cs">
+      <DependentUpon>SCRC030V_DanhSachCauThu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC050V_LichThiDau.xaml.cs">
+      <DependentUpon>SCRC050V_LichThiDau.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC051V_KetQuaTranDau.xaml.cs">
+      <DependentUpon>SCRC051V_KetQuaTranDau.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC060V_Thongtin.xaml.cs">
+      <DependentUpon>SCRC060V_Thongtin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC061V_ReportBXH.xaml.cs">
+      <DependentUpon>SCRC061V_ReportBXH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCED020V_SwitchThongTinDangKy.xaml.cs">
+      <DependentUpon>SCED020V_SwitchThongTinDangKy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC070V_ThongTinDoiBong.xaml.cs">
+      <DependentUpon>SCRC070V_ThongTinDoiBong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC071V_DSCauThuDoiBong.xaml.cs">
+      <DependentUpon>SCRC071V_DSCauThuDoiBong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SCRC080V_QuyDinh.xaml.cs">
+      <DependentUpon>SCRC080V_QuyDinh.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IconsNonShared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SCED010V_Nguoidung.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SCED030V_DangKyDoiBong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCED050V_ThongTinSVD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCED060V_ThongTinThePhat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCED040V_ThongTinHLV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCED070V_ThongTinTrongTai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCED080V_ThemCauThuDoiBong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCLG010V_Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SCLG011V_DoiMatKhau.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SCMN010V_MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SCRC020V_DanhSachChung.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC021V_ReportBanThang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC030V_DanhSachCauThu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC050V_LichThiDau.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC051V_KetQuaTranDau.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC060V_Thongtin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC061V_ReportBXH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SCED020V_SwitchThongTinDangKy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC070V_ThongTinDoiBong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC071V_DSCauThuDoiBong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SCRC080V_QuyDinh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCRC021_ReportBanThang.rdlc" />
+    <EmbeddedResource Include="SCRC061_ReportBXH.rdlc" />
+    <None Include="Command\SCED010_Nguoidung.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCED010_Nguoidung.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCED030_DangKyDoiBong.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCED030_DangKyDoiBong.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCED040_ThongTinHLV.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCED040_ThongTinHLV.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCED050_ThongTinSVD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCED050_ThongTinSVD.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCED060_ThongTinThePhat.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCED060_ThongTinThePhat.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCED070_ThongTinTrongTai.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCED070_ThongTinTrongTai.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCED080_ThemCauThuDoiBong.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCED080_ThemCauThuDoiBong.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCLG010_Login.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCLG010_Login.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCMN010_MainWindow.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCMN010_MainWindow.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC020_DanhSachChung.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC020_DanhSachChung.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC030_DanhSachCauThu.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC030_DanhSachCauThu.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC050_LichThiDau.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC050_LichThiDau.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC051_KetQuaTranDau.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC051_KetQuaTranDau.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC060_Thongtin.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC060_Thongtin.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC061_ReportBXH.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC061_ReportBXH.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCED020_SwitchThongTinDangKy.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCED020_SwitchThongTinDangKy.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC070_ThongTinDoiBong.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC070_ThongTinDoiBong.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC071_DSCauThuDoiBong.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC071_DSCauThuDoiBong.cs</LastGenOutput>
+    </None>
+    <None Include="Command\SCRC080_QuyDinh.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC080_QuyDinh.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="QUANLYGIAIBONGDADataSet1.xsc">
+      <DependentUpon>QUANLYGIAIBONGDADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYGIAIBONGDADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYGIAIBONGDADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYGIAIBONGDADataSet1.xss">
+      <DependentUpon>QUANLYGIAIBONGDADataSet1.xsd</DependentUpon>
+    </None>
+    <Resource Include="Resources\Entypo.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\Data\" />
+    <Folder Include="Resources\Images\CauthuAva\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\DoibongAva\NOAVA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\BGChiTietDoi1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\BGChiTietDoi2.jpg" />
+    <Resource Include="Resources\Images\BGDsCauThu.jpg" />
+    <Resource Include="Resources\Images\BGinfoHLV.jpg" />
+    <Resource Include="Resources\Images\BGSVD.jpg" />
+    <Resource Include="Resources\Images\BGThemCauThu.jpg" />
+    <Resource Include="Resources\Images\BGTrongTai.jpg" />
+    <Resource Include="Resources\Images\logout.png" />
+    <Resource Include="Resources\Images\logout2.png" />
+    <Resource Include="Resources\Images\search.jpg" />
+    <Resource Include="Resources\Images\thephat.jpg" />
+    <Resource Include="Resources\Images\VFF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\BGDangKy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Command\SCLG011_DoiMatKhau.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCLG011_DoiMatKhau.cs</LastGenOutput>
+    </Content>
+    <Content Include="Command\SCRC021_ReportBanThang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SCRC021_ReportBanThang.cs</LastGenOutput>
+    </Content>
+    <Content Include="DLL\System.Windows.Interactivity.dll" />
+    <Resource Include="Resources\Entypo-license.txt" />
+    <Resource Include="Resources\WindowsIcons-license.txt" />
+    <Resource Include="Resources\Images\logout_move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

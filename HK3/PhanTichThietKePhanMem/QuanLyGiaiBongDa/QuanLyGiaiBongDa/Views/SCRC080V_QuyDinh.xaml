@@ -1,0 +1,336 @@
+﻿<UserControl  x:Class="QuanLyGiaiBongDa.Views.SCRC080V_QuyDinh"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyGiaiBongDa.Views"
+        mc:Ignorable="d" d:DesignWidth="1008" d:DesignHeight="493" Background="#FFEEEEEE" >
+    <Grid x:Name="grdQuyDinh" Background="#FFEEEEEE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="83*"/>
+                <RowDefinition Height="184*"/>
+                <RowDefinition Height="226*"/>
+            </Grid.RowDefinitions>
+            <Grid Background="#FF2B748F">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="84*"/>
+                    <ColumnDefinition Width="37*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label x:Name="LBL_TENTK_00" Content="{Binding UserLogin.HoTen}" Margin="5,0" FontWeight="Bold"/>
+                <Label x:Name="LBL_LOAITK_01" Content="{Binding UserLogin.TenLoai}" Margin="5,0,10,0" FontWeight="Bold" Grid.Row="1"/>
+                <Label x:Name="LBL_EMAIL_02" Content="{Binding UserLogin.Email}" Margin="5,0,10,0" FontWeight="Bold" Grid.Row="2"/>
+                <Button x:Name="BTN_LOGOUT_00" 
+                        Click="BTN_LOGOUT_00_Click"
+                                Command="{Binding LogoutCommand}" Margin="10,10,0,10"
+                        	    Style="{DynamicResource SquareButtonStyle}" Background="Transparent"
+                        BorderBrush="{x:Null}" Foreground="{x:Null}" Grid.RowSpan="3" Grid.Column="1">
+                    
+                    <Rectangle Width="53" Height="55">
+                        <Rectangle.Style>
+                            <Style TargetType="Rectangle">
+                                <Setter Property="Fill">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="../Resources/Images/logout.png"/>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Fill">
+                                            <Setter.Value>
+                                                <ImageBrush ImageSource="../Resources/Images/logout_move.png"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Rectangle.Style>
+                    </Rectangle>
+                </Button>
+            </Grid>
+            <Image Source="../Resources/Images/VFF.jpg"  Stretch="Fill" Grid.Row="1"/>
+            <Calendar Margin="24,10,25,37" Grid.Row="2"/>
+
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="246*"/>
+                <RowDefinition Height="247*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="245*"/>
+                <ColumnDefinition Width="245*"/>
+                <ColumnDefinition Width="240*"/>
+            </Grid.ColumnDefinitions>
+            <!--Quy dinh 1 - Do tuoi - So luong cau thu-->
+            <Expander x:Name="expQD1" Header="Quy Định 1" Background="#FF2B748F"
+                      IsExpanded="True"
+                      BorderBrush="#FF2B748F" Margin="0,0,10,10" Grid.ColumnSpan="2"  >
+                <Grid Background="Brown">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="84*"/>
+                        <ColumnDefinition Width="71*"/>
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="84*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="0,5,0,15" TextWrapping="Wrap" TextAlignment="Center"
+                                       Text="-" Grid.Column="2" FontSize="25" />
+                    <!--Tuoi cau thu-->
+                    <Label Content="Độ tuổi cầu thủ" Margin="0,10"/>
+                    <Controls:NumericUpDown x:Name="txtTuoiMin" Margin="10" Value="{Binding QuyDinhItem.TuoiMin}"
+                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                             Minimum="16" Maximum="45"
+                             Grid.Column="1" IsEnabled="{Binding OpenUpdateQD1 ,UpdateSourceTrigger=PropertyChanged}" HasDecimals="False"/>
+                    <Controls:NumericUpDown x:Name="txtTuoiMax" Margin="10" Value="{Binding QuyDinhItem.TuoiMax}"
+                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                             Grid.Column="3" IsEnabled="{Binding OpenUpdateQD1}" Maximum="45" HasDecimals="False"/>
+
+                    <!--So cau thu moi doi bong-->
+                    <Label Content="Giới hạn số cầu thủ" Margin="0,10" Grid.Row="1"/>
+                    <Controls:NumericUpDown x:Name="txtSoLuongMin" Margin="10" Value="{Binding QuyDinhItem.SoLuongMin}"
+                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                             Minimum="12" Maximum="30"
+                             Grid.Row="1" Grid.Column="1" IsEnabled="{Binding OpenUpdateQD1}" HasDecimals="False"/>
+                    <Controls:NumericUpDown x:Name="txtSoLuongMax" Margin="10" Value="{Binding QuyDinhItem.SoLuongMax}"
+                             Minimum="12" Maximum="30"
+                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                             Grid.Row="1" Grid.Column="3" IsEnabled="{Binding OpenUpdateQD1}" HasDecimals="False"/>
+                    <!--So ngoai binh-->
+                    <Label Content="Số ngoại binh tối đa" Margin="0,13,0,10" Grid.Row="2"/>
+                    <Controls:NumericUpDown x:Name="txtCTNgoai" Margin="10" Value="{Binding QuyDinhItem.CTNgoai}"
+                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                             Grid.Row="2" Grid.Column="1" IsEnabled="{Binding OpenUpdateQD1}" Minimum="0" HasDecimals="False"/>
+                    <TextBlock Margin="0,5,0,15" TextWrapping="Wrap" TextAlignment="Center"
+                        Text="-" Grid.Column="2" FontSize="25" Grid.Row="1" />
+                    <Button x:Name="btnSua_Copy2" Margin="93,10,10,10"
+                            IsEnabled="{Binding IsAccept}"
+                            Command="{Binding UpdateQuyDinh1Command}"
+                            Style="{DynamicResource SquareButtonStyle}" 
+                            Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+                        <TextBlock TextWrapping="Wrap" Text="{Binding UpdateQD1}"
+                            TextAlignment="Center" FontSize="12"/>
+                    </Button>
+                    <Button x:Name="btnOK_Copy2" Margin="0,10,104,10"
+                            Command="{Binding CancelUpdateQuyDinh1Command}"
+                            Style="{DynamicResource SquareButtonStyle}" 
+                            Grid.Row="3" Grid.Column="3">
+                        <TextBlock TextWrapping="Wrap" Text="Hủy"
+                            TextAlignment="Center" FontSize="12"/>
+                    </Button>
+                </Grid>
+            </Expander>
+            <Expander x:Name="expQD2" Grid.Column="2" Header="Quy Định 2" 
+                      IsExpanded="True"
+                      Background="#FF2B748F" BorderBrush="#FF2B748F" 
+                      Margin="10,0,0,10">
+                <Grid Background="Brown">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="10" TextWrapping="Wrap" 
+                               FontSize="14" TextAlignment="Left"
+                               Text="- Mỗi vòng mỗi đội chỉ được tham gia đúng 1 trận đấu."/>
+                    <TextBlock Margin="10" TextWrapping="Wrap" 
+                               FontSize="14" TextAlignment="Left"
+                               Text="- Mỗi đội thi đấu 2 lần với đội khác " Grid.Row="1"/>
+                    <TextBlock Margin="10" TextWrapping="Wrap"  
+                               FontSize="14" TextAlignment="Left"
+                               Grid.Row="2"><Run Text="- Lượt đi  đá trên sân nhà."/><LineBreak/><Run Text="- Lượt về đá trên sân khách."/></TextBlock>
+                </Grid>
+            </Expander>
+            <Expander x:Name="expQD3" Header="Quy Định 3" 
+                      Background="#FF2B748F" BorderBrush="#FF2B748F" 
+                      IsExpanded="True" Margin="0,0,10,0" Grid.Row="1" Grid.ColumnSpan="2"
+                              >
+                <Grid Background="Brown">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="76*"/>
+                        <ColumnDefinition Width="72*"/>
+                        <ColumnDefinition Width="137*"/>
+                        <ColumnDefinition Width="215*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="43*"/>
+                        <RowDefinition Height="125*"/>
+                        <RowDefinition Height="39*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.ColumnSpan="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150*"/>
+                            <ColumnDefinition Width="46*"/>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="55*"/>
+                            <ColumnDefinition Width="55*"/>
+                            <ColumnDefinition Width="79*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Margin="10,14,0,9" TextWrapping="Wrap" TextAlignment="Center"
+                                       Text="Thời điểm ghi bàn hợp lệ" />
+                        <TextBlock Text="phút" Margin="0,13,0,7" 
+                               TextAlignment="Center" Grid.Column="1"/>
+                        <Controls:NumericUpDown x:Name="txtTDGhiBan" Margin="5,10,5,7" 
+                             Minimum="0" Maximum="120"  
+                             Value="{Binding QuyDinhItem.TDGhiBan, UpdateSourceTrigger=PropertyChanged}" Grid.Column="2"
+                             IsEnabled="{Binding OpenUpdateQD3}" HasDecimals="False"/>
+                        <Button x:Name="btnSua_Copy" Margin="5,10,5,6"
+                        Command="{Binding UpdateQuyDinh3Command}"
+                        Style="{DynamicResource SquareButtonStyle}" Grid.Column="3">
+                            <TextBlock TextWrapping="Wrap" Text="{Binding UpdateQD3}"
+                            TextAlignment="Center" FontSize="12"/>
+                        </Button>
+                        <Button x:Name="btnOK_Copy" Margin="5,10,5
+                                ,6"
+                        Command="{Binding CancelUpdateQuyDinh3Command}"
+                        Style="{DynamicResource SquareButtonStyle}" Grid.Column="4">
+                            <TextBlock TextWrapping="Wrap" Text="Hủy"
+                            TextAlignment="Center" FontSize="12"/>
+                        </Button>
+
+                    </Grid>
+                    <DataGrid Margin="10,1,0,0" x:Name="dgvLoaiBanThang"
+                              AutoGenerateColumns="False" GridLinesVisibility="All"
+                              IsReadOnly="True"
+                              ItemsSource="{Binding LoaiBanThangItems}"
+                              SelectedItem="{Binding LoaiBanThangItem}"
+                              Style="{StaticResource AzureDataGrid}" Grid.Row="1" Grid.ColumnSpan="3">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Mã Loại" Binding="{Binding MaLoai}"/>
+                            <DataGridTextColumn Header="Tên Loại" Binding="{Binding TenLoai}"/>
+                        </DataGrid.Columns>
+
+                    </DataGrid>
+                    <GroupBox x:Name="grbLoaiBT" Margin="10,1,10,10" Background="#FF2B748F" BorderBrush="#FF2B748F" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2">
+                        <Grid Background="Brown">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="49*"/>
+                                <RowDefinition Height="50*"/>
+                                <RowDefinition Height="50*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="9*"/>
+                                <ColumnDefinition Width="19*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Mã Loại" Margin="0,5"/>
+                            <Label Content="Tên Loại" Margin="0,5" Grid.Row="1"/>
+                            <TextBox x:Name="txtMaLoai" VerticalContentAlignment="Center"
+                            	Margin="0,5" TextWrapping="Wrap"
+                            	IsEnabled="False"
+                                Text="{Binding LoaiBanThangItem.MaLoai,UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+                            <TextBox x:Name="txtTenLoai"
+                                     Margin="0,5" VerticalContentAlignment="Center"
+                                     Text="{Binding LoaiBanThangItem.TenLoai, UpdateSourceTrigger=PropertyChanged}"
+                                     Grid.Column="1" Grid.Row="1"   
+                            	/>
+                            <Grid Grid.Row="2" Grid.ColumnSpan="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Button x:Name="btnEdit" Margin="25,10,5,5"
+                                        Command="{Binding UpdateLoaiBTCommand}"
+                                        Style="{DynamicResource SquareButtonStyle}">
+                                    <TextBlock TextWrapping="Wrap" Text="Lưu"
+                                               TextAlignment="Center" FontSize="12"/>
+                                </Button>
+                                <Button x:Name="btnCancel" Margin="5,10,25,5"
+                                        Command="{Binding CancelUpdateLoaiBTCommand}"
+                                        Style="{DynamicResource SquareButtonStyle}" Grid.Column="1">
+                                    <TextBlock TextWrapping="Wrap" Text="Hủy"
+                                               TextAlignment="Center" FontSize="12"/>
+                                </Button>
+
+                            </Grid>
+                        </Grid>
+                    </GroupBox>
+                    <Button x:Name="btnEdit_Copy" Margin="10,5,5,5"
+                            IsEnabled="{Binding IsAccept}"
+                                    Command="{Binding AddLoaiBTCommand}" CommandParameter="0"
+                                    Style="{DynamicResource SquareButtonStyle}" Grid.Row="2">
+                        <TextBlock TextWrapping="Wrap" Text="Thêm"
+                                        TextAlignment="Center" FontSize="12"/>
+                    </Button>
+                    <Button x:Name="btnEdit_Copy1" Margin="0,5,9,5"
+                        Command="{Binding DeleteLoaiBTCommand}"
+                        Style="{DynamicResource SquareButtonStyle}" Grid.Row="2" Grid.Column="1">
+                        <TextBlock TextWrapping="Wrap" Text="Xóa"
+                            TextAlignment="Center" FontSize="12"/>
+                    </Button>
+                </Grid>
+            </Expander>
+            <Expander x:Name="expQD4" Header="Quy Định 4" Background="#FF2B748F" 
+                      BorderBrush="#FF2B748F" IsExpanded="True"
+                      Grid.Row="1" Margin="10,1,0,0" Grid.Column="2">
+                <Grid Background="Brown">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="34*"/>
+                        <RowDefinition Height="21*"/>
+                        <RowDefinition Height="47*"/>
+                        <RowDefinition Height="48*"/>
+                        <RowDefinition Height="47*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" TextAlignment="Center"
+                    			Text="Điểm Số Sau Mỗi Trận Đấu" Grid.ColumnSpan="3"/>
+                    <TextBlock Margin="10,0" TextWrapping="Wrap" TextAlignment="Center"
+                    			Text="Thắng" Grid.Row="1"/>
+                    <Controls:NumericUpDown x:Name="txtThang" Margin="5,10" Value="{Binding QuyDinhItem.Thang}"
+                               Grid.Row="2" IsEnabled="{Binding OpenUpdateQD4}" Minimum="0" Maximum="99" HasDecimals="False"/>
+                    <TextBlock Margin="10,0" TextWrapping="Wrap" TextAlignment="Center"
+                            	Text="Hòa" Grid.Row="1" Grid.Column="1"/>
+                    <Controls:NumericUpDown x:Name="txtHoa" Margin="5,10" Value="{Binding QuyDinhItem.Hoa}"
+                             Grid.Row="2" Grid.Column="1" Minimum="0" Maximum="99"
+                             IsEnabled="{Binding OpenUpdateQD4}" HasDecimals="False"/>
+                    <TextBlock Margin="10,0" TextWrapping="Wrap" TextAlignment="Center"
+                            	Text="Thua" Grid.Row="1" Grid.Column="2"/>
+                    <Controls:NumericUpDown x:Name="txtThua" Margin="5,10" Value="{Binding QuyDinhItem.Thua}"
+                             Grid.Row="2" Grid.Column="2" Minimum="0" Maximum="99"
+                             IsEnabled="{Binding OpenUpdateQD4}" HasDecimals="False"/>
+                    <TextBlock Margin="0,10,0,0" TextWrapping="Wrap" TextAlignment="Center"
+                            	Text="- Xếp hạng theo điểm, hiệu số, tổng số bàn thắng, đối kháng" Grid.Row="3" Grid.ColumnSpan="3"/>
+                    <Grid Grid.ColumnSpan="3" Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="btnSua" Margin="70,10,5,10"
+                                IsEnabled="{Binding IsAccept}"
+                            Command="{Binding UpdateQuyDinh4Command,ValidatesOnDataErrors=True}"
+                            Style="{DynamicResource SquareButtonStyle}">
+                            <TextBlock TextWrapping="Wrap" Text="{Binding UpdateQD4}"
+                                   TextAlignment="Center" FontSize="12"/>
+                        </Button>
+                        <Button x:Name="btnHuy" Margin="5,10,70,10"
+                                Command="{Binding CancelUpdateQuyDinh4Command}"
+                                Style="{DynamicResource SquareButtonStyle}" Grid.Column="1">
+                            <TextBlock TextWrapping="Wrap" Text="Hủy"
+                                       TextAlignment="Center" FontSize="12"/>
+                        </Button>
+                    </Grid>
+
+                </Grid>
+            </Expander>
+        </Grid>
+    </Grid>
+</UserControl>

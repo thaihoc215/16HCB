@@ -1,0 +1,62 @@
+﻿2017-05-31 18:56:46,484 INFO [1] QuanLyGiaiBongDa.ViewModels.SCLG010VM_Login.InitializeProperties - InitializeProperties
+2017-05-31 18:56:52,204 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCLG010Impl.GetUser - Execute SQL
+2017-05-31 18:56:53,240 ERROR [1] QuanLyGiaiBongDa.ViewModels.SCLG010VM_Login.ExecuteLoginCommand - Login Fail
+2017-05-31 18:56:55,228 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCLG010Impl.GetUser - Execute SQL
+2017-05-31 18:56:55,237 INFO [1] QuanLyGiaiBongDa.ViewModels.SCMN010VM_MainWindow.InitializeProperties - InitializeProperties
+2017-05-31 18:56:55,344 INFO [1] QuanLyGiaiBongDa.ViewModels.SCLG010VM_Login.ExecuteLoginCommand - thaihoc@gmail.com    Loggin
+2017-05-31 18:56:55,432 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC060VM_Thongtin.InitializeProperties - InitializeProperties
+2017-05-31 18:56:55,449 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC060Impl.GetLichDauTrongNgay - Execute SQL
+2017-05-31 18:56:55,459 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC060Impl.GetBangXepHang - Execute SQL
+2017-05-31 18:56:55,557 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED010VM_Nguoidung.InitializeProperties - InitializeProperties
+2017-05-31 18:56:55,561 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED010VM_Nguoidung.ExecuteGetListLoaiNVCommand - thaihoc@gmail.com    Lay danh sach loai nhan vien
+2017-05-31 18:56:55,562 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED010Impl.GetListLoaiNV - Execute SQL
+2017-05-31 18:56:55,566 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED010VM_Nguoidung.ExecuteGetListNguoiDungCommand - thaihoc@gmail.com    Lay danh sach nguoi dung
+2017-05-31 18:56:55,567 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED010Impl.GetListNguoiDung - Execute SQL
+2017-05-31 18:56:55,594 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC080VM_QuyDinh.InitializeProperties - InitializeProperties
+2017-05-31 18:56:55,598 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC080Impl.LoadQuyDinh - Execute SQL
+2017-05-31 18:56:55,601 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC080VM_QuyDinh.ExecuteLoadLoaiBanThangCommand - thaihoc@gmail.com    Load danh sach quy dinh
+2017-05-31 18:56:55,602 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC080Impl.LoadLoaiBanThang - Execute SQL
+2017-05-31 18:56:55,618 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC020VM_DanhSachChung.InitializeProperties - InitializeProperties
+2017-05-31 18:56:55,622 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetDanhSachDoiBong - Execute SQL
+2017-05-31 18:56:55,627 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListHuanLuyenVien - Execute SQL
+2017-05-31 18:56:55,634 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListSanVanDong - Execute SQL
+2017-05-31 18:56:55,640 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListTrongTai - Execute SQL
+2017-05-31 18:56:55,644 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListThePhat - Execute SQL
+2017-05-31 18:56:55,651 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListBanThang - Execute SQL
+2017-05-31 18:56:59,280 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC060VM_Thongtin.ExecuteOpenDangKiDoiBongCommand - thaihoc@gmail.com    Open man hinh dang ky doi bong
+2017-05-31 18:56:59,285 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED030VM_DangKyDoiBong.InitializeProperties - InitializeProperties
+2017-05-31 18:56:59,289 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED030Impl.CountMaxDoiBong - Execute SQL
+2017-05-31 18:56:59,292 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED030Impl.GetDanhSachHLV - Execute SQL
+2017-05-31 18:56:59,303 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED030Impl.GetDanhSachSVD - Execute SQL
+2017-05-31 18:56:59,313 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED080VM_ThemCauThuDoiBong.InitializeProperties - InitializeProperties
+2017-05-31 18:56:59,316 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED080Impl.GetDanhSachViTri - Execute SQL
+2017-05-31 18:56:59,319 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED080Impl.GetListQuyDinh - Execute SQL
+2017-05-31 18:57:01,779 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED030VM_DangKyDoiBong.DeleteDoiBong - thaihoc@gmail.com    Xoa doi bong
+2017-05-31 18:57:01,785 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED030Impl.DeleteDoiBong - Execute SQL
+2017-05-31 18:57:01,801 ERROR [1] QuanLyGiaiBongDa.Dao.Impl.SCED030Impl.DeleteDoiBong - Excute SQl Fail
+2017-05-31 18:57:01,807 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC060Impl.GetBangXepHang - Execute SQL
+2017-05-31 19:03:04,739 INFO [1] QuanLyGiaiBongDa.ViewModels.SCLG010VM_Login.InitializeProperties - InitializeProperties
+2017-05-31 19:23:27,238 INFO [1] QuanLyGiaiBongDa.ViewModels.SCLG010VM_Login.InitializeProperties - InitializeProperties
+2017-05-31 19:23:31,151 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCLG010Impl.GetUser - Execute SQL
+2017-05-31 19:23:31,521 INFO [1] QuanLyGiaiBongDa.ViewModels.SCMN010VM_MainWindow.InitializeProperties - InitializeProperties
+2017-05-31 19:23:31,594 INFO [1] QuanLyGiaiBongDa.ViewModels.SCLG010VM_Login.ExecuteLoginCommand - thaihoc@gmail.com    Loggin
+2017-05-31 19:23:31,651 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC060VM_Thongtin.InitializeProperties - InitializeProperties
+2017-05-31 19:23:31,657 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC060Impl.GetLichDauTrongNgay - Execute SQL
+2017-05-31 19:23:31,669 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC060Impl.GetBangXepHang - Execute SQL
+2017-05-31 19:23:31,776 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED010VM_Nguoidung.InitializeProperties - InitializeProperties
+2017-05-31 19:23:31,780 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED010VM_Nguoidung.ExecuteGetListLoaiNVCommand - thaihoc@gmail.com    Lay danh sach loai nhan vien
+2017-05-31 19:23:31,780 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED010Impl.GetListLoaiNV - Execute SQL
+2017-05-31 19:23:31,783 INFO [1] QuanLyGiaiBongDa.ViewModels.SCED010VM_Nguoidung.ExecuteGetListNguoiDungCommand - thaihoc@gmail.com    Lay danh sach nguoi dung
+2017-05-31 19:23:31,784 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCED010Impl.GetListNguoiDung - Execute SQL
+2017-05-31 19:23:31,811 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC080VM_QuyDinh.InitializeProperties - InitializeProperties
+2017-05-31 19:23:31,815 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC080Impl.LoadQuyDinh - Execute SQL
+2017-05-31 19:23:31,818 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC080VM_QuyDinh.ExecuteLoadLoaiBanThangCommand - thaihoc@gmail.com    Load danh sach quy dinh
+2017-05-31 19:23:31,818 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC080Impl.LoadLoaiBanThang - Execute SQL
+2017-05-31 19:23:31,835 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC020VM_DanhSachChung.InitializeProperties - InitializeProperties
+2017-05-31 19:23:31,838 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetDanhSachDoiBong - Execute SQL
+2017-05-31 19:23:31,845 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListHuanLuyenVien - Execute SQL
+2017-05-31 19:23:31,851 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListSanVanDong - Execute SQL
+2017-05-31 19:23:31,857 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListTrongTai - Execute SQL
+2017-05-31 19:23:31,862 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListThePhat - Execute SQL
+2017-05-31 19:23:31,868 INFO [1] QuanLyGiaiBongDa.Dao.Impl.SCRC020Impl.GetListBanThang - Execute SQL
+2017-05-31 19:23:34,028 INFO [1] QuanLyGiaiBongDa.ViewModels.SCRC060VM_Thongtin.ExecuteOpenReportCommand - thaihoc@gmail.com    Xem report bang xep hang
