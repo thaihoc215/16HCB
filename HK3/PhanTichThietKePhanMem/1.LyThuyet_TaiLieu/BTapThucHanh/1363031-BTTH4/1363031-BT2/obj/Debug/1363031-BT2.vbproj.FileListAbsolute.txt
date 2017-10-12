@@ -1,0 +1,36 @@
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.exe.config
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.exe
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.pdb
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.xml
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.Form1.resources
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.Resources.resources
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.TextClock.resources
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.vbproj.GenerateResource.Cache
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.exe
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.xml
+E:\Hoc tap\DH CD\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.pdb
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.exe.config
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.exe
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.xml
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.pdb
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.exe
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.pdb
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.xml
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.vbprojResolveAssemblyReference.cache
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.Form1.resources
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.Resources.resources
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.TextClock.resources
+D:\STUDY\AllLearnWork\School\Nam III\HK 5\LTƯDQL1\BTTH\W5\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.vbproj.GenerateResource.Cache
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.exe.config
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.exe
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.pdb
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\bin\Debug\1363031-BT2.xml
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.vbprojResolveAssemblyReference.cache
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.Form1.resources
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.Resources.resources
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\_1363031_BT2.TextClock.resources
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.vbproj.GenerateResource.Cache
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.vbproj.CoreCompileInputs.cache
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.exe
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.xml
+E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\PhanTichThietKePhanMem\1.LyThuyet_TaiLieu\BTapThucHanh\1363031-BTTH4\1363031-BT2\obj\Debug\1363031-BT2.pdb
