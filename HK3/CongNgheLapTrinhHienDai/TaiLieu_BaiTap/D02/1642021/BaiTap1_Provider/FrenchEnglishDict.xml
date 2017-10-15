@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dict>
+  <word>
+    <fr>bonjour</fr>
+    <en>hello</en>
+  </word>
+  <word>
+    <fr>amour</fr>
+    <en>love</en>
+  </word>
+  <word>
+    <fr>au revoir</fr>
+    <en>goodbye</en>
+  </word>
+</dict>
