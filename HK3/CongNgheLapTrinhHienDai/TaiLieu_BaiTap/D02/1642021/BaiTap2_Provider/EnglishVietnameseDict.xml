@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dict>
+  <word>
+    <vi>xin chào</vi>
+    <en>hello</en>
+  </word>
+  <word>
+    <vi>yêu</vi>
+    <en>love</en>
+  </word>
+  <word>
+    <vi>tạm biệt</vi>
+    <en>goodbye</en>
+  </word>
+  <word>
+    <vi>nắng</vi>
+    <en>sunny</en>
+  </word>
+  <word>
+    <vi>mưa</vi>
+    <en>rain</en>
+  </word>
+  <word>
+    <vi>đẹp</vi>
+    <en>pretty</en>
+  </word>
+  <word>
+    <vi>định nghĩa</vi>
+    <en>define</en>
+  </word>
+  <word>
+    <vi>thêm</vi>
+    <en>more</en>
+  </word>
+  <word>
+    <vi>chỉnh sửa</vi>
+    <en>edit</en>
+  </word>
+  <word>
+    <vi>động từ</vi>
+    <en>verb</en>
+  </word>
+  <word>
+    <vi>bố</vi>
+    <en>dad</en>
+  </word>
+  <word>
+    <vi>mẹ</vi>
+    <en>mom</en>
+  </word>
+  <word>
+    <vi>anh trai</vi>
+    <en>brother</en>
+  </word>
+</dict>

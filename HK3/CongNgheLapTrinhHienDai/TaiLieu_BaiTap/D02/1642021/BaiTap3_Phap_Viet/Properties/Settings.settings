@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BaiTap3_Phap_Viet.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BaiTap3_Phap_Viet_PhapAnhServiceProxy_PhapAnhService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:64712/PhapAnhService.asmx</Value>
+    </Setting>
+    <Setting Name="BaiTap3_Phap_Viet_AnhVietServiceProxy_AnhVietService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:65413/AnhVietService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

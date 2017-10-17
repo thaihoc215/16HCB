@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dict>
+  <word>
+    <fr>bonjour</fr>
+    <en>hello</en>
+  </word>
+  <word>
+    <fr>amour</fr>
+    <en>love</en>
+  </word>
+  <word>
+    <fr>au revoir</fr>
+    <en>goodbye</en>
+  </word>
+  <word>
+    <fr>plus</fr>
+    <en>more</en>
+  </word>
+  <word>
+    <fr>modifier</fr>
+    <en>edit</en>
+  </word>
+  <word>
+    <fr>verbe</fr>
+    <en>verb</en>
+  </word>
+  <word>
+    <fr>papa</fr>
+    <en>dad</en>
+  </word>
+  <word>
+    <fr>mère</fr>
+    <en>mom</en>
+  </word>
+  <word>
+    <fr>frère</fr>
+    <en>brother</en>
+  </word>
+  <word>
+    <fr>douleur</fr>
+    <en>pain</en>
+  </word>
+  <word>
+    <fr>croître</fr>
+    <en>grow</en>
+  </word>
+  <word>
+    <fr>up</fr>
+    <en>up</en>
+  </word>
+  <word>
+    <fr>down</fr>
+    <en>vers le bas</en>
+  </word>
+</dict>
