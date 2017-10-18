@@ -8,7 +8,7 @@ CREATE TABLE The(
 	TenChuThe nvarchar(50) not null,
 	NgayHetHan datetime not null,
 	SoDuKhaDung float not null,
-	NganHang int
+	NganHang int not null
 );
 
 Create table NganHang(
@@ -17,16 +17,20 @@ Create table NganHang(
 );
 
 Create table GiaoDich(
-	MaGiaoDich int,
-	TaiKhoanNguon int,
-	TaiKhoanDich int,
+	MaGiaoDich int not null,
+	TaiKhoan int not null,
 	ThoiDiemGiaoDich datetime not null,
-	Primary Key (MaGiaoDich,TaiKhoanNguon,TaiKhoanDich)
+	LoaiGiaoDich int not null
+	Primary Key (MaGiaoDich,TaiKhoan)
 );
 
+Create table LoaiGiaoDich{
+	MaLoai int  primary key not null,
+	TenGiaoDich nvarchar(50) not null
+}
 Alter table The add foreign key (NganHang) references NganHang(MaNganHang);
-Alter table GiaoDich add foreign key (TaiKhoanNguon) references The(MaThe);
-Alter table GiaoDich add foreign key (TaiKhoanDich) references The(MaThe);
+Alter table GiaoDich add foreign key (TaiKhoan) references The(MaThe);
+Alter table GiaoDich add foreign key (LoaiGiaoDich) references LoaiGiaoDich(MaLoai);
 
 --Them ngan hang
 Insert into NganHang(MaNganHang,TenNganHang) values (1,N'VietComBank');

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="REST_ATMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="GiaoDich">
+          <Key>
+            <PropertyRef Name="MaGiaoDich" />
+            <PropertyRef Name="TaiKhoanNguon" />
+            <PropertyRef Name="TaiKhoanDich" />
+          </Key>
+          <Property Name="MaGiaoDich" Type="int" Nullable="false" />
+          <Property Name="TaiKhoanNguon" Type="int" Nullable="false" />
+          <Property Name="TaiKhoanDich" Type="int" Nullable="false" />
+          <Property Name="ThoiDiemGiaoDich" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NganHang">
+          <Key>
+            <PropertyRef Name="MaNganHang" />
+          </Key>
+          <Property Name="MaNganHang" Type="int" Nullable="false" />
+          <Property Name="TenNganHang" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="The">
+          <Key>
+            <PropertyRef Name="MaThe" />
+          </Key>
+          <Property Name="MaThe" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenChuThe" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NgayHetHan" Type="datetime" Nullable="false" />
+          <Property Name="SoDuKhaDung" Type="float" Nullable="false" />
+          <Property Name="NganHang" Type="int" />
+        </EntityType>
+        <Association Name="FK__GiaoDich__TaiKho__15502E78">
+          <End Role="The" Type="Self.The" Multiplicity="1" />
+          <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="The">
+              <PropertyRef Name="MaThe" />
+            </Principal>
+            <Dependent Role="GiaoDich">
+              <PropertyRef Name="TaiKhoanNguon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__GiaoDich__TaiKho__164452B1">
+          <End Role="The" Type="Self.The" Multiplicity="1" />
+          <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="The">
+              <PropertyRef Name="MaThe" />
+            </Principal>
+            <Dependent Role="GiaoDich">
+              <PropertyRef Name="TaiKhoanDich" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__The__NganHang__145C0A3F">
+          <End Role="NganHang" Type="Self.NganHang" Multiplicity="0..1" />
+          <End Role="The" Type="Self.The" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NganHang">
+              <PropertyRef Name="MaNganHang" />
+            </Principal>
+            <Dependent Role="The">
+              <PropertyRef Name="NganHang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="REST_ATMModelStoreContainer">
+          <EntitySet Name="GiaoDich" EntityType="Self.GiaoDich" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NganHang" EntityType="Self.NganHang" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="The" EntityType="Self.The" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__GiaoDich__TaiKho__15502E78" Association="Self.FK__GiaoDich__TaiKho__15502E78">
+            <End Role="The" EntitySet="The" />
+            <End Role="GiaoDich" EntitySet="GiaoDich" />
+          </AssociationSet>
+          <AssociationSet Name="FK__GiaoDich__TaiKho__164452B1" Association="Self.FK__GiaoDich__TaiKho__164452B1">
+            <End Role="The" EntitySet="The" />
+            <End Role="GiaoDich" EntitySet="GiaoDich" />
+          </AssociationSet>
+          <AssociationSet Name="FK__The__NganHang__145C0A3F" Association="Self.FK__The__NganHang__145C0A3F">
+            <End Role="NganHang" EntitySet="NganHang" />
+            <End Role="The" EntitySet="The" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="REST_ATMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="GiaoDich">
+          <Key>
+            <PropertyRef Name="MaGiaoDich" />
+            <PropertyRef Name="TaiKhoanNguon" />
+            <PropertyRef Name="TaiKhoanDich" />
+          </Key>
+          <Property Name="MaGiaoDich" Type="Int32" Nullable="false" />
+          <Property Name="TaiKhoanNguon" Type="Int32" Nullable="false" />
+          <Property Name="TaiKhoanDich" Type="Int32" Nullable="false" />
+          <Property Name="ThoiDiemGiaoDich" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="The" Relationship="Self.FK__GiaoDich__TaiKho__15502E78" FromRole="GiaoDich" ToRole="The" />
+          <NavigationProperty Name="The1" Relationship="Self.FK__GiaoDich__TaiKho__164452B1" FromRole="GiaoDich" ToRole="The" />
+        </EntityType>
+        <EntityType Name="NganHang">
+          <Key>
+            <PropertyRef Name="MaNganHang" />
+          </Key>
+          <Property Name="MaNganHang" Type="Int32" Nullable="false" />
+          <Property Name="TenNganHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Thes" Relationship="Self.FK__The__NganHang__145C0A3F" FromRole="NganHang" ToRole="The" />
+        </EntityType>
+        <EntityType Name="The">
+          <Key>
+            <PropertyRef Name="MaThe" />
+          </Key>
+          <Property Name="MaThe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenChuThe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NgayHetHan" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SoDuKhaDung" Type="Double" Nullable="false" />
+          <Property Name="NganHang" Type="Int32" />
+          <NavigationProperty Name="GiaoDiches" Relationship="Self.FK__GiaoDich__TaiKho__15502E78" FromRole="The" ToRole="GiaoDich" />
+          <NavigationProperty Name="GiaoDiches1" Relationship="Self.FK__GiaoDich__TaiKho__164452B1" FromRole="The" ToRole="GiaoDich" />
+          <NavigationProperty Name="NganHang1" Relationship="Self.FK__The__NganHang__145C0A3F" FromRole="The" ToRole="NganHang" />
+        </EntityType>
+        <Association Name="FK__GiaoDich__TaiKho__15502E78">
+          <End Role="The" Type="Self.The" Multiplicity="1" />
+          <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="The">
+              <PropertyRef Name="MaThe" />
+            </Principal>
+            <Dependent Role="GiaoDich">
+              <PropertyRef Name="TaiKhoanNguon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__GiaoDich__TaiKho__164452B1">
+          <End Role="The" Type="Self.The" Multiplicity="1" />
+          <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="The">
+              <PropertyRef Name="MaThe" />
+            </Principal>
+            <Dependent Role="GiaoDich">
+              <PropertyRef Name="TaiKhoanDich" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__The__NganHang__145C0A3F">
+          <End Role="NganHang" Type="Self.NganHang" Multiplicity="0..1" />
+          <End Role="The" Type="Self.The" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NganHang">
+              <PropertyRef Name="MaNganHang" />
+            </Principal>
+            <Dependent Role="The">
+              <PropertyRef Name="NganHang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="REST_ATMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GiaoDiches" EntityType="Self.GiaoDich" />
+          <EntitySet Name="NganHangs" EntityType="Self.NganHang" />
+          <EntitySet Name="Thes" EntityType="Self.The" />
+          <AssociationSet Name="FK__GiaoDich__TaiKho__15502E78" Association="Self.FK__GiaoDich__TaiKho__15502E78">
+            <End Role="The" EntitySet="Thes" />
+            <End Role="GiaoDich" EntitySet="GiaoDiches" />
+          </AssociationSet>
+          <AssociationSet Name="FK__GiaoDich__TaiKho__164452B1" Association="Self.FK__GiaoDich__TaiKho__164452B1">
+            <End Role="The" EntitySet="Thes" />
+            <End Role="GiaoDich" EntitySet="GiaoDiches" />
+          </AssociationSet>
+          <AssociationSet Name="FK__The__NganHang__145C0A3F" Association="Self.FK__The__NganHang__145C0A3F">
+            <End Role="NganHang" EntitySet="NganHangs" />
+            <End Role="The" EntitySet="Thes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="REST_ATMModelStoreContainer" CdmEntityContainer="REST_ATMEntities">
+          <EntitySetMapping Name="GiaoDiches">
+            <EntityTypeMapping TypeName="REST_ATMModel.GiaoDich">
+              <MappingFragment StoreEntitySet="GiaoDich">
+                <ScalarProperty Name="MaGiaoDich" ColumnName="MaGiaoDich" />
+                <ScalarProperty Name="TaiKhoanNguon" ColumnName="TaiKhoanNguon" />
+                <ScalarProperty Name="TaiKhoanDich" ColumnName="TaiKhoanDich" />
+                <ScalarProperty Name="ThoiDiemGiaoDich" ColumnName="ThoiDiemGiaoDich" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NganHangs">
+            <EntityTypeMapping TypeName="REST_ATMModel.NganHang">
+              <MappingFragment StoreEntitySet="NganHang">
+                <ScalarProperty Name="MaNganHang" ColumnName="MaNganHang" />
+                <ScalarProperty Name="TenNganHang" ColumnName="TenNganHang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Thes">
+            <EntityTypeMapping TypeName="REST_ATMModel.The">
+              <MappingFragment StoreEntitySet="The">
+                <ScalarProperty Name="MaThe" ColumnName="MaThe" />
+                <ScalarProperty Name="TenChuThe" ColumnName="TenChuThe" />
+                <ScalarProperty Name="NgayHetHan" ColumnName="NgayHetHan" />
+                <ScalarProperty Name="SoDuKhaDung" ColumnName="SoDuKhaDung" />
+                <ScalarProperty Name="NganHang" ColumnName="NganHang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
