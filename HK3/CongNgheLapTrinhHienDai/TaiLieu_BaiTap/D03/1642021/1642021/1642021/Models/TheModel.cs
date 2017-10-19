@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace _1642021.Models
+﻿namespace _1642021.Models
 {
     public class TheModel
     {
@@ -12,7 +7,8 @@ namespace _1642021.Models
         public System.DateTime NgayHetHan { get; set; }
         public double SoDuKhaDung { get; set; }
         public int NganHang { get; set; }
-
+        public string MatKhau { get; set; }
+        public string TenNganHang { get; set; }
         public TheModel()
         {
 
@@ -20,6 +16,7 @@ namespace _1642021.Models
         public TheModel(The the)
         {
             MaThe = the.MaThe;
+            MatKhau = the.MatKhau;
             TenChuThe = the.TenChuThe;
             NgayHetHan = the.NgayHetHan;
             SoDuKhaDung = the.SoDuKhaDung;

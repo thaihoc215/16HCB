@@ -92,8 +92,8 @@
     <Content Include="Global.asax" />
     <Content Include="Models\ATMData.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ATMData.Context.cs</LastGenOutput>
       <DependentUpon>ATMData.edmx</DependentUpon>
+      <LastGenOutput>ATMData.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\ATMData.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -104,7 +104,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ATMApiController.cs" />
+    <Compile Include="Controllers\GiaoDichController.cs" />
+    <Compile Include="Controllers\TaiKhoanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -124,6 +125,9 @@
       <DependentUpon>ATMData.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\GiaoDich.cs">
+      <DependentUpon>ATMData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoaiGiaoDich.cs">
       <DependentUpon>ATMData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\NganHang.cs">

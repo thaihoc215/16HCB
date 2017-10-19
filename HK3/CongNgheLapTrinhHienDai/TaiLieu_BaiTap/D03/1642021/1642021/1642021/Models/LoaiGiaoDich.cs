@@ -12,24 +12,24 @@ namespace _1642021.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class NganHang
+    public partial class LoaiGiaoDich
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public NganHang()
+        public LoaiGiaoDich()
         {
-            this.Thes = new HashSet<The>();
-            this.Thes1 = new HashSet<The>();
-            this.Thes2 = new HashSet<The>();
+            this.GiaoDiches = new HashSet<GiaoDich>();
+            this.GiaoDiches1 = new HashSet<GiaoDich>();
+            this.GiaoDiches2 = new HashSet<GiaoDich>();
         }
     
-        public int MaNganHang { get; set; }
-        public string TenNganHang { get; set; }
+        public int MaLoai { get; set; }
+        public string TenLoai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<The> Thes { get; set; }
+        public virtual ICollection<GiaoDich> GiaoDiches { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<The> Thes1 { get; set; }
+        public virtual ICollection<GiaoDich> GiaoDiches1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<The> Thes2 { get; set; }
+        public virtual ICollection<GiaoDich> GiaoDiches2 { get; set; }
     }
 }

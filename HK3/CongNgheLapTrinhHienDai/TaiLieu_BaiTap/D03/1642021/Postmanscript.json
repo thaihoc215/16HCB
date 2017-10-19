@@ -1,7 +1,8 @@
-//Chuyen Khoan
 {
 	"MaNguoiGui": 1,
     "MaNguoiNhan": 3,
     "SoTienGui": 10000,
+    "NganHangGui": 1,
+    "NganHangNhan":2,
     "XacNhan": "true"
 }

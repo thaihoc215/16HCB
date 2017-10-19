@@ -19,18 +19,24 @@ namespace _1642021.Models
         {
             this.GiaoDiches = new HashSet<GiaoDich>();
             this.GiaoDiches1 = new HashSet<GiaoDich>();
+            this.GiaoDiches2 = new HashSet<GiaoDich>();
         }
     
         public int MaThe { get; set; }
         public string TenChuThe { get; set; }
         public System.DateTime NgayHetHan { get; set; }
         public double SoDuKhaDung { get; set; }
-        public Nullable<int> NganHang { get; set; }
+        public int NganHang { get; set; }
+        public string MatKhau { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GiaoDich> GiaoDiches { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GiaoDich> GiaoDiches1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GiaoDich> GiaoDiches2 { get; set; }
         public virtual NganHang NganHang1 { get; set; }
+        public virtual NganHang NganHang2 { get; set; }
+        public virtual NganHang NganHang3 { get; set; }
     }
 }

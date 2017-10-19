@@ -8,70 +8,42 @@ using System.Web.Http;
 
 namespace _1642021.Controllers
 {
-    public class ATMApiController : ApiController
+    public class GiaoDichController : ApiController
     {
-        [HttpGet]
-        [Route("api/demo/sayhello")]
-        public HttpResponseMessage SayHello()
-        {
-            return Request.CreateResponse(HttpStatusCode.OK, "á");
-        }
-        [HttpGet]
-        [Route("api/taikhoan/dstaikhoan")]
-        public HttpResponseMessage GetListTaiKhoan()
-        {
-            using (var ctx = new Models.REST_ATMEntities())
-            {
-                var lstThe = ctx.Thes.ToList();
-                List<TheModel> lst = new List<TheModel>();
-                foreach (var item in lstThe)
-                {
-                    TheModel tmp = new TheModel(item);
-                    lst.Add(tmp);
-                }
-                return Request.CreateResponse(HttpStatusCode.OK, lst);
-            }
-        }
-
-        [HttpGet]
-        [Route("api/taikhoan/thongtinthe")]
-        public HttpResponseMessage GetTaiKhoan(int maThe)
-        {
-            using (var ctx = new Models.REST_ATMEntities())
-            {
-                var tmp = ctx.Thes.Where(t => t.MaThe == maThe).FirstOrDefault();
-                if(tmp != null)
-                {
-                    TheModel tkhoan = new TheModel(tmp);
-                    return Request.CreateResponse(HttpStatusCode.OK, tkhoan);
-                }
-                return Request.CreateResponse(HttpStatusCode.NoContent);
-
-            }
-
-        }
-
         [HttpPost]
-        [Route("api/chuyenkhoan/chuyentien")]
-        public HttpResponseMessage ChuyenKhoanNoiBo([FromBody]ChuyenKhoan ck)
+        [Route("api/giaodich/rutien")]
+        public HttpResponseMessage RutTien([FromBody]ChuyenKhoan ck)
+        {
+            return Request.CreateResponse(HttpStatusCode.NoContent, "Không tiến hành giao dịch");
+        }
+        /// <summary>
+        /// Chuc nang chuyen tien
+        /// </summary>
+        /// <param name="ck"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("api/giaodich/chuyentien")]
+        public HttpResponseMessage ChuyenKhoan([FromBody]ChuyenKhoan ck)
         {
             if (ck.XacNhan == false)
                 return Request.CreateResponse(HttpStatusCode.NotAcceptable, "Không tiến hành giao dịch");
             using (var ctx = new Models.REST_ATMEntities())
             {
-                var nd1 = ctx.Thes.Where(t => t.MaThe == ck.MaNguoiGui).FirstOrDefault();
-                var nd2 = ctx.Thes.Where(t => t.MaThe == ck.MaNguoiNhan).FirstOrDefault();
+                var nd1 = ctx.Thes.Where(t => t.MaThe == ck.MaNguoiGui && t.NganHang == ck.NganHangGui).FirstOrDefault();
+                var nd2 = ctx.Thes.Where(t => t.MaThe == ck.MaNguoiNhan && t.NganHang == ck.NganHangNhan).FirstOrDefault();
                 if (nd2 != null)
                 {
+                    if (nd1.MaThe == nd2.MaThe && nd1.NganHang == nd2.NganHang)
+                        return Request.CreateResponse(HttpStatusCode.NotAcceptable, "Tài khoản người nhận phải khác tài khoản người gửi");
+
                     //kiem tra hop le tien gui
                     if (ck.SoTienGui <= 0)
                         return Request.CreateResponse(HttpStatusCode.NotAcceptable, "Số tiền gửi không hợp lệ");
                     //kiem tra tai khoan nguon va dich
-                    if (nd1.MaThe == nd2.MaThe)
-                        return Request.CreateResponse(HttpStatusCode.NotAcceptable, "Tài khoản người nhận phải khác tài khoản người gửi");
                     
-                    //con lai trong tai khoan it hon 50000
-                    if (nd1.SoDuKhaDung - ck.SoTienGui < 50000)
+
+                    //con lai trong tai khoan it hon 100000
+                    if (nd1.SoDuKhaDung - ck.SoTienGui < 100000)
                         return Request.CreateResponse(HttpStatusCode.NotAcceptable, "Số dư trong tài khoản không đủ");
                     //chuyen khoan noi bo
                     if (nd1.NganHang == nd2.NganHang)
@@ -84,8 +56,15 @@ namespace _1642021.Controllers
                         ctx.SaveChanges();
                         List<object> rs = new List<object>();
                         rs.Add("Chuyển khoản nội bộ.");
-                        rs.Add(new TheModel(ctx.Thes.Where(t => t.MaThe == ck.MaNguoiGui).FirstOrDefault()));
-                        rs.Add(new TheModel(ctx.Thes.Where(t => t.MaThe == ck.MaNguoiNhan).FirstOrDefault()));
+                        TheModel tkg = new TheModel(ctx.Thes.Where(t => t.MaThe == ck.MaNguoiGui && t.NganHang == ck.NganHangGui).FirstOrDefault());
+                        tkg.MatKhau = "";
+                        tkg.TenNganHang = ctx.NganHangs.Where(ng => ng.MaNganHang == tkg.NganHang).FirstOrDefault().TenNganHang;
+                        rs.Add(tkg);
+
+                        TheModel tkn = new TheModel(ctx.Thes.Where(t => t.MaThe == ck.MaNguoiNhan&& t.NganHang == ck.NganHangNhan).FirstOrDefault());
+                        tkn.MatKhau = "";
+                        tkn.TenNganHang = ctx.NganHangs.Where(ng => ng.MaNganHang == tkn.NganHang).FirstOrDefault().TenNganHang;
+                        rs.Add(tkn);
                         return Request.CreateResponse(HttpStatusCode.OK, rs);
                     }
                     if (nd1.NganHang != nd2.NganHang)
@@ -98,28 +77,35 @@ namespace _1642021.Controllers
                         ctx.SaveChanges();
                         List<object> rs = new List<object>();
                         rs.Add("Chuyển khoản liên ngân hàng.");
-                        rs.Add(new TheModel(ctx.Thes.Where(t => t.MaThe == ck.MaNguoiGui).FirstOrDefault()));
-                        rs.Add(new TheModel(ctx.Thes.Where(t => t.MaThe == ck.MaNguoiNhan).FirstOrDefault()));
+                        TheModel tkg = new TheModel(ctx.Thes.Where(t => t.MaThe == ck.MaNguoiGui && t.NganHang == ck.NganHangGui).FirstOrDefault());
+                        tkg.MatKhau = "";
+                        tkg.TenNganHang = ctx.NganHangs.Where(ng => ng.MaNganHang == tkg.NganHang).FirstOrDefault().TenNganHang;
+                        rs.Add(tkg);
+
+                        TheModel tkn = new TheModel(ctx.Thes.Where(t => t.MaThe == ck.MaNguoiNhan && t.NganHang == ck.NganHangNhan).FirstOrDefault());
+                        tkn.MatKhau = "";
+                        tkn.TenNganHang = ctx.NganHangs.Where(ng => ng.MaNganHang == tkn.NganHang).FirstOrDefault().TenNganHang;
+                        rs.Add(tkn);
                         return Request.CreateResponse(HttpStatusCode.OK, rs);
                     }
 
                 }
                 return Request.CreateResponse(HttpStatusCode.NoContent);
-
             }
         }
     }
+
     public class ChuyenKhoan
     {
         public int MaNguoiGui { get; set; }
         public int MaNguoiNhan { get; set; }
         public double SoTienGui { get; set; }
         public bool XacNhan { get; set; }
-
+        public int NganHangNhan { get; set; }
+        public int NganHangGui { get; set; }
         public ChuyenKhoan()
         {
 
         }
     }
-
 }

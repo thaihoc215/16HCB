@@ -26,6 +26,7 @@ namespace _1642021.Models
         }
     
         public virtual DbSet<GiaoDich> GiaoDiches { get; set; }
+        public virtual DbSet<LoaiGiaoDich> LoaiGiaoDiches { get; set; }
         public virtual DbSet<NganHang> NganHangs { get; set; }
         public virtual DbSet<The> Thes { get; set; }
     }
