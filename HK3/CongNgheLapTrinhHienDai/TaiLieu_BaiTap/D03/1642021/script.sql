@@ -21,7 +21,7 @@ Create table NganHang(
 );
 
 Create table GiaoDich(
-	MaGiaoDich int not null,
+	MaGiaoDich int identity(1,1) not null,
 	TaiKhoan int not null,
 	NganHangSoHu int not null,
 	SoTienGiaoDich float not null,
@@ -64,3 +64,8 @@ Insert into The(MaThe,MatKhau,TenChuThe,NgayHetHan,SoDuKhaDung,NganHang) values 
 
 Insert into LoaiGiaoDich(MaLoai,TenLoai) values (1,N'Rút tiền');
 Insert into LoaiGiaoDich(MaLoai,TenLoai) values (2,N'Chuyển tiền');
+
+Insert into GiaoDich(TaiKhoan,NganHangSoHu,SoTienGiaoDich,ThoiDiemGiaoDich,LoaiGiaoDich)
+values (1,1,10000,'12/12/2016',1);
+Insert into GiaoDich(TaiKhoan,NganHangSoHu,SoTienGiaoDich,ThoiDiemGiaoDich,LoaiGiaoDich)
+values (1,1,10000,'12/31/2016',1);

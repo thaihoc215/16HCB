@@ -10,7 +10,7 @@
             <PropertyRef Name="MaGiaoDich" />
             <PropertyRef Name="TaiKhoan" />
           </Key>
-          <Property Name="MaGiaoDich" Type="int" Nullable="false" />
+          <Property Name="MaGiaoDich" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TaiKhoan" Type="int" Nullable="false" />
           <Property Name="NganHangSoHu" Type="int" Nullable="false" />
           <Property Name="SoTienGiaoDich" Type="float" Nullable="false" />
@@ -115,11 +115,7 @@
           <Property Name="ThoiDiemGiaoDich" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="LoaiGiaoDich" Type="Int32" Nullable="false" />
           <NavigationProperty Name="The" Relationship="Self.FK__GiaoDich__173876EA" FromRole="GiaoDich" ToRole="The" />
-          <NavigationProperty Name="The1" Relationship="Self.FK__GiaoDich__1A14E395" FromRole="GiaoDich" ToRole="The" />
-          <NavigationProperty Name="The2" Relationship="Self.FK__GiaoDich__1CF15040" FromRole="GiaoDich" ToRole="The" />
           <NavigationProperty Name="LoaiGiaoDich1" Relationship="Self.FK__GiaoDich__LoaiGi__182C9B23" FromRole="GiaoDich" ToRole="LoaiGiaoDich" />
-          <NavigationProperty Name="LoaiGiaoDich2" Relationship="Self.FK__GiaoDich__LoaiGi__1B0907CE" FromRole="GiaoDich" ToRole="LoaiGiaoDich" />
-          <NavigationProperty Name="LoaiGiaoDich3" Relationship="Self.FK__GiaoDich__LoaiGi__1DE57479" FromRole="GiaoDich" ToRole="LoaiGiaoDich" />
         </EntityType>
         <EntityType Name="LoaiGiaoDich">
           <Key>
@@ -128,8 +124,6 @@
           <Property Name="MaLoai" Type="Int32" Nullable="false" />
           <Property Name="TenLoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="GiaoDiches" Relationship="Self.FK__GiaoDich__LoaiGi__182C9B23" FromRole="LoaiGiaoDich" ToRole="GiaoDich" />
-          <NavigationProperty Name="GiaoDiches1" Relationship="Self.FK__GiaoDich__LoaiGi__1B0907CE" FromRole="LoaiGiaoDich" ToRole="GiaoDich" />
-          <NavigationProperty Name="GiaoDiches2" Relationship="Self.FK__GiaoDich__LoaiGi__1DE57479" FromRole="LoaiGiaoDich" ToRole="GiaoDich" />
         </EntityType>
         <EntityType Name="NganHang">
           <Key>
@@ -138,8 +132,6 @@
           <Property Name="MaNganHang" Type="Int32" Nullable="false" />
           <Property Name="TenNganHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Thes" Relationship="Self.FK__The__NganHang__164452B1" FromRole="NganHang" ToRole="The" />
-          <NavigationProperty Name="Thes1" Relationship="Self.FK__The__NganHang__1920BF5C" FromRole="NganHang" ToRole="The" />
-          <NavigationProperty Name="Thes2" Relationship="Self.FK__The__NganHang__1BFD2C07" FromRole="NganHang" ToRole="The" />
         </EntityType>
         <EntityType Name="The">
           <Key>
@@ -147,47 +139,15 @@
             <PropertyRef Name="NganHang" />
           </Key>
           <Property Name="MaThe" Type="Int32" Nullable="false" />
+          <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TenChuThe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="NgayHetHan" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="SoDuKhaDung" Type="Double" Nullable="false" />
           <Property Name="NganHang" Type="Int32" Nullable="false" />
           <NavigationProperty Name="GiaoDiches" Relationship="Self.FK__GiaoDich__173876EA" FromRole="The" ToRole="GiaoDich" />
-          <NavigationProperty Name="GiaoDiches1" Relationship="Self.FK__GiaoDich__1A14E395" FromRole="The" ToRole="GiaoDich" />
-          <NavigationProperty Name="GiaoDiches2" Relationship="Self.FK__GiaoDich__1CF15040" FromRole="The" ToRole="GiaoDich" />
           <NavigationProperty Name="NganHang1" Relationship="Self.FK__The__NganHang__164452B1" FromRole="The" ToRole="NganHang" />
-          <NavigationProperty Name="NganHang2" Relationship="Self.FK__The__NganHang__1920BF5C" FromRole="The" ToRole="NganHang" />
-          <NavigationProperty Name="NganHang3" Relationship="Self.FK__The__NganHang__1BFD2C07" FromRole="The" ToRole="NganHang" />
-          <Property Name="MatKhau" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK__GiaoDich__173876EA">
-          <End Role="The" Type="Self.The" Multiplicity="1" />
-          <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="The">
-              <PropertyRef Name="MaThe" />
-              <PropertyRef Name="NganHang" />
-            </Principal>
-            <Dependent Role="GiaoDich">
-              <PropertyRef Name="TaiKhoan" />
-              <PropertyRef Name="NganHangSoHu" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__GiaoDich__1A14E395">
-          <End Role="The" Type="Self.The" Multiplicity="1" />
-          <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="The">
-              <PropertyRef Name="MaThe" />
-              <PropertyRef Name="NganHang" />
-            </Principal>
-            <Dependent Role="GiaoDich">
-              <PropertyRef Name="TaiKhoan" />
-              <PropertyRef Name="NganHangSoHu" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__GiaoDich__1CF15040">
           <End Role="The" Type="Self.The" Multiplicity="1" />
           <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
           <ReferentialConstraint>
@@ -213,55 +173,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__GiaoDich__LoaiGi__1B0907CE">
-          <End Role="LoaiGiaoDich" Type="Self.LoaiGiaoDich" Multiplicity="1" />
-          <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="LoaiGiaoDich">
-              <PropertyRef Name="MaLoai" />
-            </Principal>
-            <Dependent Role="GiaoDich">
-              <PropertyRef Name="LoaiGiaoDich" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__GiaoDich__LoaiGi__1DE57479">
-          <End Role="LoaiGiaoDich" Type="Self.LoaiGiaoDich" Multiplicity="1" />
-          <End Role="GiaoDich" Type="Self.GiaoDich" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="LoaiGiaoDich">
-              <PropertyRef Name="MaLoai" />
-            </Principal>
-            <Dependent Role="GiaoDich">
-              <PropertyRef Name="LoaiGiaoDich" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__The__NganHang__164452B1">
-          <End Role="NganHang" Type="Self.NganHang" Multiplicity="1" />
-          <End Role="The" Type="Self.The" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="NganHang">
-              <PropertyRef Name="MaNganHang" />
-            </Principal>
-            <Dependent Role="The">
-              <PropertyRef Name="NganHang" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__The__NganHang__1920BF5C">
-          <End Role="NganHang" Type="Self.NganHang" Multiplicity="1" />
-          <End Role="The" Type="Self.The" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="NganHang">
-              <PropertyRef Name="MaNganHang" />
-            </Principal>
-            <Dependent Role="The">
-              <PropertyRef Name="NganHang" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK__The__NganHang__1BFD2C07">
           <End Role="NganHang" Type="Self.NganHang" Multiplicity="1" />
           <End Role="The" Type="Self.The" Multiplicity="*" />
           <ReferentialConstraint>
@@ -282,35 +194,11 @@
             <End Role="The" EntitySet="Thes" />
             <End Role="GiaoDich" EntitySet="GiaoDiches" />
           </AssociationSet>
-          <AssociationSet Name="FK__GiaoDich__1A14E395" Association="Self.FK__GiaoDich__1A14E395">
-            <End Role="The" EntitySet="Thes" />
-            <End Role="GiaoDich" EntitySet="GiaoDiches" />
-          </AssociationSet>
-          <AssociationSet Name="FK__GiaoDich__1CF15040" Association="Self.FK__GiaoDich__1CF15040">
-            <End Role="The" EntitySet="Thes" />
-            <End Role="GiaoDich" EntitySet="GiaoDiches" />
-          </AssociationSet>
           <AssociationSet Name="FK__GiaoDich__LoaiGi__182C9B23" Association="Self.FK__GiaoDich__LoaiGi__182C9B23">
             <End Role="LoaiGiaoDich" EntitySet="LoaiGiaoDiches" />
             <End Role="GiaoDich" EntitySet="GiaoDiches" />
           </AssociationSet>
-          <AssociationSet Name="FK__GiaoDich__LoaiGi__1B0907CE" Association="Self.FK__GiaoDich__LoaiGi__1B0907CE">
-            <End Role="LoaiGiaoDich" EntitySet="LoaiGiaoDiches" />
-            <End Role="GiaoDich" EntitySet="GiaoDiches" />
-          </AssociationSet>
-          <AssociationSet Name="FK__GiaoDich__LoaiGi__1DE57479" Association="Self.FK__GiaoDich__LoaiGi__1DE57479">
-            <End Role="LoaiGiaoDich" EntitySet="LoaiGiaoDiches" />
-            <End Role="GiaoDich" EntitySet="GiaoDiches" />
-          </AssociationSet>
           <AssociationSet Name="FK__The__NganHang__164452B1" Association="Self.FK__The__NganHang__164452B1">
-            <End Role="NganHang" EntitySet="NganHangs" />
-            <End Role="The" EntitySet="Thes" />
-          </AssociationSet>
-          <AssociationSet Name="FK__The__NganHang__1920BF5C" Association="Self.FK__The__NganHang__1920BF5C">
-            <End Role="NganHang" EntitySet="NganHangs" />
-            <End Role="The" EntitySet="Thes" />
-          </AssociationSet>
-          <AssociationSet Name="FK__The__NganHang__1BFD2C07" Association="Self.FK__The__NganHang__1BFD2C07">
             <End Role="NganHang" EntitySet="NganHangs" />
             <End Role="The" EntitySet="Thes" />
           </AssociationSet>
@@ -352,8 +240,8 @@
           <EntitySetMapping Name="Thes">
             <EntityTypeMapping TypeName="REST_ATMModel.The">
               <MappingFragment StoreEntitySet="The">
-                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
                 <ScalarProperty Name="MaThe" ColumnName="MaThe" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
                 <ScalarProperty Name="TenChuThe" ColumnName="TenChuThe" />
                 <ScalarProperty Name="NgayHetHan" ColumnName="NgayHetHan" />
                 <ScalarProperty Name="SoDuKhaDung" ColumnName="SoDuKhaDung" />

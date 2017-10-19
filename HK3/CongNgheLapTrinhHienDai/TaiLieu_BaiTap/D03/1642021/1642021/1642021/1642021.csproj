@@ -127,6 +127,7 @@
     <Compile Include="Models\GiaoDich.cs">
       <DependentUpon>ATMData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\GiaoDichModel.cs" />
     <Compile Include="Models\LoaiGiaoDich.cs">
       <DependentUpon>ATMData.tt</DependentUpon>
     </Compile>

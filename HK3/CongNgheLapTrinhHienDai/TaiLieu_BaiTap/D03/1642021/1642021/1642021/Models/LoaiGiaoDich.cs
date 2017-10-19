@@ -18,8 +18,6 @@ namespace _1642021.Models
         public LoaiGiaoDich()
         {
             this.GiaoDiches = new HashSet<GiaoDich>();
-            this.GiaoDiches1 = new HashSet<GiaoDich>();
-            this.GiaoDiches2 = new HashSet<GiaoDich>();
         }
     
         public int MaLoai { get; set; }
@@ -27,9 +25,5 @@ namespace _1642021.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GiaoDich> GiaoDiches { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GiaoDich> GiaoDiches1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GiaoDich> GiaoDiches2 { get; set; }
     }
 }

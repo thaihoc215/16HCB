@@ -22,10 +22,6 @@ namespace _1642021.Models
         public int LoaiGiaoDich { get; set; }
     
         public virtual The The { get; set; }
-        public virtual The The1 { get; set; }
-        public virtual The The2 { get; set; }
         public virtual LoaiGiaoDich LoaiGiaoDich1 { get; set; }
-        public virtual LoaiGiaoDich LoaiGiaoDich2 { get; set; }
-        public virtual LoaiGiaoDich LoaiGiaoDich3 { get; set; }
     }
 }

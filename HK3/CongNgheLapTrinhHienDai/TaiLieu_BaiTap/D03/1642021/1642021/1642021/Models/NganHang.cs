@@ -18,8 +18,6 @@ namespace _1642021.Models
         public NganHang()
         {
             this.Thes = new HashSet<The>();
-            this.Thes1 = new HashSet<The>();
-            this.Thes2 = new HashSet<The>();
         }
     
         public int MaNganHang { get; set; }
@@ -27,9 +25,5 @@ namespace _1642021.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<The> Thes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<The> Thes1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<The> Thes2 { get; set; }
     }
 }

@@ -18,43 +18,22 @@ namespace _1642021.Controllers
         }
 
         /// <summary>
-        /// Lay danh sach tai khoan the ngan hang
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("api/taikhoan/dstaikhoan")]
-        public HttpResponseMessage GetListTaiKhoan()
-        {
-            using (var ctx = new Models.REST_ATMEntities())
-            {
-                var lstThe = ctx.Thes.ToList();
-                List<TheModel> lst = new List<TheModel>();
-                foreach (var item in lstThe)
-                {
-                    TheModel tmp = new TheModel(item);
-                    lst.Add(tmp);
-                }
-                return Request.CreateResponse(HttpStatusCode.OK, lst);
-            }
-        }
-
-        /// <summary>
         /// Lấy thông tin thẻ
         /// </summary>
         /// <param name="maThe"></param>
         /// <returns></returns>
         [HttpGet]
         [Route("api/taikhoan/thongtinthe")]
-        public HttpResponseMessage GetTaiKhoan(int maThe, string matKhau)
+        public HttpResponseMessage GetTaiKhoan(int maThe,int maNganHang, string matKhau)
         {
             using (var ctx = new Models.REST_ATMEntities())
             {
-                var tkhoan = ctx.Thes.Where(t => t.MaThe == maThe).FirstOrDefault();
+                var tkhoan = ctx.Thes.Where(t => t.MaThe == maThe && t.NganHang == maNganHang).FirstOrDefault();
                 if(tkhoan != null)
                 {
                     if (tkhoan.MatKhau.Equals(matKhau))
                     {
-                        tkhoan.MatKhau = "***";
+                        tkhoan.MatKhau = "";
                         TheModel rs = new TheModel(tkhoan);
                         rs.TenNganHang = ctx.NganHangs.Where(ng => ng.MaNganHang == rs.NganHang).FirstOrDefault().TenNganHang;
                         return Request.CreateResponse(HttpStatusCode.OK, rs);
