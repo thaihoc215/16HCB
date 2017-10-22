@@ -15,17 +15,20 @@ namespace _1642021
         public Form1()
         {
             InitializeComponent();
+            btnPause.Visible = false;
+            btnResume.Visible = false;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             btnResume.Visible = false;
+            btnPause.Visible = true;
             dongHoDienTu1.StartTime(lstListTime);
             dongHoDienTu1.CheckStopClock += DongHoDienTu1_CheckStopClock;
             lblStop.Text = "";
         }
 
-        private void DongHoDienTu1_CheckStopClock(int time)
+        private void DongHoDienTu1_CheckStopClock()
         {
                 dongHoDienTu1.SetEndSession(this);
         }
@@ -35,7 +38,8 @@ namespace _1642021
             btnResume.Visible = false;
             btnPause.Visible = false;
             dongHoDienTu1.StopTime();
-            lblStop.Text ="Time Stop: " + "00" + ":" + dongHoDienTu1.Second.ToString("00");
+            lblStop.Text ="Time Stop: " + dongHoDienTu1.Minute.ToString("00")
+                + ":" + dongHoDienTu1.Second.ToString("00") + ":" + dongHoDienTu1.MiliSecond.ToString("00");
         }
 
         private void btnPause_Click(object sender, EventArgs e)
@@ -50,6 +54,22 @@ namespace _1642021
             btnPause.Visible = true;
             btnResume.Visible = false;
             dongHoDienTu1.Resume();
+        }
+
+        private void btnCountDown_Click(object sender, EventArgs e)
+        {
+            if(dateTimePicker1.Value.Minute <=0 &&dateTimePicker1.Value.Second <=0)
+            {
+                MessageBox.Show("Please set the count down time!!!");
+                return;
+            }
+            dongHoDienTu1.CountDown(dateTimePicker1);
+            dongHoDienTu1.CheckStopClock += DongHoDienTu1_CheckStopClock;
+        }
+
+        private void btnStopCount_Click(object sender, EventArgs e)
+        {
+            dongHoDienTu1.StopCountDown();
         }
     }
 }
