@@ -10,8 +10,9 @@ exports.load = (sql) => {
         password: 'th2151994',
         database: 'rest_atm'
     });
+    
     connection.connect();
-    connection.query(sql,function (err, rs, fields) {
+    connection.query(sql, function (err, rs, fields) {
         if (err) {
             d.reject(err);
         } else {

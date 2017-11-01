@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
         matkhau = req.body.matkhau,
         nganhang = req.body.nganhang;
     model.loadTaiKhoan(mathe, matkhau, nganhang).then(rows => {
-        res.status = 200;
+        res.statusCode = 201;
         res.json(rows[0]);
     });
     // res.json(obj = {abc: String(id)});
@@ -29,5 +29,3 @@ router.post('/', (req, res) => {
 
 //middle ware
 module.exports = router;
-
-// res.json(obj = {abc:'123'});

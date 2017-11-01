@@ -5,47 +5,51 @@ var express = require('express'),
 var router = express.Router();
 
 //Rut tien
-router.post('/rutrien', (req, res) => {
+router.post('/ruttien', (req, res) => {
     var mathe = req.body.mathe,
         manganhang = req.body.manganhang,
         matkhau = req.body.matkhau,
         loairut = req.body.loairut,
         sotienrut = req.body.sotienrut;
+
+    var sotien;
     switch (loairut) {
         case 1:
-            sotienrut = 1000000;
+            sotien = 1000000;
             break;
         case 2:
-            sotienrut = 2000000;
+            sotien = 2000000;
             break;
         case 3:
-            sotienrut = 5000000;
+            sotien = 5000000;
             break;
         default:
+            sotien = sotienrut;
             break;
     }
-    if (sotienrut % 50000 != 0) {
+    if (sotien % 50000 != 0) {
         res.status(404).json('So tien rut phai la boi so cua 50000');
     }
+
     //kiem tra so tien nguoi dung
     var nd = {};
     ndModel.loadTaiKhoan(mathe, matkhau, manganhang).
-    then((rows) => {
-        nd = rows[0];
-        if (nd.SoDuKhaDung < 100000) {
-            res.status(404).json('So du tai khoan khong du');
-        } else {
-            var sodu = nd.SoDuKhaDung - sotienrut;
-            return model.rutTien(mathe, manganhang, sodu);
-        }
-    }).then((rs) => {
-        if (rs)
-            rs.status(200).json('Rut tien thanh cong');
-        else
-            rs.status(204).json('Rut tien that bai');
-    }).catch((err) => {
-
-    });
+        then((rows) => {
+            nd = rows[0];
+            if (nd.SoDuKhaDung < 100000) {
+                res.status(404).json('So du tai khoan khong du');
+            } else {
+                var sodu = nd.SoDuKhaDung - sotienrut;
+                return model.rutTien(mathe, manganhang, sodu)
+            }
+        }).then((rs) => {
+            if (rs) {
+                return ndModel.loadTaiKhoan(mathe, matkhau, manganhang)
+            } else
+                res.status(204).json('Rut tien that bai');
+        }).then((rows) => {
+            res.status(200).json(rows[0]);
+        });;
 });
 
 //chuyen tien
@@ -56,4 +60,6 @@ router.post('/chuyentien', (req, res) => {
     var nganHangGui = req.body.nganHangGui;
     var nganHangNhan = req.body.nganHangNhan;
     var xacNhan = req.body.xacNhan;
-})
+});
+
+module.exports = router;
