@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_no_accounts"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/google_blue_500"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/nav_panel_height">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24.0dip"
+            android:paddingLeft="24.0dip"
+            android:paddingRight="24.0dip">
+
+            <ImageView
+                android:layout_width="148.0dip"
+                android:layout_height="148.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="48.0dip"
+                android:layout_marginTop="72.0dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/product_logo_authenticator_color_144" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8.0dip"
+                android:text="@string/welcome_page_details"
+                android:textColor="#ffffffff"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/quantum_ic_vpn_key_white_24" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24.0dip"
+                    android:lineSpacingExtra="8.0dip"
+                    android:text="@string/welcome_page_details_list_entry1"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/quantum_ic_lock_white_24" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24.0dip"
+                    android:lineSpacingExtra="8.0dip"
+                    android:text="@string/welcome_page_details_list_entry2"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nav_panel_height"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/add_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip"
+            android:minHeight="48.0dip"
+            android:minWidth="96.0dip"
+            android:text="@string/button_begin_setup" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/nav_panel_height"
+        android:background="#33ffffff" />
+</FrameLayout>

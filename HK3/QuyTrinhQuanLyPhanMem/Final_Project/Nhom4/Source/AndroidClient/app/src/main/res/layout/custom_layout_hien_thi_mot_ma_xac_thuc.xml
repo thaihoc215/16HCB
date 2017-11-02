@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/doi_mau_listview_item_khi_duoc_nhap_nen_trang"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="_ _ _ _ _ _"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#4285F4"
+        android:id="@+id/tvMaXacThuc"/>
+
+    <TextView
+        android:text="nqphuc94@gmail.com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTenTaiKhoan"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/tvEmail" />
+
+</LinearLayout>

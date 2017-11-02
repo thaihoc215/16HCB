@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bat_dau"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#4285F4"
+    tools:context="com.hcmus.authenticator.BatDauActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4285F4"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/noi_dung_bat_dau_1"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:text="@string/noi_dung_bat_dau_2"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:drawablePadding="15dp"
+            android:layout_marginLeft="25dp"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+        <TextView
+            android:text="@string/noi_dung_bat_dau_3"
+            android:textColor="#ffffff"
+            android:layout_margin="25dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"/>
+
+        <Button
+            android:text="@string/nut_bat_dau"
+            android:textStyle="bold"
+            android:textColor="#4285F4"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBatDau" />
+    </LinearLayout>
+</LinearLayout>

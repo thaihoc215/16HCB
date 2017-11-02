@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Authenticator</string>
+    <string name="welcome_page_details">With 2-step verification, whenever you sign in to your Google Account you will need:</string>
+    <string name="welcome_page_details_list_entry1">Your password</string>
+    <string name="welcome_page_details_list_entry2">A code this app will generate for you</string>
+    <string name="button_begin_setup">Begin</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="check_code_menu_item">Check key value</string>
+    <string name="rename">Rename</string>
+    <string name="context_menu_remove_account">Remove</string>
+    <string name="how_it_works_menu_item">How it works</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="help_and_feedback_menu_item">Help &amp; feedback</string>
+    <string name="switch_ui_mode_dark">Dark mode</string>
+    <string name="title_activity_qrcode_reader">QRCodeReaderActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="howitworks_page_title">Tính năng này hoạt động như thế nào</string>
+    <string name="howitworks_page_button_skip">Bỏ qua</string>
+    <string name="howitworks_page_button_next">Kế tiếp</string>
+    <string name="howitworks_page_layout_1_title">Đăng nhập vào tài khoản</string>
+    <string name="howitworks_page_layout_1_description_1">Bất cứ khi nào bạn đăng nhập vào tài khoản, bạn sẽ nhập tên người dùng và mật khẩu như thường lệ.</string>
+    <string name="howitworks_page_layout_1_description_2">Khi được yêu cầu nhập mã, bạn có thể nhận một mã từ ứng dụng này.</string>
+    <string name="howitworks_page_layout_2_title">Các vấn đề bảo mật của bạn</string>
+    <string name="howitworks_page_layout_2_description_1"></string>
+    <string name="howitworks_page_layout_2_description_2">Chúng tôi sẽ hỏi lại bạn về mã khi bạn hoặc bất kỳ người nào khác cố gắng đăng nhập vào tài khoản của bạn.</string>
+    <string name="howitworks_page_layout_3_title">Bạn đã hoàn tất</string>
+    <string name="howitworks_page_layout_3_description">Hãy nhớ rằng, nếu bạn đã từng phải thực hiện bất kỳ điều nào sau đây:</string>
+    <string name="howitworks_page_layout_3_description_option_1">Cập nhật số điện thoại của bạn</string>
+    <string name="howitworks_page_layout_3_description_option_2">Tạo tùy chọn sao lưu khác</string>
+    <string name="howitworks_page_layout_3_description_option_3">Tắt xác minh 2 bước</string>
+    <string name="account_list_page_first_account_message_header">Bạn đã hoàn tất</string>
+    <string name="account_list_page_first_account_button_done">Xong</string>
+    <string name="howitworks_page_button_done">Done</string>
+
+    <string name="title_activity_bat_dau">BatDauActivity</string>
+    <string name="title_activity_them_tai_khoan">ThemTaiKhoanActivity</string>
+    <string name="noi_dung_bat_dau_1">Với xác minh 2 bước, bất cứ khi nào bạn đăng nhập vào tài khoản Google, bạn sẽ cần:</string>
+    <string name="noi_dung_bat_dau_2">Mật khẩu của bạn</string>
+    <string name="noi_dung_bat_dau_3">Mã mà ứng dụng này sẽ tạo cho bạn</string>
+    <string name="nut_bat_dau">Bắt đầu</string>
+    <string name="tieu_de_them_tai_khoan">Thêm tài khoản</string>
+    <string name="noi_dung_them_tai_khoan">Bạn có thể thêm một tài khoản bằng cách chọn một trong các tùy chọn sau đây:</string>
+    <string name="nut_quet_ma_vach">Quét mã vạch</string>
+    <string name="nut_nhap_khoa_duoc_cung_cap">Nhập khóa được cung cấp</string>
+    <string name="option_cach_thuc_hoat_dong">Cách thức hoạt động</string>
+    <string name="option_cai_dat">Cài đặt</string>
+    <string name="option_tro_giup_va_phan_hoi">Trợ giúp và phản hồi</string>
+    <string name="option_tro_lai">Trở lại</string>
+    <string name="nhap_ten_tai_khoan">Nhập tên tài khoản</string>
+    <string name="nhap_khoa_cua_ban">Nhập khóa của bạn</string>
+    <string name="nut_them_tai_khoan">Thêm tài khoản</string>
+    <string name="tieu_de_nhap_ma_thu_cong">Nhập tài khoản thủ công</string>
+    <string name="tieu_de_cai_dat">Cài đặt</string>
+    <string name="pho_bien">Phổ biến</string>
+    <string name="tro_giup">Trợ giúp</string>
+    <string name="duoc_xem_gan_day">Được xem gần đây</string>
+    <string name="duyet_quua_tat_ca_bai_viet">Duyệt qua tất cả bài viết</string>
+    <string name="goi_phan_hoi">Gởi phản hồi</string>
+    <string name="checkbox_dinh_kem_anh_phan_hoi">Bao gồm ảnh chụp màn hình và nhật ký</string>
+    <string name="noi_dung_bo_tro_phan_hoi_1">Chuyển tới trang <a href="http://www.google.com">Trang trợ giúp pháp lý</a> để yêu cầu thay đổi nội dung vì lý do pháp lý.</string>
+    <string name="noi_dung_bo_tro_phan_hoi_2">Thông tin hệ thống của bạn sẽ được gởi tới Google. Xem <a href="http://www.google.com">Chính sách bảo mật</a> và <a href="http://www.google.com">Điều khoản dịch vụ.</a></string>
+    <string name="phan_hoi">Phản hồi</string>
+    <string name="trinh_xac_thuc">Trình xác thực</string>
+    <string name="ban_da_hoan_tat">Bạn đã hoàn tất</string>
+    <string name="thong_bao_hoan_tat">Khi bạn nhận được yêu cầu nhập mã xác nhận, hãy sử dụng mã được tạo ra từ ứng dụng này. Mã xác nhận sẽ thay đổi theo định kỳ, vì vậy bạn không cần phải nhớ chúng.</string>
+    <string name="xong">Xong</string>
+    <string name="nhap_ten">NHẬP TÊN</string>
+    <string name="huy">Hủy</string>
+    <string name="luu">Lưu</string>
+    <string name="permlab_setTime">permlab_setTime</string>
+    <string name="permdesc_setTime">Chỉnh thời gian cho hệ thống</string>
+    <string name="title_activity_testbasic">testbasic</string>
+    <string name="title_activity_test">testActivity</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/flBottomt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_panel_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/howitworks_button_skip"
+            style="@style/HowItWorksButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="4.0dip"
+            android:text="@string/howitworks_page_button_skip" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+
+
+        <ImageButton
+            android:id="@+id/howitworks_button_next"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/nav_panel_height"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end|center"
+            android:contentDescription="@string/howitworks_page_button_next"
+            android:scaleType="center"
+            android:src="@drawable/quantum_ic_navigate_next_white_24" />
+
+        <Button
+            android:id="@+id/howitworks_button_done"
+            style="@style/HowItWorksButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="4.0dip"
+            android:text="@string/howitworks_page_button_done"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

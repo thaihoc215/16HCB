@@ -1,0 +1,28 @@
+<div class="container d-table" ng-controller="VerificationCtrl">
+    <div class="d-100vh-va-middle">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card mx-2">
+                    <div class="card-block p-2">
+                        <h1>Verification</h1>
+                        <p class="text-muted">Enter the verification code generate by your application</p>
+
+                        <div class="center-block mb-2">
+                            <img style="max-width: 50%;" src="img/verify.png" class="rounded mx-auto d-block" alt="verify">
+                        </div>
+
+                        <div class="input-group mb-2" ng-class="code.status">
+                            <input ng-model="code.value" type="text" class="form-control" placeholder="Enter code">
+                        </div>
+
+                        <div class="input-group mb-2 has-danger" ng-show="!isVerify">
+                            <div class="form-control-feedback" ng-show="!isVerify">Sorry, The code is incorrect.</div>
+                        </div>
+
+                        <button ng-click="Verification(code)" type="button" class="btn btn-block btn-success">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="@string/nut_quet_ma_vach"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:background="@drawable/doi_mau_button_luc_duoc_nhap"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="40dp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnQuetMaQR" />
+
+    <LinearLayout
+        android:background="#9e9b9b"
+        android:layout_marginLeft="80dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <Button
+        android:text="@string/nut_nhap_khoa_duoc_cung_cap"
+        android:paddingLeft="10dp"
+        android:gravity="left|center"
+        android:textAllCaps="false"
+        android:background="@drawable/doi_mau_button_luc_duoc_nhap"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNhapMaDuocCungCap" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<div class="container d-table" ng-controller="RegisterCtrl">
+    <div class="d-100vh-va-middle">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card mx-2">
+                    <div class="card-block p-2">
+                        <h1>Register</h1>
+                        <p class="text-muted">Create your account</p>
+                        <div class="input-group mb-1" ng-class="username.status">
+                            <span class="input-group-addon"><i class="icon-user"></i>
+                            </span>
+                            <input ng-model="username.value" type="text" class="form-control" placeholder="Username">
+                        </div>
+
+                        <div class="input-group mb-1" ng-class="email.status">
+                            <span class="input-group-addon"><i class="icon-envelope"></i></span>
+                            <input ng-model="email.value" type="text" class="form-control" placeholder="Email">
+                        </div>
+
+
+                        <div class="input-group mb-1">
+                            <span class="input-group-addon"><i class="icon-heart"></i></span>
+                            <input ng-model="fullname.value" type="text" class="form-control" placeholder="Full name">
+                        </div>
+
+                        <div class="input-group mb-1">
+                            <span class="input-group-addon"><i class="icon-phone"></i></span>
+                            <input ng-model="phone.value" type="text" class="form-control" placeholder="Phone number">
+                        </div>
+
+                        <div class="input-group mb-1" ng-class="password.status">
+                            <span class="input-group-addon"><i class="icon-lock"></i>
+                            </span>
+                            <input ng-model="password.value" type="password" class="form-control" placeholder="Password">
+                        </div>
+
+                        <div class="input-group mb-1" ng-class="password.status">
+                            <span class="input-group-addon"><i class="icon-lock"></i>
+                            </span>
+                            <input ng-model="repassword.value" type="password" class="form-control" placeholder="Repeat password">
+                        </div>
+
+                        <div class="input-group mb-2 has-danger" ng-show="!isRegister">
+                            <div class="form-control-feedback" ng-show="!isRegister">Sorry, The input is incorrect.</div>
+                        </div>
+
+                        <div class="input-group mb-2 has-success" ng-show="registerSuccess">
+                            <div class="form-control-feedback" ng-show="registerSuccess">Register successfully. Congratulations ! </div>
+                        </div>
+
+                        <button ng-click="Register()" type="button" class="btn btn-block btn-success">Create Account</button>
+                    </div>
+                    <div class="card-footer p-2">
+                        <div class="row mb-1">
+                            <div class="col-xs-12">
+                                <button class="btn btn-block btn-primary" ui-sref="appSimple.login" type="button">
+                                    <span>Login</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <button class="btn btn-block btn-github" type="button">
+                                    <span>github</span>
+                                </button>
+                            </div>
+                            <div class="col-xs-6">
+                                <button class="btn btn-block btn-facebook" type="button">
+                                    <span>facebook</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

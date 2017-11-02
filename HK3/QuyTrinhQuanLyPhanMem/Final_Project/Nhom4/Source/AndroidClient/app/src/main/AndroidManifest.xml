@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hcmus.authenticator">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/product_logo_authenticator_color_144"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AuthenticatorTheme">
+        <activity
+            android:name=".QRCodeReaderActivity"
+            android:screenOrientation="portrait">
+
+            <!--
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".hotp.TestHOTPActivity">
+
+            <!--
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".HowItWorksActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BatDauActivity"
+            android:label="@string/title_activity_bat_dau"
+            android:theme="@style/AuthenticatorTheme.NoActionBar" />
+        <activity
+            android:name=".ThemTaiKhoanActivity"
+            android:label="@string/tieu_de_them_tai_khoan"
+            android:theme="@style/AuthenticatorTheme.NoActionBar" />
+        <activity
+            android:name=".NhapMaThuCongActivity"
+            android:label="@string/tieu_de_nhap_ma_thu_cong" />
+        <activity
+            android:name=".HienThiCodeXacThucActivity"
+            android:label="@string/trinh_xac_thuc"
+            android:theme="@style/AuthenticatorTheme.NoActionBar" />
+        <activity
+            android:name=".CaiDatActivity"
+            android:label="@string/tieu_de_cai_dat" />
+        <activity
+            android:name=".TroGiupVaPhanHoiActivity"
+            android:label="@string/tro_giup" />
+        <activity
+            android:name=".HoanTatDangNhapActivity"
+            android:label="@string/trinh_xac_thuc" />
+        <activity
+            android:name=".HienThiTroGiupActivity"
+            android:theme="@style/AuthenticatorTheme.NoActionBar" />
+        <activity
+            android:name=".QuetMaQRActivity"
+            android:theme="@style/AuthenticatorTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

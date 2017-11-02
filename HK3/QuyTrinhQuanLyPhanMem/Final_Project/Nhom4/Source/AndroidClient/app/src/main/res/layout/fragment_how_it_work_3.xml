@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/howItWorksBackgroundColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/HowItWorksTextHeadingStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24.0dip"
+            android:layout_marginRight="24.0dip"
+            android:layout_marginTop="56.0dip"
+            android:gravity="center"
+            android:minHeight="32.0dip"
+            android:text="@string/howitworks_page_layout_3_title" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="188.0dip"
+            android:layout_marginTop="32.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/howitworks_image_3" />
+
+        <TextView
+            style="@style/HowItWorksTextBodyStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24.0dip"
+            android:layout_marginRight="24.0dip"
+            android:layout_marginTop="16.0dip"
+            android:lineSpacingExtra="8.0dip"
+            android:text="@string/howitworks_page_layout_3_description" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="24.0dip"-->
+            <!--android:layout_marginRight="24.0dip"-->
+            <!--android:layout_marginTop="20.0dip"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="24.0dip"-->
+                <!--android:layout_height="24.0dip"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/quantum_ic_phone_white_24" />-->
+
+            <!--<TextView-->
+                <!--style="@style/HowItWorksTextBodyStyle"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="24.0dip"-->
+                <!--android:ellipsize="marquee"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="@string/howitworks_page_layout_3_description_option_1" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24.0dip"
+            android:layout_marginRight="24.0dip"
+            android:layout_marginTop="16.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/quantum_ic_lock_white_24" />
+
+            <TextView
+                style="@style/HowItWorksTextBodyStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24.0dip"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="@string/howitworks_page_layout_3_description_option_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24.0dip"
+            android:layout_marginLeft="24.0dip"
+            android:layout_marginRight="24.0dip"
+            android:layout_marginTop="16.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/quantum_ic_highlight_off_white_24" />
+
+            <TextView
+                style="@style/HowItWorksTextBodyStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24.0dip"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="@string/howitworks_page_layout_3_description_option_3" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
