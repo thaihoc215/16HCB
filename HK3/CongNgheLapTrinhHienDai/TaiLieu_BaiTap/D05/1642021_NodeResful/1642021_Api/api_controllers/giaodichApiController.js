@@ -10,47 +10,33 @@ router.post('/ruttien', (req, res) => {
     var mathe = req.body.mathe,
         manganhang = req.body.manganhang,
         matkhau = req.body.matkhau,
-        loairut = req.body.loairut,
         sotienrut = req.body.sotienrut;
 
-    var sotien;
-    switch (loairut) {
-        case 1:
-            sotien = 1000000;
-            break;
-        case 2:
-            sotien = 2000000;
-            break;
-        case 3:
-            sotien = 5000000;
-            break;
-        default:
-            sotien = sotienrut;
-            break;
+    if (sotienrut % 50000 != 0) {
+        res.status(cons.HTTPCODE.NotAccept).json('Số tiền rút phải là bội số của 50000');
     }
-    if (sotien % 50000 != 0) {
-        res.status(404).json('So tien rut phai la boi so cua 50000');
+    else {
+        //kiem tra so tien nguoi dung
+        var nd = {};
+        ndModel.loadThongTinTaiKhoan(mathe, manganhang).
+            then((rows) => {
+                nd = rows[0];
+                if (nd.SoDuKhaDung - sotienrut < 100000) {
+                    res.status(cons.HTTPCODE.NotAccept).json('Số dư tài khoản không đủ');
+                } else {
+                    var sodu = nd.SoDuKhaDung - sotienrut;
+                    return gdmodel.rutTien(mathe, manganhang, sodu)
+                }
+            }).then((rs) => {
+                if (rs) {
+                    return ndModel.loadThongTinTaiKhoan(mathe, manganhang)
+                } else
+                    res.status(cons.HTTPCODE.NotAccept).json('Rút tiền thất bại');
+            }).then((rows) => {
+                res.status(200).json(rows[0]);
+            });;
     }
 
-    //kiem tra so tien nguoi dung
-    var nd = {};
-    ndModel.loadTaiKhoan(mathe, matkhau, manganhang).
-        then((rows) => {
-            nd = rows[0];
-            if (nd.SoDuKhaDung < 100000) {
-                res.status(404).json('So du tai khoan khong du');
-            } else {
-                var sodu = nd.SoDuKhaDung - sotienrut;
-                return gdmodel.rutTien(mathe, manganhang, sodu)
-            }
-        }).then((rs) => {
-            if (rs) {
-                return ndModel.loadTaiKhoan(mathe, matkhau, manganhang)
-            } else
-                res.status(204).json('Rut tien that bai');
-        }).then((rows) => {
-            res.status(200).json(rows[0]);
-        });;
 });
 
 //chuyen tien
@@ -78,12 +64,15 @@ router.post('/chuyentien', (req, res) => {
             nd2 = rs[1][0];
             // res.status(200).json([nd1,nd2]);
         }).then(() => {
-            if (nd1.MaThe == nd2.MaThe && nd1.MaNganHang == nd2.MaNganHang) {
-                res.status(cons.HTTPCODE.NotAccept).json('Tai khoan nhan tien phai khac tai khoan gui tien');
-            } else if (soTienGui < 0) {
-                res.status(cons.HTTPCODE.NotAccept).json('So tien gui khong hop le');
+            if (nd2 == null) {
+                res.status(cons.HTTPCODE.NotAccept)
+                    .json('Người nhận tiền không có trong hệ thông');
+            } else if (nd1.MaThe == nd2.MaThe && nd1.MaNganHang == nd2.MaNganHang) {
+                res.status(cons.HTTPCODE.NotAccept)
+                    .json('Tài khoản nhận phải khác tài khoản gửi');
             } else if (nd1.SoDuKhaDung - soTienGui < 100000) {
-                res.status(cons.HTTPCODE.NotAccept).json('So du tai khoan khong du');
+                res.status(cons.HTTPCODE.NotAccept)
+                    .json('Số dư tài khoản không đủ');
             } else {
                 let sodunguoigui = nd1.SoDuKhaDung - soTienGui;
                 let sodunguoinhan = nd2.SoDuKhaDung + soTienGui;
@@ -93,12 +82,20 @@ router.post('/chuyentien', (req, res) => {
                 } else {//chuyen khoan trai ngan hang
                     sodunguoigui = sodunguoigui - 11000;
                 }
-                gdmodel.chuyenTien(magui, nganHangDi, sodunguoigui);
-                gdmodel.nhanTien(manhan, nganHangDen, sodunguoinhan);
-                res.status('200').json('Giao dich thanh cong');
+                // gdmodel.chuyenTien(magui, nganHangDi, sodunguoigui);
+                // gdmodel.nhanTien(manhan, nganHangDen, sodunguoinhan);
+                return [gdmodel.chuyenTien(magui, nganHangDi, sodunguoigui),
+                    gdmodel.nhanTien(manhan, nganHangDen, sodunguoinhan)];
+                
+            }
+        }).then((rs)=>{
+            if(rs){
+                ndModel.loadThongTinTaiKhoan(maNguoiGui, nganHangDi).then((rs2)=>{
+                    res.status('200').json(rs2[0]);
+                });
             }
         }).catch(() => {
-            res.status(cons.HTTPCODE.Notfound).json("LOI");
+            res.status(cons.HTTPCODE.Notfound).json("Chuyển tiền không thành công");
         });
     }
 });

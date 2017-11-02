@@ -12,7 +12,7 @@ namespace _1642021ApiClient.Model
         public string TenChuThe { get; set; }
         public System.DateTime NgayHetHan { get; set; }
         public double SoDuKhaDung { get; set; }
-        public int NganHang { get; set; }
+        public int MaNganHang { get; set; }
         public string MatKhau { get; set; }
         public string TenNganHang { get; set; }
         public TaiKhoanModel()
@@ -26,7 +26,7 @@ namespace _1642021ApiClient.Model
             TenChuThe = the.TenChuThe;
             NgayHetHan = the.NgayHetHan;
             SoDuKhaDung = the.SoDuKhaDung;
-            NganHang = (int)the.NganHang;
+            MaNganHang = the.MaNganHang;
         }
     }
 }

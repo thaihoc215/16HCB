@@ -1,6 +1,6 @@
 ﻿namespace _1642021ApiClient
 {
-    partial class Form1
+    partial class frmDangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -30,44 +30,44 @@
         {
             this.bntXemThongTin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMaThe = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cboNganHang = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.btnThoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bntXemThongTin
             // 
-            this.bntXemThongTin.Location = new System.Drawing.Point(56, 207);
+            this.bntXemThongTin.Location = new System.Drawing.Point(45, 245);
             this.bntXemThongTin.Name = "bntXemThongTin";
             this.bntXemThongTin.Size = new System.Drawing.Size(95, 23);
             this.bntXemThongTin.TabIndex = 0;
-            this.bntXemThongTin.Text = "Xem thông tin";
+            this.bntXemThongTin.Text = "Đăng Nhập";
             this.bntXemThongTin.UseVisualStyleBackColor = true;
             this.bntXemThongTin.Click += new System.EventHandler(this.bntXemThongTin_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 37);
+            this.label1.Location = new System.Drawing.Point(43, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Thẻ";
             // 
-            // textBox1
+            // txtMaThe
             // 
-            this.textBox1.Location = new System.Drawing.Point(111, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtMaThe.Location = new System.Drawing.Point(120, 56);
+            this.txtMaThe.Name = "txtMaThe";
+            this.txtMaThe.Size = new System.Drawing.Size(121, 20);
+            this.txtMaThe.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 93);
+            this.label2.Location = new System.Drawing.Point(43, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 3;
@@ -76,7 +76,7 @@
             // cboNganHang
             // 
             this.cboNganHang.FormattingEnabled = true;
-            this.cboNganHang.Location = new System.Drawing.Point(111, 90);
+            this.cboNganHang.Location = new System.Drawing.Point(120, 112);
             this.cboNganHang.Name = "cboNganHang";
             this.cboNganHang.Size = new System.Drawing.Size(121, 21);
             this.cboNganHang.TabIndex = 4;
@@ -84,43 +84,46 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 149);
+            this.label3.Location = new System.Drawing.Point(43, 171);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Mật Khẩu";
             // 
-            // textBox2
+            // txtMatKhau
             // 
-            this.textBox2.Location = new System.Drawing.Point(111, 146);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtMatKhau.Location = new System.Drawing.Point(120, 168);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(121, 20);
+            this.txtMatKhau.TabIndex = 6;
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(157, 207);
+            this.btnThoat.Location = new System.Drawing.Point(146, 245);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(86, 23);
+            this.btnThoat.Size = new System.Drawing.Size(95, 23);
             this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // Form1
+            // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 303);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboNganHang);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMaThe);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bntXemThongTin);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Đăng Nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,11 +133,11 @@
 
         private System.Windows.Forms.Button bntXemThongTin;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMaThe;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboNganHang;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Button btnThoat;
     }
 }

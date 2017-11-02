@@ -15,9 +15,11 @@ exports.loadTaiKhoan = (mathe, matkhau, nganhang) => {
                         t.TenChuThe TenChuThe,
                         t.SoDuKhaDung SoDuKhaDung,
                         t.NgayHetHan NgayHetHan,
-                        nh.TenNganHang TenNganHang
+                        t.MatKhau MatKhau,
+                        nh.TenNganHang TenNganHang,
+                        nh.MaNganHang MaNganHang
                 from the t,nganhang nh
-                where t.MaThe = nh.MaNganHang 
+                where t.NganHang = nh.MaNganHang 
                                 and t.MaThe = ${mathe}
                                 and t.MatKhau = ${matkhau}
                                 and t.NganHang = ${nganhang}`;
@@ -29,7 +31,7 @@ exports.loadThongTinTaiKhoan = (mathe, nganhang) => {
                     t.TenChuThe TenChuThe,
                     t.SoDuKhaDung SoDuKhaDung,
                     t.NgayHetHan NgayHetHan,
-                    nh.TenNganHang NganHang,
+                    nh.TenNganHang TenNganHang,
                     nh.MaNganHang MaNganHang
                 from the t,nganhang nh
                 where t.NganHang = nh.MaNganHang 

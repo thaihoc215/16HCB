@@ -16,7 +16,7 @@ namespace _1642021ApiClient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmDangNhap());
         }
     }
 }
