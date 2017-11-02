@@ -1,6 +1,7 @@
 var express = require('express'),
-    model = require('../models/giaodichModel.js'),
-    ndModel = require('../models/taiKhoanModel.js');
+    gdmodel = require('../models/giaodichModel'),
+    ndModel = require('../models/taiKhoanModel'),
+    cons = require('../cons');
 
 var router = express.Router();
 
@@ -40,7 +41,7 @@ router.post('/ruttien', (req, res) => {
                 res.status(404).json('So du tai khoan khong du');
             } else {
                 var sodu = nd.SoDuKhaDung - sotienrut;
-                return model.rutTien(mathe, manganhang, sodu)
+                return gdmodel.rutTien(mathe, manganhang, sodu)
             }
         }).then((rs) => {
             if (rs) {
@@ -60,6 +61,46 @@ router.post('/chuyentien', (req, res) => {
     var nganHangGui = req.body.nganHangGui;
     var nganHangNhan = req.body.nganHangNhan;
     var xacNhan = req.body.xacNhan;
+    if (xacNhan == false) {
+        res.status(cons.HTTPCODE.OK).json('Huy giao dich');
+    }
+    else {
+        let nd1 = {};
+        let nd2 = {};
+        let magui = maNguoiGui,
+            manhan = maNguoiNhan;
+        let nganHangDi = nganHangGui,
+            nganHangDen = nganHangNhan;
+        let p1 = ndModel.loadThongTinTaiKhoan(maNguoiGui, nganHangDi);
+        let p2 = ndModel.loadThongTinTaiKhoan(maNguoiNhan, nganHangDen);
+        Promise.all([p1, p2]).then((rs) => {
+            nd1 = rs[0][0];
+            nd2 = rs[1][0];
+            // res.status(200).json([nd1,nd2]);
+        }).then(() => {
+            if (nd1.MaThe == nd2.MaThe && nd1.MaNganHang == nd2.MaNganHang) {
+                res.status(cons.HTTPCODE.NotAccept).json('Tai khoan nhan tien phai khac tai khoan gui tien');
+            } else if (soTienGui < 0) {
+                res.status(cons.HTTPCODE.NotAccept).json('So tien gui khong hop le');
+            } else if (nd1.SoDuKhaDung - soTienGui < 100000) {
+                res.status(cons.HTTPCODE.NotAccept).json('So du tai khoan khong du');
+            } else {
+                let sodunguoigui = nd1.SoDuKhaDung - soTienGui;
+                let sodunguoinhan = nd2.SoDuKhaDung + soTienGui;
+                //chuyen khoan cung ngan hang
+                if (nd1.MaNganHang == nd2.MaNganHang) {
+                    sodunguoigui = sodunguoigui - 3300;
+                } else {//chuyen khoan trai ngan hang
+                    sodunguoigui = sodunguoigui - 11000;
+                }
+                gdmodel.chuyenTien(magui, nganHangDi, sodunguoigui);
+                gdmodel.nhanTien(manhan, nganHangDen, sodunguoinhan);
+                res.status('200').json('Giao dich thanh cong');
+            }
+        }).catch(() => {
+            res.status(cons.HTTPCODE.Notfound).json("LOI");
+        });
+    }
 });
 
 module.exports = router;

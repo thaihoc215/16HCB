@@ -11,15 +11,29 @@ exports.loadAllTK = () => {
 };
 
 exports.loadTaiKhoan = (mathe, matkhau, nganhang) => {
-    var sql = `select t.MaThe MaThe,
+    let sql = `select t.MaThe MaThe,
                         t.TenChuThe TenChuThe,
                         t.SoDuKhaDung SoDuKhaDung,
                         t.NgayHetHan NgayHetHan,
-                        nh.TenNganHang NganHang
+                        nh.TenNganHang TenNganHang
                 from the t,nganhang nh
                 where t.MaThe = nh.MaNganHang 
                                 and t.MaThe = ${mathe}
                                 and t.MatKhau = ${matkhau}
                                 and t.NganHang = ${nganhang}`;
+    return db.load(sql);
+};
+
+exports.loadThongTinTaiKhoan = (mathe, nganhang) => {
+    let sql = `select t.MaThe MaThe,
+                    t.TenChuThe TenChuThe,
+                    t.SoDuKhaDung SoDuKhaDung,
+                    t.NgayHetHan NgayHetHan,
+                    nh.TenNganHang NganHang,
+                    nh.MaNganHang MaNganHang
+                from the t,nganhang nh
+                where t.NganHang = nh.MaNganHang 
+                            and t.MaThe = ${mathe}
+                            and t.NganHang = ${nganhang}`;
     return db.load(sql);
 };

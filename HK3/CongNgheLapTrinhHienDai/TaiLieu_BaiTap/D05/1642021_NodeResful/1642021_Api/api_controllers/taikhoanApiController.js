@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
         matkhau = req.body.matkhau,
         nganhang = req.body.nganhang;
     model.loadTaiKhoan(mathe, matkhau, nganhang).then(rows => {
-        res.statusCode = 201;
+        res.statusCode = 200;
         res.json(rows[0]);
     });
     // res.json(obj = {abc: String(id)});

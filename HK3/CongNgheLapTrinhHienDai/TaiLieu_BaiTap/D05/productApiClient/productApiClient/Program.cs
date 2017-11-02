@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 
 namespace productApiClient
 {
@@ -13,11 +14,15 @@ namespace productApiClient
             client.BaseAddress = new Uri("http://localhost:3000/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            var response = client.GetAsync("/products").Result;
+            object content = new
+            {
+                mathe = 1,
+                matkhau = 123,
+                nganhang = 1
+            };
+            var response = client.PostAsync("/products", new StringContent(content.ToString())).Result;
             if (response.IsSuccessStatusCode) {
-                var list = response.Content.ReadAsAsync<Product[]>().Result;
-                Console.WriteLine(list.Length);
+                var list = response.Content;
             }
         }
     }

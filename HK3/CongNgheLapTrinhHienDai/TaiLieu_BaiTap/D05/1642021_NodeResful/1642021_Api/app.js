@@ -4,6 +4,7 @@ var express = require('express'),
 
 var taikhoanApi = require('./api_controllers/taikhoanApiController');
 var giaodichApi = require('./api_controllers/giaodichApiController');
+var nganHangApi = require('./api_controllers/nganhangApiController');
 var app = express();
 
 app.use(morgan('dev'));
@@ -15,6 +16,7 @@ app.use(bodyParser.urlencoded({
 // di chuyen den router
 app.use('/taikhoan', taikhoanApi);
 app.use('/giaodich', giaodichApi);
+app.use('/nganhang', nganHangApi);
 
 app.get('/',(request,response) =>{
     var obj = {
