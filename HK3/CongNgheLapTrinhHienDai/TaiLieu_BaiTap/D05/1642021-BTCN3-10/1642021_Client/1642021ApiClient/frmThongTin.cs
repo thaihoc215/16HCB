@@ -22,6 +22,7 @@ namespace _1642021ApiClient
         public frmThongTin(TaiKhoanModel nd)
         {
             InitializeComponent();
+            dgvGiaoDich.AutoGenerateColumns = false;
             _chuTaiKhoan = nd;
             lblMaThe.Text = _chuTaiKhoan.MaThe.ToString();
             lblTenChuThe.Text = _chuTaiKhoan.TenChuThe;
@@ -112,7 +113,7 @@ namespace _1642021ApiClient
                     MessageBox.Show("chuyển tiền không thành công", "Lỗi");
                     return;
                 }
-                lblSauKhiChuyenTien.Text = "Rút tiền thành công. Số dư tài khoản: " + string.Format("{0:n0}", nd.SoDuKhaDung);
+                lblSauKhiChuyenTien.Text = "Chuyển tiền thành công. Số dư tài khoản: " + string.Format("{0:n0}", nd.SoDuKhaDung);
                 lblSoDu.Text = string.Format("{0:n0}", nd.SoDuKhaDung);
             }
             else
@@ -133,6 +134,25 @@ namespace _1642021ApiClient
             Close();
         }
 
-        
+        private void btnXem_Click(object sender, EventArgs e)
+        {
+            var res = client.GetAsync("/giaodich/ngay?mathe=" + _chuTaiKhoan.MaThe +"&ngaybatdau=" + dtpFrom.Value.ToShortDateString()
+                + "&ngayketthuc=" + dtpTo.Value.ToShortDateString()).Result;
+            if (res.IsSuccessStatusCode)
+            {
+                GiaoDichModel[] lstGiaoDich = res.Content.ReadAsAsync<GiaoDichModel[]>().Result;
+                dgvGiaoDich.DataSource = lstGiaoDich;
+            }
+        }
+
+        private void btnXemTatCa_Click(object sender, EventArgs e)
+        {
+            var res = client.GetAsync("/giaodich?mathe=" + _chuTaiKhoan.MaThe).Result;
+            if (res.IsSuccessStatusCode)
+            {
+                GiaoDichModel[] lstGiaoDich = res.Content.ReadAsAsync<GiaoDichModel[]>().Result;
+                dgvGiaoDich.DataSource = lstGiaoDich;
+            }
+        }
     }
 }

@@ -5,10 +5,10 @@ var express = require('express'),
 var router = express.Router();
 
 //Lay danh sach ngan hang
-router.get('/',(req,res) =>{
-    nhModel.layDsNganHang().then((result)=>{
+router.get('/', (req, res) => {
+    nhModel.layDsNganHang().then((result) => {
         res.status(cons.HTTPCODE.OK).json(result);
-    }).catch(()=>{
+    }).catch(() => {
         res.status(cons.HTTPCODE.Notfound);
     });
 })

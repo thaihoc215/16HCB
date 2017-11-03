@@ -4,16 +4,16 @@ var express = require('express'),
 var router = express.Router();
 
 //lay thong tin toan bo tai khoan
-router.get('/', (req, res) => {
-    // var sql = 'select * from the';
-    // db.load(sql).then(rows => {
-    //     res.json(rows);
-    // });
+// router.get('/', (req, res) => {
+//     // var sql = 'select * from the';
+//     // db.load(sql).then(rows => {
+//     //     res.json(rows);
+//     // });
 
-    model.loadAllTK().then(rows => {
-        res.json(rows);
-    });
-});
+//     model.loadAllTK().then(rows => {
+//         res.json(rows);
+//     });
+// });
 
 //lay thong tin mot tai khoan
 router.post('/', (req, res) => {

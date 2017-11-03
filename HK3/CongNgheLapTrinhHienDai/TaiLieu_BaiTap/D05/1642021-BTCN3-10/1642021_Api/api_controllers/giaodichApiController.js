@@ -33,6 +33,7 @@ router.post('/ruttien', (req, res) => {
                 } else
                     res.status(cons.HTTPCODE.NotAccept).json('Rút tiền thất bại');
             }).then((rows) => {
+                gdmodel.luuGiaoDich(mathe, manganhang, sotienrut, new Date().toLocaleString(), 1);
                 res.status(200).json(rows[0]);
             });;
     }
@@ -82,22 +83,32 @@ router.post('/chuyentien', (req, res) => {
                 } else {//chuyen khoan trai ngan hang
                     sodunguoigui = sodunguoigui - 11000;
                 }
-                // gdmodel.chuyenTien(magui, nganHangDi, sodunguoigui);
-                // gdmodel.nhanTien(manhan, nganHangDen, sodunguoinhan);
-                return [gdmodel.chuyenTien(magui, nganHangDi, sodunguoigui),
-                    gdmodel.nhanTien(manhan, nganHangDen, sodunguoinhan)];
-                
-            }
-        }).then((rs)=>{
-            if(rs){
-                ndModel.loadThongTinTaiKhoan(maNguoiGui, nganHangDi).then((rs2)=>{
-                    res.status('200').json(rs2[0]);
+                Promise.all([gdmodel.chuyenTien(magui, nganHangDi, sodunguoigui),
+                gdmodel.nhanTien(manhan, nganHangDen, sodunguoinhan)]).then(() => {
+                    ndModel.loadThongTinTaiKhoan(maNguoiGui, nganHangDi).then((rs2) => {
+                        gdmodel.luuGiaoDich(maNguoiGui, nganHangDi, soTienGui, new Date().toLocaleString(), 2);
+                        res.status('200').json(rs2[0]);
+                    })
                 });
             }
         }).catch(() => {
             res.status(cons.HTTPCODE.Notfound).json("Chuyển tiền không thành công");
         });
     }
+});
+router.get('/ngay', (req, res) => {
+    var mathe = req.query.mathe,
+        ngaybatdau = req.query.ngaybatdau,
+        ngayketthuc = req.query.ngayketthuc;
+    gdmodel.layGiaoDichNgay(mathe, ngaybatdau, ngayketthuc).then((rs) => {
+        res.status(200).json(rs);
+    });
+});
+
+router.get('/', (req, res) => {
+    gdmodel.layGiaoDich(req.query.mathe).then((rs) => {
+        res.status(200).json(rs);
+    });
 });
 
 module.exports = router;
