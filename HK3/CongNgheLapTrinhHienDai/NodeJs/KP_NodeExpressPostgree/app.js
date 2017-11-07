@@ -18,6 +18,15 @@ app.get('/thaihoc',(req,res)=>{
     res.render('thaihoc');
 });
 
+// app.get('/paramejs',(req,res)=>{
+//     res.render('chitiet',{hoten: 'Ha nguyen thai hoc'});
+// });
+
+app.get('/paramejss',(req,res)=>{
+    res.render('chitiet',{namsinh: [1,2,3,4,5,6]});
+});
+
+
 app.get('/', (req, res) => {
     res.send('route succesfull');
 });
