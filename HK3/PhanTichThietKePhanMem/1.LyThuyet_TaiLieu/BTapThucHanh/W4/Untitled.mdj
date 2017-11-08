@@ -6257,7 +6257,7 @@
 								"$ref": "AAAAAAFfmsVRyhCq4Lg="
 							},
 							"showMultiplicity": true,
-							"showType": true,
+							"showType": false,
 							"tailRoleNameLabel": {
 								"$ref": "AAAAAAFfmsVRyhCrUzY="
 							},
