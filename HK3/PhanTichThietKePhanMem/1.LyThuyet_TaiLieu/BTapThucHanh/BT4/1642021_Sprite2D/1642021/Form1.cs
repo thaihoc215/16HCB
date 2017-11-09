@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.WindowsAPICodePack.Dialogs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +26,8 @@ namespace _1642021
         public frmSprite()
         {
             InitializeComponent();
+            //this.BackColor = Color.Magenta;
+            //this.TransparencyKey = Color.Magenta;
             this.KeyDown += FrmSprite_KeyDown;
             this.KeyUp += FrmSprite_KeyUp;
             this.Load += FrmSprite_Load;
@@ -33,10 +37,11 @@ namespace _1642021
             popupMenu = new ContextMenuStrip();
             popupMenu.Items.Add("+ : Up speed", null, ItemUpspeedClick);
             popupMenu.Items.Add("- : Down speed", null, ItemDownSpeedClick);
-            popupMenu.Items.Add("[ : Zoom in", null, ItemZoominClick);
-            popupMenu.Items.Add("] : Zoom out", null, ItemZoomoutClick);
+            popupMenu.Items.Add("[ : Zoom out", null, ItemZoomoutClick);
+            popupMenu.Items.Add("] : Zoom in", null, ItemZoominClick);
             popupMenu.Items.Add("S : Pause", null, ItemPauseClick);
             popupMenu.Items.Add("P : Continue", null, ItemContinueClick);
+            popupMenu.Items.Add("B : Edit Sprite", null, ItemChangeSpriteClick);
             popupMenu.Items.Add("ESC - Close", null, ItemCloseClick );
         }
 
@@ -75,6 +80,24 @@ namespace _1642021
                 case (int)Keys.Subtract:
                     if (_moveDistance > 0)
                         _moveDistance--;
+                    break;
+                case (int)Keys.OemOpenBrackets:
+                    picMain.Size = new Size(picMain.Width - 10, picMain.Height - 10);
+                    break;
+                case (int)Keys.OemCloseBrackets:
+                    picMain.Size = new Size(picMain.Width + 10, picMain.Height + 10);
+                    break;
+                case (int)Keys.B:
+                    using (var fbd = new OpenFileDialog())
+                    {
+                        CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+                        dialog.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                        dialog.IsFolderPicker = true;
+                        if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+                        {
+                            MessageBox.Show("You selected: " + dialog.FileName);
+                        }
+                    }
                     break;
                 case (int)Keys.Escape:
                     this.Close();
@@ -149,23 +172,36 @@ namespace _1642021
 
         private void ItemZoomoutClick(object sender, EventArgs e)
         {
-            //throw new NotImplementedException();
+            picMain.Size = new Size(picMain.Width - 10, picMain.Height - 10);
         }
 
         private void ItemZoominClick(object sender, EventArgs e)
         {
-            //throw new NotImplementedException();
+            picMain.Size = new Size(picMain.Width + 10, picMain.Height + 10);
         }
 
         private void ItemDownSpeedClick(object sender, EventArgs e)
         {
-            _moveDistance -= 1;
+            if (_moveDistance > 0)
+                _moveDistance -= 1;
         }
 
         private void ItemUpspeedClick(object sender, EventArgs e)
         {
             _moveDistance += 1;
         }
+
+        private void ItemChangeSpriteClick(object sender, EventArgs e)
+        {
+            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            dialog.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            dialog.IsFolderPicker = true;
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+            {
+                MessageBox.Show("You selected: " + dialog.FileName);
+            }
+        }
+
         private void ItemCloseClick(object sender, EventArgs e)
         {
             this.Close();
