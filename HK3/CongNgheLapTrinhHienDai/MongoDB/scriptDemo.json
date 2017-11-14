@@ -1,0 +1,15 @@
+[{
+    "username":"thaihoc",
+    "password": "12345",
+    "email": "hochnt@gmail.com",
+    "status": "active"
+},
+
+{
+    "username":"thaihoc",
+    "password": "12345",
+    "email": "hochnt@gmail.com",
+    "status": "active",
+    "skill" : ["angular","node"]
+}
+]

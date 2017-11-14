@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5a096ba61eb88c6ac4a47f61"},"username":"thaihoc","password":"12345","email":"hochnt@gmail.com","status":"active"}
+{"_id":{"$oid":"5a096d2e1eb88c6ac4a47f62"},"username":"thaihoc","password":"12345","email":"hochnt@gmail.com","status":"active","skill":["angular","node"]}
+{"_id":{"$oid":"5a096e0f1eb88c6ac4a47f63"},"username":"happyboy","password":"33333","email":"blaknb@gmail.com","skill":["html","css","js"]}
