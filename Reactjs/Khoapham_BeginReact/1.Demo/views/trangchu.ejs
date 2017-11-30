@@ -8,16 +8,39 @@
     <script crossorigin src="lib/react-dom.development.js"></script>
     <!-- 5.3.8 -->
     <script crossorigin src="lib/browser.js"></script>
+
     <title>Demo reactjs</title>
 </head>
 <body>
+    <style>
+        .mauvang{
+            background-color: yellow;
+        }
+    </style>
     <h1>Test react js</h1>
     <!-- hung ket qua react render -->
     <div id="root">
-        
     </div>
-    <script type="text/babel">
-        ReactDOM.render(<h1>HOCHNT</h1>,document.getElementById("root"));
-    </script>
+    <hr/>
+    <div id="root2"></div>
+    <!-- <script type="text/babel">
+        //demo 1
+        /*
+        ReactDOM.render(
+            //chua co babel
+            // React.createElement("h1", {}, "HOCHNT react"),
+            <h1>HOCHNT</h1>,
+            document.getElementById("root"));
+        */
+        
+        // //demo nhiều render nhiều element
+        // ReactDOM.render(
+        //     <div>
+        //         <h1>HOCHNT1</h1>
+        //         <h1 className="mauvang">HOCHNT2</h1>
+        //     </div>
+        //     ,document.getElementById("root"));
+    </script> -->
+    <script src="xuly.js" type="text/babel"/>
 </body>
 </html>
