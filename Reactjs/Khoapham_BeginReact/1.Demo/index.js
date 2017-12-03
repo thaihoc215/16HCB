@@ -15,5 +15,5 @@ app.listen(PORT,()=>{
 })
 
 app.get("/",(req,res)=>{
-    res.render("trangchu2");
+    res.render("trangchu3");
 });
