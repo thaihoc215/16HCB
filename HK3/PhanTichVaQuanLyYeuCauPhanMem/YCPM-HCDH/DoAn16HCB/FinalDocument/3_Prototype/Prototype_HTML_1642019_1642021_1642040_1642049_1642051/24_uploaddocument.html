@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>24.UploadDocument</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/24_uploaddocument/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/24_uploaddocument/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- tf tiêu đề sách (Text Field) -->
+      <div id="u961" class="ax_default text_field" data-label="tf tiêu đề sách">
+        <input id="u961_input" type="text" value=""/>
+      </div>
+
+      <!-- lb tiêu đề sách (Rectangle) -->
+      <div id="u962" class="ax_default label" data-label="lb tiêu đề sách">
+        <div id="u962_div" class=""></div>
+        <div id="u962_text" class="text ">
+          <p><span>Tiều đề tài liệu</span></p>
+        </div>
+      </div>
+
+      <!-- lb chủ đề (Rectangle) -->
+      <div id="u963" class="ax_default label" data-label="lb chủ đề">
+        <div id="u963_div" class=""></div>
+        <div id="u963_text" class="text ">
+          <p><span>Chủ đề</span></p>
+        </div>
+      </div>
+
+      <!-- lb giới thiệu ngắn (Rectangle) -->
+      <div id="u964" class="ax_default label" data-label="lb giới thiệu ngắn">
+        <div id="u964_div" class=""></div>
+        <div id="u964_text" class="text ">
+          <p><span>Giới thiệu</span></p>
+        </div>
+      </div>
+
+      <!-- tf giới thiệu ngắn (Text Field) -->
+      <div id="u965" class="ax_default text_field" data-label="tf giới thiệu ngắn">
+        <input id="u965_input" type="text" value=""/>
+      </div>
+
+      <!-- tf file pdf (Text Field) -->
+      <div id="u966" class="ax_default text_field" data-label="tf file pdf">
+        <input id="u966_input" type="text" value=""/>
+      </div>
+
+      <!-- tf ảnh bìa (Text Field) -->
+      <div id="u967" class="ax_default text_field" data-label="tf ảnh bìa">
+        <input id="u967_input" type="text" value=""/>
+      </div>
+
+      <!-- lb các sách liên quan (Rectangle) -->
+      <div id="u968" class="ax_default label" data-label="lb các sách liên quan">
+        <div id="u968_div" class=""></div>
+        <div id="u968_text" class="text ">
+          <p><span>Sách liên quan</span></p>
+        </div>
+      </div>
+
+      <!-- tf các sách liên quan (Text Field) -->
+      <div id="u969" class="ax_default text_field" data-label="tf các sách liên quan">
+        <input id="u969_input" type="text" value=""/>
+      </div>
+
+      <!-- lb warning tên chủ đề (Rectangle) -->
+      <div id="u970" class="ax_default label ax_default_hidden" data-label="lb warning tên chủ đề" style="display:none; visibility: hidden">
+        <div id="u970_div" class=""></div>
+        <div id="u970_text" class="text ">
+          <p><span>Vui lòng chọn tệp sách</span></p>
+        </div>
+      </div>
+
+      <!-- lb warning tiêu đề sách (Rectangle) -->
+      <div id="u971" class="ax_default label ax_default_hidden" data-label="lb warning tiêu đề sách" style="display:none; visibility: hidden">
+        <div id="u971_div" class=""></div>
+        <div id="u971_text" class="text ">
+          <p><span>Vui lòng nhập tiêu đề sách</span></p>
+        </div>
+      </div>
+
+      <!-- lb warning ảnh bìa (Rectangle) -->
+      <div id="u972" class="ax_default label ax_default_hidden" data-label="lb warning ảnh bìa" style="display:none; visibility: hidden">
+        <div id="u972_div" class=""></div>
+        <div id="u972_text" class="text ">
+          <p><span>Vui lòng chọn ảnh bìa</span></p>
+        </div>
+      </div>
+
+      <!-- lb thêm thành công (Rectangle) -->
+      <div id="u973" class="ax_default label ax_default_hidden" data-label="lb thêm thành công" style="display:none; visibility: hidden">
+        <div id="u973_div" class=""></div>
+        <div id="u973_text" class="text ">
+          <p><span>Thêm tài liệu thành công</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Header sau khi dang nhap) -->
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u975" class="ax_default box_1">
+        <img id="u975_img" class="img " src="images/1_home/u2.png"/>
+      </div>
+
+      <!-- btnDangNhap (Rectangle) -->
+      <div id="u976" class="ax_default primary_button" data-label="btnDangNhap">
+        <div id="u976_div" class=""></div>
+        <div id="u976_text" class="text ">
+          <p><span>Đăng Xuất</span></p>
+        </div>
+      </div>
+
+      <!-- txtTimKiem (Text Field) -->
+      <div id="u977" class="ax_default text_field" data-label="txtTimKiem">
+        <input id="u977_input" type="text" value=""/>
+      </div>
+
+      <!-- btnTimKiem (Image) -->
+      <div id="u978" class="ax_default image" data-label="btnTimKiem">
+        <img id="u978_img" class="img " src="images/1_home/btntimkiem_u6.png"/>
+      </div>
+
+      <!-- imgDanhMuc (Image) -->
+      <div id="u979" class="ax_default image" data-label="imgDanhMuc">
+        <img id="u979_img" class="img " src="images/1_home/imgdanhmuc_u8.png"/>
+      </div>
+
+      <!-- lblDanhMuc (Rectangle) -->
+      <div id="u980" class="ax_default label" data-label="lblDanhMuc">
+        <div id="u980_div" class=""></div>
+        <div id="u980_text" class="text ">
+          <p><span>Danh Mục</span></p>
+        </div>
+      </div>
+
+      <!-- imgLogoHeader (Image) -->
+      <div id="u981" class="ax_default image" data-label="imgLogoHeader">
+        <img id="u981_img" class="img " src="images/1_home/imglogoheader_u7.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u982" class="ax_default image" title="Thay đổi avatar">
+        <img id="u982_img" class="img " src="images/5_updateprofile/u165.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u983" class="ax_default label">
+        <div id="u983_div" class=""></div>
+        <div id="u983_text" class="text ">
+          <p><span>Hà Nguyễn Thái Học</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u984" class="ax_default" data-left="0" data-top="799" data-width="1440" data-height="50">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u985" class="ax_default box_2">
+          <div id="u985_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (Image) -->
+        <div id="u986" class="ax_default image">
+          <img id="u986_img" class="img " src="images/1_home/u12.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u987" class="ax_default label">
+          <div id="u987_div" class=""></div>
+          <div id="u987_text" class="text ">
+            <p><span>16HCB Copyright 2017 </span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Menu) -->
+      <div id="u988" class="ax_default ax_default_hidden" style="display:none; visibility: hidden">
+        <img id="u988_menu" class="img " src="images/1_home/u14_menu.png" alt="u988_menu"/>
+
+        <!-- Unnamed (Table) -->
+        <div id="u989" class="ax_default">
+
+          <!-- Unnamed (Menu Item) -->
+          <div id="u990" class="ax_default menu_item">
+            <img id="u990_img" class="img " src="images/1_home/u16.png"/>
+            <div id="u990_text" class="text ">
+              <p><span>&nbsp; Tin Học</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (Menu Item) -->
+          <div id="u991" class="ax_default menu_item">
+            <img id="u991_img" class="img " src="images/1_home/u16.png"/>
+            <div id="u991_text" class="text ">
+              <p><span>&nbsp; Kinh Tế</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (Menu Item) -->
+          <div id="u992" class="ax_default menu_item">
+            <img id="u992_img" class="img " src="images/1_home/u16.png"/>
+            <div id="u992_text" class="text ">
+              <p><span>&nbsp; Đại Cương</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (Menu Item) -->
+          <div id="u993" class="ax_default menu_item">
+            <img id="u993_img" class="img " src="images/1_home/u19.png"/>
+            <div id="u993_text" class="text ">
+              <p><span>&nbsp; Tài Liệu Chung</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u994" class="ax_default image">
+        <img id="u994_img" class="img " src="images/5_updateprofile/u177.png"/>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u995" class="ax_default droplist">
+        <select id="u995_input">
+          <option value="Chủ đề 1">Chủ đề 1</option>
+          <option value="Chủ đề 2">Chủ đề 2</option>
+          <option value="Chủ đề 3">Chủ đề 3</option>
+          <option value="Chur đề 4">Chur đề 4</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u996" class="ax_default label">
+        <div id="u996_div" class=""></div>
+        <div id="u996_text" class="text ">
+          <p><span>Đăng tải tài liệu</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u997" class="ax_default button">
+        <div id="u997_div" class=""></div>
+        <div id="u997_text" class="text ">
+          <p><span>Chọn Tệp</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u998" class="ax_default button">
+        <div id="u998_div" class=""></div>
+        <div id="u998_text" class="text ">
+          <p><span>Chọn ảnh bìa</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u999" class="ax_default primary_button">
+        <div id="u999_div" class=""></div>
+        <div id="u999_text" class="text ">
+          <p><span>Thêm </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1000" class="ax_default primary_button">
+        <div id="u1000_div" class=""></div>
+        <div id="u1000_text" class="text ">
+          <p><span>Quay lại</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
