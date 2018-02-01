@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Quote Machine</title>
+    <link rel="stylesheet" type="text/css" href="./randomquote.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="quote-box">
+        <div class="quote-text">
+            <i class="fa fa-quote-left"> </i>
+            <span id="text">
+                <p>test this is a test to see what happens with a lot of text</p>
+            </span>
+            <i class="fa fa-quote-right"> </i>
+        </div>
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+        <div class="buttons">
+            <a id="facequo" title="Post this quote to facebook" class="button" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a id="twitquo" title="Post this quote to twitter" class="button" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <button class="button" id="new-quote">New Quote</button>
+        </div>
+    </div>
+    <div class="footer">
+        by
+        <a href="">Thai Hoc</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./quotes.js"></script>
+    <script src="./randomquote.js"></script>
+</body>
+
+</html>
