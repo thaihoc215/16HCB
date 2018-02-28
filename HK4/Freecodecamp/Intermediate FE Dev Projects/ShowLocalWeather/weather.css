@@ -11,7 +11,32 @@ div{
 }
 
 body{
-    background-color: rgb(165, 153, 153);
-    color: #333;
-    font-weight: 400;
+    background-color: rgb(68, 68, 68);
+    color: rgb(228, 228, 228);
+    /* font-weight: 400; */
+    font-family: 'Roboto';
+}
+
+h1{
+    font-size: 5em;
+}
+
+header{
+    margin-top: 30px;
+}
+.status p{
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.tempunit{
+    cursor: pointer;
+    color: rgb(24, 48, 180);
+}
+.tempunit:hover{
+    color: rgb(43, 61, 158);
+}
+
+.all-icon{
+    margin-bottom: 20px;
 }

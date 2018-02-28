@@ -28,7 +28,8 @@ function getWeather(position){
             // $('#city').text(r)
             $('#city').text(rs.name);
             $('#country').text(', ' + rs.sys.country);
-            $('#temp').text(rs.main.temp) + " " + String.fromCharCode(176);
+            curTemp = rs.main.temp
+            $('#temp').text(curTemp + " " + String.fromCharCode(176));
             $("#tempunit").text(tempUnit);
             $('#descrip').text(rs.weather[0].main);
         }
@@ -37,4 +38,14 @@ function getWeather(position){
 
 $(document).ready(() => {
     getLocation();
+    $('#tempunit').on('click',()=>{
+        let newTempUnit = $('#tempunit').text() == 'C' ? 'F' : 'C';
+        $('#tempunit').text(newTempUnit);
+        if(newTempUnit == 'F'){
+            let fahTemp = Math.round(parseInt($("#temp").text()) * 1.8 + 32);
+            $('#temp').text(fahTemp + " " + String.fromCharCode(176));
+        } else{
+            $('#temp').text(curTemp + " " + String.fromCharCode(176));
+        }
+    });
 });
