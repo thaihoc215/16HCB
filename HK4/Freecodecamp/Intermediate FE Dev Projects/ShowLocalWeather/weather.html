@@ -6,21 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="text/css" rel="stylesheet" href="./weather.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./weather.css">
     <title>Show Local Weather</title>
 </head>
 <body>
     
     <div class="container">
         <div class="row">
-            <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1>Challenge</h1>
-                <h1>Weather APP</h1>
+            <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <h1>Thai Hoc FreeCodeCamp Challenge</h1>
+                <h1>Weather API</h1>
             </header>
             
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                <p><span id="city">TPHCM</span> <span id="country">VN</span></p>
-                <p><span id="temp">Temp</span> <span id="tempunit">TempUnit</span></p>
-                <p id="descrip">Sunny</p>
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="text-center status">
+                    <p><span id="city">TPHCM</span> <span id="country">VN</span></p>
+                    <p>
+                        <span id="temp">Temp</span> 
+                        <span class="tempunit" id="tempunit">TempUnit</span>
+                    </p>
+                    <p id="descrip">Sunny</p>
+                </div>
+                
+                <!-- show the icon depend temperature -->
+                <div class="text-center all-icon">
+                    <div class="icon sun-shower hide ">
+                        <div class="cloud"></div>
+                        <div class="sun">
+                            <div class="rays"></div>
+                        </div>
+                        <div class="rain"></div>
+                    </div>
+                    <div class="icon thunder-storm hide thunderstom">
+                        <div class="cloud"></div>
+                        <div class="lightning">
+                            <div class="bolt"></div>
+                            <div class="bolt"></div>
+                        </div>
+                    </div>
+                    <div class="icon cloudy hide clouds">
+                        <div class="cloud"></div>
+                        <div class="cloud"></div>
+                    </div>
+                    <div class="icon flurries hide snow">
+                        <div class="cloud"></div>
+                        <div class="snow">
+                            <div class="flake"></div>
+                            <div class="flake"></div>
+                        </div>
+                    </div>
+                    <div class="icon sunny hide clear">
+                        <div class="sun">
+                            <div class="rays"></div>
+                        </div>
+                    </div>
+                    <div class="icon rainy hide rain">
+                        <div class="cloud"></div>
+                        <div class="rain"></div>
+                    </div>
+                </div>
             </div>
             
         </div>
