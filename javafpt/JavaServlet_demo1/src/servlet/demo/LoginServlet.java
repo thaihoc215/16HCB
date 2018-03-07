@@ -39,40 +39,37 @@ public class LoginServlet extends HttpServlet {
 	 * @see Servlet#destroy()
 	 */
 	public void destroy() {
-		// TODO Auto-generated method stub
 	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-		response.setContentType( "text/html" );
-	      PrintWriter out = response.getWriter();
-	      
-	      // send XHTML page to client
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
 
-	      // start XHTML document
-	      out.println( "<?xml version = \"1.0\"?>" );
+		// send XHTML page to client
 
-	      out.println( "<!DOCTYPE html PUBLIC \"-//W3C//DTD " +
-	         "XHTML 1.0 Strict//EN\" \"http://www.w3.org" +
-	         "/TR/xhtml1/DTD/xhtml1-strict.dtd\">" );
+		// start XHTML document
+		out.println("<?xml version = \"1.0\"?>");
 
-	      out.println(
-	         "<html xmlns = \"http://www.w3.org/1999/xhtml\">" );
+		out.println("<!DOCTYPE html PUBLIC \"-//W3C//DTD " + "XHTML 1.0 Strict//EN\" \"http://www.w3.org"
+				+ "/TR/xhtml1/DTD/xhtml1-strict.dtd\">");
 
-	      // head section of document
-	      out.println( "<head>" );
-	      out.println( "<title>A Simple Servlet Example</title>" );
-	      out.println( "</head>" );
+		out.println("<html xmlns = \"http://www.w3.org/1999/xhtml\">");
 
-	      // body section of document
-	      out.println( "<body>" );
-	      out.println( "<h1>Welcome to Servlets!</h1>" );
-	      //login form
-	      out.println("<form action='" + request.getContextPath() + "/Login' method = 'POST'" );
+		// head section of document
+		out.println("<head>");
+		out.println("<title>A Simple Servlet Example</title>");
+		out.println("</head>");
+
+		// body section of document
+		out.println("<body>");
+		out.println("<h1>Welcome to Servlets!</h1>");
+		// login form
+		out.println("<form action='" + request.getContextPath() + "/Login' method = 'POST'");
 		out.println("<table>");
 		out.println("<tr>");
 		out.println("<td>Username:</td>");
@@ -89,50 +86,47 @@ public class LoginServlet extends HttpServlet {
 		out.println("</tr>");
 		out.println("</body>");
 
-	      // end XHTML document
-	      out.println( "</html>" );
-	      out.close();  // close stream to complete the page
+		// end XHTML document
+		out.println("</html>");
+		out.close(); // close stream to complete the page
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-//		doGet(request, response);
-		String userName = request.getParameter( "userName" );
-		String password = request.getParameter( "password" );
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// doGet(request, response);
+		String userName = request.getParameter("userName");
+		String password = request.getParameter("password");
 
-	      response.setContentType( "text/html" );
-	      PrintWriter out = response.getWriter();
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
 
-	      // send XHTML document to client
+		// send XHTML document to client
 
-	      // start XHTML document
-	      out.println( "<?xml version = \"1.0\"?>" );
+		// start XHTML document
+		out.println("<?xml version = \"1.0\"?>");
 
-	      out.println( "<!DOCTYPE html PUBLIC \"-//W3C//DTD " +
-	         "XHTML 1.0 Strict//EN\" \"http://www.w3.org" +
-	         "/TR/xhtml1/DTD/xhtml1-strict.dtd\">" );
+		out.println("<!DOCTYPE html PUBLIC \"-//W3C//DTD " + "XHTML 1.0 Strict//EN\" \"http://www.w3.org"
+				+ "/TR/xhtml1/DTD/xhtml1-strict.dtd\">");
 
-	      out.println(
-	         "<html xmlns = \"http://www.w3.org/1999/xhtml\">" );
+		out.println("<html xmlns = \"http://www.w3.org/1999/xhtml\">");
 
-	      // head section of document
-	      out.println( "<head>" );
-	      out.println(
-	         "<title>Processing get requests with data</title>" );
-	      out.println( "</head>" );
+		// head section of document
+		out.println("<head>");
+		out.println("<title>Processing get requests with data</title>");
+		out.println("</head>");
 
-	      // body section of document
-	      out.println( "<body>" );
-	      out.println( "<h1>Hello " + userName + "- Password is " + password + ",<br />" );
-	      out.println( "Welcome to Servlets!</h1>" );
-	      out.println( "</body>" );
+		// body section of document
+		out.println("<body>");
+		out.println("<h1>Hello " + userName + "- Password is " + password + ",<br />");
+		out.println("Welcome to Servlets!</h1>");
+		out.println("</body>");
 
-	      // end XHTML document
-	      out.println( "</html>" );
-	      out.close();  // close stream to complete the page
+		// end XHTML document
+		out.println("</html>");
+		out.close(); // close stream to complete the page
 	}
 
 }
