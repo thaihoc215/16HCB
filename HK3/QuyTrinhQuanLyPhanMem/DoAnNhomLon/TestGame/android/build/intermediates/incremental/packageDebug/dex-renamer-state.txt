@@ -1,0 +1,4 @@
+#Wed Oct 25 00:12:52 ICT 2017
+base.0=E\:\\STUDY\\AllLearnWork\\School\\16HCB1\\16HCB\\HK3\\QuyTrinhQuanLyPhanMem\\DoAnNhomLon\\TestGame\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=E\:\\STUDY\\AllLearnWork\\School\\16HCB1\\16HCB\\HK3\\QuyTrinhQuanLyPhanMem\\DoAnNhomLon\\TestGame\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
