@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\HOCHNT\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype\1.9.7\aa953bdba7adc9c8f301274ddc797705460565ab\gdx-freetype-1.9.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aa953bdba7adc9c8f301274ddc797705460565ab">
+        <dex dex="E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\QuyTrinhQuanLyPhanMem\DoAnNhomLon\TestGame\android\build\intermediates\pre-dexed\debug\gdx-freetype-1.9.7_da5f74c2883ce08e5860a23958c9d520e9ca31e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\QuyTrinhQuanLyPhanMem\DoAnNhomLon\TestGame\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aa26ce55a1d4fe7cec73ead156c40dd6d1d0d5f5">
+        <dex dex="E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\QuyTrinhQuanLyPhanMem\DoAnNhomLon\TestGame\android\build\intermediates\pre-dexed\debug\core-1.0_ca01d24a8626df990a7b48015e14d2b2b2f7464b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HOCHNT\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.7\ad5b0c9246497c2141580f26ad82f51ecc9879e5\gdx-box2d-1.9.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ad5b0c9246497c2141580f26ad82f51ecc9879e5">
+        <dex dex="E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\QuyTrinhQuanLyPhanMem\DoAnNhomLon\TestGame\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.9.7_97cc091d5b920f0e6f112acad2c72ed770da679c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HOCHNT\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.7\8a021ba0bb6555c25dfc272697d379215aa05ed1\gdx-1.9.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8a021ba0bb6555c25dfc272697d379215aa05ed1">
+        <dex dex="E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\QuyTrinhQuanLyPhanMem\DoAnNhomLon\TestGame\android\build\intermediates\pre-dexed\debug\gdx-1.9.7_738c2f21061ce3ea8aa7a113bf765802380b1413.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HOCHNT\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.7\884a964d5a09643269390bdc4d30fc7bf8b0b9eb\gdx-backend-android-1.9.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="884a964d5a09643269390bdc4d30fc7bf8b0b9eb">
+        <dex dex="E:\STUDY\AllLearnWork\School\16HCB1\16HCB\HK3\QuyTrinhQuanLyPhanMem\DoAnNhomLon\TestGame\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.7_a47cb866691e3260eb1e8f0bb772cfd57dc4afe8.jar" />
+    </item>
+
+</items>
