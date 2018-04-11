@@ -38,12 +38,13 @@
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: white;
+    color: black;
     font-size: 20px;
 }
 
 .navbar.navbar-inverse.navbar-fixed-top {
-    background-color: #be3636;
+    background-color: rgb(157, 183, 245);
+    /* background-color: #be3636; */
     height: 60px;
 }
 
@@ -67,7 +68,8 @@
 footer {
     margin: 0px;
     height: 250px;
-    background-color: #be3636;
+    background-color:  rgb(157, 183, 245);
+    /* background-color: #be3636; */
     color: white;
 }
 
@@ -871,13 +873,13 @@ body {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1dbc53+0,#1dbc53+100 */
     background: #da4747;
     /* Old browsers */
-    background: -moz-linear-gradient(top, #da4747 0%, #be3636 100%);
+    background: -moz-linear-gradient(top, #6777d3 0%,    100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #da4747 0%, #be3636 100%);
+    background: -webkit-linear-gradient(top, #6777d3 0%, #5f75d8 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #da4747 0%, #be3636 100%);
+    background: linear-gradient(to bottom, #6777d3 0%, #5f75d8 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#da4747', endColorstr='#be3636', GradientType=0);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6777d3', endColorstr='#5f75d8', GradientType=0);
     /* IE6-9 */
     height: 100%;
     text-align: center;
