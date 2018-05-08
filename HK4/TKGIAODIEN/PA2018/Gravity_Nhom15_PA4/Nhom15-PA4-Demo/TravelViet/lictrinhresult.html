@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Lich trinh du lich</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+    <!-- my css -->
+    <link href="mycss/style.css" rel="stylesheet">
+    <link href="mycss/footerstyle.css" rel="stylesheet">
+    <link href="mycss/flexslider.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="myjs/RateIt/rateit.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu/css/style.css">
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="container" style="width: 1500px">
+            <section id="nav-test">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="image/logo.png" align="middle" />
+                    </a>
+                </div>
+                <div id="nav-container">
+                    <ul>
+                        <li class="nav-li">
+                            <a href="./index.html active-nav">Trang chủ</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="./baiviet.html">Bài Viết</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="./laplichtrinh.html">Lập Lịch Trình</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="./dangky.html">Đăng Ký</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="./dangnhap.html">Đăng nhập</a>
+                        </li>
+        
+                    </ul>
+                    <div id="line"></div>
+                </div>
+                <div class="input-group" id="adv-search">
+                        <input type="text" class="form-control" placeholder="Địa điểm tìm kiếm..." style="width:100%">
+                        <div class="input-group-btn">
+                            <div class="btn-group" role="group">
+                                <div class="dropdown dropdown-lg">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-filter" aria-hidden="true"></i> &nbsp;Mở rộng</button>
+                                    <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <!-- tabs left -->
+                                        <form class="form-horizontal" role="form">
+                                            <div class="tabbable tabs-left">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active" tab_id="a">
+                                                        <a href="#a" data-toggle="tab">
+                                                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Đối tượng</a>
+                                                    </li>
+                                                    <li tab_id="b">
+                                                        <a href="#b" data-toggle="tab">
+                                                            <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Khu Vực</a>
+                                                    </li>
+                                                    <li tab_id="c">
+                                                        <a href="#c" data-toggle="tab">
+                                                            <i class="glyphicon glyphicon-road" aria-hidden="true"></i>&nbsp;&nbsp;Địa hình</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active col-md-12" id="a">
+                                                        <div class="checkbox checkbox-success col-md-12 listdoituong">
+                                                            <div class="col-md-12">
+                                                                <div class="col-md-4">
+                                                                    <input id="checkboxphuot" type="checkbox" name="Bạn bè">
+                                                                    <label for="checkboxphuot">Phượt thủ</label>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <input id="checkboxcap" type="checkbox" name="Cặp đôi">
+                                                                    <label for="checkboxcap">Cặp đôi</label>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <input id="checkboxgiadinh" type="checkbox" name="Gia đình">
+                                                                    <label for="checkboxgiadinh">Gia đình</label>
+                                                                </div>
+                
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="col-md-4">
+                                                                    <input id="checkboxbanbe" type="checkbox" name="Bạn bè">
+                                                                    <label for="checkboxbanbe">Nhóm bạn bè</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane col-md-12" id="b">
+                                                        <div class="checkbox checkbox-success col-md-12 listtinhthanh">
+                                                            <div class="col-md-12">
+                                                                <div class="col-md-4">
+                                                                    <input id="checkboxtphcm" type="checkbox" name="TP.HCM">
+                                                                    <label for="checkboxtphcm">Miền Bắc</label>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <input id="checkboxhanoi" type="checkbox" name="Hà Nội">
+                                                                    <label for="checkboxhanoi">Miền Trung</label>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <input id="checkboxhue" type="checkbox" name="Huế">
+                                                                    <label for="checkboxhue">Miền Nam</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane col-lg-12" id="c">
+                                                        <div class="checkbox checkbox-success col-md-12 listdiahinh">
+                                                            <div class="col-md-12">
+                                                                <div class="col-md-4">
+                                                                    <input id="111" type="checkbox" name="Núi">
+                                                                    <label for="111">Núi</label>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <input id="112" type="checkbox" name="Biển">
+                                                                    <label for="112">Biển</label>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <input id="113" type="checkbox" name="Đồng Bằng">
+                                                                    <label for="113">Đồng Bằng</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="col-md-4">
+                                                                    <input id="114" type="checkbox" name="Sa Mạc">
+                                                                    <label for="114">Sa Mạc</label>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <input id="115" type="checkbox" name="Thung Lũng">
+                                                                    <label for="115">Thung Lũng</label>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <input id="116" type="checkbox" name="Hang Động">
+                                                                    <label for="116">Hang Động</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /tabs -->
+                                            <div class="search-action col-md-12">
+                                                <button class="btn btn-success btntimkiem" id="btnExtendSearch">Tìm kiếm</button>
+                                                <button class="btn btn-danger btnxoaboloc">Xóa tùy chọn</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--Button Search-->
+                                <button type="button" class="btn btn-default" id="btnSearch">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        
+        </div>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:70px;overflow:hidden;visibility:hidden;">
+    </div>
+    <section>
+        <div class="container-fluid">
+            <div class="row" style="border: 1px solid #f1f1f1; height:600px; padding: 5px 0px">
+                <div class="col-md-2">
+                </div>
+
+                <div class="col-md-8">
+                    <div class="filter col-md-12">
+                        <div class="head-result d_resultfilter">
+                            <div class="filter-count">
+                                Lập lịch trình >>
+                            </div>
+                            <div class="filter-status-count">
+                                Chi tiết lịch trình
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row thongtincoban" style="margin-bottom: 30px;position: relative;" itemscope="" itemtype="http://data-vocabulary.org/Product">
+                        <div class="tt col-xs-10">
+                            <div style="font-weight: bold;font-size:18px;line-height: 22px;padding: 15px 80px 15px 15px;background:#f5f4ef;" class="tentour">
+                                <h1 itemprop="name">Dự kiến:Thành Phố HCM - Nha Trang - Hội An - Đà Nẵng - Huế</h1>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="socialBox">
+                                    <div class="tw">
+                                        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
+                                            title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.8e64fb971a1b22efbf633db166113ae6.vi.html#dnt=false&amp;id=twitter-widget-0&amp;lang=vi&amp;original_referer=https%3A%2F%2Ftravel.com.vn%2FtourNDSGN307-004-290518BL-D%2Fhue-dong-thien-duong-cu-lao-cham-hoi-an-ba-na-da-nang-khach-san-4sao-2-dem-tour-tieu-chuan-.aspx&amp;size=m&amp;text=Hu%E1%BA%BF%20-%20%C4%90%E1%BB%99ng%20Thi%C3%AAn%20%C4%90%C6%B0%E1%BB%9Dng%20-%20C%C3%B9%20Lao%20Ch%C3%A0m%20-%20H%E1%BB%99i%20An%20-%20B%C3%A0%20N%C3%A0%20-%20%C4%90%C3%A0%20N%E1%BA%B5ng%20(%20Kh%C3%A1ch%20s%E1%BA%A1n%204*%202%20%C4%91%C3%AAm.%20Tour%20Ti%C3%AAu%20Chu%E1%BA%A9n)%20.%20M%C3%A3%20tour%20NDSGN307-004-290518BL-D&amp;time=1525677239812&amp;type=share&amp;url=https%3A%2F%2Ftravel.com.vn%2FtourNDSGN307-004-290518BL-D%2Fhue-dong-thien-duong-cu-lao-cham-hoi-an-ba-na-da-nang-khach-san-4sao-2-dem-tour-tieu-chuan-.aspx"
+                                            style="position: static; visibility: visible; width: 60px; height: 20px;" data-url="https://travel.com.vn/tourNDSGN307-004-290518BL-D/hue-dong-thien-duong-cu-lao-cham-hoi-an-ba-na-da-nang-khach-san-4sao-2-dem-tour-tieu-chuan-.aspx"></iframe>
+                                    </div>
+
+                                    <div class="fb">
+                                        <div class="fb-like fb_iframe_widget" data-href="https://travel.com.vn/tourNDSGN307-004-290518BL-D/hue-dong-thien-duong-cu-lao-cham-hoi-an-ba-na-da-nang-khach-san-4sao-2-dem-tour-tieu-chuan-.aspx"
+                                            data-send="true" data-layout="button_count" data-width="150" data-show-faces="true"
+                                            fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=486170608123974&amp;container_width=120&amp;href=https%3A%2F%2Ftravel.com.vn%2FtourNDSGN307-004-290518BL-D%2Fhue-dong-thien-duong-cu-lao-cham-hoi-an-ba-na-da-nang-khach-san-4sao-2-dem-tour-tieu-chuan-.aspx&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=true&amp;show_faces=true&amp;width=150">
+                                            <span style="vertical-align: bottom; width: 106px; height: 20px;">
+                                                <iframe name="f5ca3e677bf924" width="150px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true"
+                                                    scrolling="no" allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                                    src="https://www.facebook.com/v2.6/plugins/like.php?app_id=486170608123974&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F2VRzCA39w_9.js%3Fversion%3D42%23cb%3Dfc5e89e63273f%26domain%3Dtravel.com.vn%26origin%3Dhttps%253A%252F%252Ftravel.com.vn%252Ff246fd45b37da4c%26relation%3Dparent.parent&amp;container_width=120&amp;href=https%3A%2F%2Ftravel.com.vn%2FtourNDSGN307-004-290518BL-D%2Fhue-dong-thien-duong-cu-lao-cham-hoi-an-ba-na-da-nang-khach-san-4sao-2-dem-tour-tieu-chuan-.aspx&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=true&amp;show_faces=true&amp;width=150"
+                                                    style="border: none; visibility: visible; width: 106px; height: 20px;" class=""></iframe>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="gl">
+                                        <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;">
+                                            <iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;"
+                                                tabindex="0" vspace="0" width="100%" id="I0_1525677237880" name="I0_1525677237880"
+                                                src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;size=medium&amp;annotation=bubble&amp;origin=https%3A%2F%2Ftravel.com.vn&amp;url=https%3A%2F%2Ftravel.com.vn%2FtourNDSGN307-004-290518BL-D%2Fhue-dong-thien-duong-cu-lao-cham-hoi-an-ba-na-da-nang-khach-san-4sao-2-dem-tour-tieu-chuan-.aspx&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.vi.AUObnV6Ebwk.O%2Fm%3D__features__%2Fam%3DAQE%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCNEUWT6BWtUM3CMKwxVlx9KW64xrQ#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1525677237880&amp;_gfid=I0_1525677237880&amp;parent=https%3A%2F%2Ftravel.com.vn&amp;pfname=&amp;rpctoken=15191661"
+                                                data-gapiattached="true" title="G+"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row thongtinchitiet" style="margin-bottom: 30px;">
+
+                        <div style="position: relative;">
+                            <div class="tab-menu col-xs-12 mg-bot10 hidden-xs" id="jumtome">
+                                <ul class="nav nav-tabs">
+                                    <li id="ctt" class="active">
+                                        <a href="#chuongtrinhtour">Lịch trình dự kiến</a>
+                                    </li>
+                                    <li id="ctiettour" class="">
+                                        <a href="#chitiettour">Thông tin hỗ trợ</a>
+                                    </li>
+                                    <li id="ly" class="">
+                                        <a href="#diadiemdiqua">Địa điểm đi qua</a>
+                                    </li>
+                                    <li id="phkh" class="">
+                                        <a href="#phanhoikhachhang">Ý kiến người dùng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="noidungtour col-xs-12 mg-bot10">
+                            <div style="margin: 0px 0px 10px 0px; background: #f5f4ef;">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border-right">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <section class="chuongtrinhtour item-tour-title align-cc" id="chuongtrinhtour">
+                                                        <div style="margin-bottom: 30px;margin-top: 20px">
+                                                                <div class="text-center">
+                                                                    <span class="title">LỊCH TRÌNH DỰ KIẾN</span>
+                                                                </div>
+                                                            </div>
+                                                    <div>
+                                                            <div class="col-md-6 col-sm-3 col-xs-12 mg-bot15" style="position:relative;">
+                                                                    <a href="https://www.maps.google.com" title="Huế" target="_blank">
+                                                                        <div style="position:relative;">
+                                                                            <img src="./img/lichtrinh.PNG" alt="Huế" class="img-responsive">
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                        <div class="col-xs-12">
+                                                            <div class="row ngaytour mg-bot15">
+                                                                <div class="col-sm-10">
+                                                                    <div>
+                                                                        <div class="date-num col-md-2 col-sm-2 col-xs-12 mg-bot5">Ngày 1</div>
+                                                                        <div class="tenchuongtrinh col-md-10 col-sm-10 col-xs-12">TP.HCM - HUẾ</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div class="text-right toggle-div" style="padding: 5px; color: #4c3cdd">
+                                                                        <span class="thugon1 " onclick="ThuGon('1')">Thu gọn &nbsp;
+                                                                            <i class="fa fa-arrow-up"></i>
+                                                                        </span>
+                                                                        <span class="morong1 hidden" onclick="MoRong('1')">Mở rộng &nbsp;
+                                                                            <i class="fa fa-arrow-down"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p class="line"></p>
+                                                                </div>
+                                                                <div class="col-xs-12 item-noidungchuongtrinh1 ">
+                                                                    <div class="noidungchuongtrinh1 ">
+                                                                        <div style="text-align: justify;">
+                                                                            -
+                                                                            <strong>Lăng Tự Đức </strong>- Nơi có phong cảnh sơn
+                                                                            thủy hữu tình và được cho là một trong những
+                                                                            lăng tẩm có kiến trúc đẹp nhất của các vua chúa
+                                                                            nhà Nguyễn.</div>
+                                                                        <div>
+                                                                            -
+                                                                            <strong>Đại Nội</strong> - Hoàng cung xưa của 13 vị vua
+                                                                            triều Nguyễn, tham quan Ngọ Môn, Điện Thái Hòa,
+                                                                            Tử Cấm Thành, Thế Miếu, Hiển Lâm Các, Cửu Đình.</div>
+                                                                        <div>
+                                                                            -
+                                                                            <strong>Chùa Thiên Mụ </strong>- Ngôi chùa được xem là
+                                                                            cổ nhất ở Huế và là nơi lưu giữ nhiều cổ vật
+                                                                            quý giá không chỉ về mặt lịch sử mà còn cả về
+                                                                            nghệ thuật.</div>
+                                                                        <div>
+                                                                            ..............</div>
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row ngaytour mg-bot15">
+                                                            <div class="col-sm-10">
+                                                                <div>
+                                                                    <div class="date-num col-md-2 col-sm-2 col-xs-12 mg-bot5">Ngày 2</div>
+                                                                    <div class="tenchuongtrinh col-md-10 col-sm-10 col-xs-12">HUẾ - ĐỘNG THIÊN ĐƯỜNG</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <div class="text-right toggle-div" style="padding: 5px; color: #4c3cdd">
+                                                                    <span class="thugon2 hidden" onclick="ThuGon('2')">Thu gọn &nbsp;
+                                                                        <i class="fa fa-arrow-up"></i>
+                                                                    </span>
+                                                                    <span class="morong2 " onclick="MoRong('2')">Mở rộng &nbsp;
+                                                                        <i class="fa fa-arrow-down"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                <p class="line"></p>
+                                                            </div>
+                                                            <div class="col-xs-12 item-noidungchuongtrinh2 hidden">
+                                                                <div class="noidungchuongtrinh1 ">
+                                                                    <div style="text-align: justify;">
+                                                                        <div>
+                                                                            Nội dung du lịch ngày 2...</div>
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row ngaytour mg-bot15">
+                                                            <div class="col-sm-10">
+                                                                <div>
+                                                                    <div class="date-num col-md-2 col-sm-2 col-xs-12 mg-bot5">Ngày 3</div>
+                                                                    <div class="tenchuongtrinh col-md-10 col-sm-10 col-xs-12">QUẢNG BÌNH - LA VANG - LĂNG CÔ - ĐÀ NẴNG
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <div class="text-right toggle-div" style="padding: 5px; color: #4c3cdd">
+                                                                    <span class="thugon3 hidden" onclick="ThuGon('3')">Thu gọn &nbsp;
+                                                                        <i class="fa fa-arrow-up"></i>
+                                                                    </span>
+                                                                    <span class="morong3 " onclick="MoRong('3')">Mở rộng &nbsp;
+                                                                        <i class="fa fa-arrow-down"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                <p class="line"></p>
+                                                            </div>
+                                                            <div class="col-xs-12 item-noidungchuongtrinh3 hidden">
+                                                                <div class="noidungchuongtrinh1 ">
+
+
+
+
+
+                                                                    <div style="text-align: justify;">
+                                                                        <div>
+                                                                            Nội dung du lịch ngày 3...</div>
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row ngaytour mg-bot15">
+                                                            <div class="col-sm-10">
+                                                                <div>
+                                                                    <div class="date-num col-md-2 col-sm-2 col-xs-12 mg-bot5">Ngày 4</div>
+                                                                    <div class="tenchuongtrinh col-md-10 col-sm-10 col-xs-12">ĐÀ NẴNG - CÙ LAO CHÀM - HỘI AN</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <div class="text-right toggle-div" style="padding: 5px; color: #4c3cdd">
+                                                                    <span class="thugon4 hidden" onclick="ThuGon('4')">Thu gọn &nbsp;
+                                                                        <i class="fa fa-arrow-up"></i>
+                                                                    </span>
+                                                                    <span class="morong4 " onclick="MoRong('4')">Mở rộng &nbsp;
+                                                                        <i class="fa fa-arrow-down"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                <p class="line"></p>
+                                                            </div>
+                                                            <div class="col-xs-12 item-noidungchuongtrinh4 hidden">
+                                                                <div class="noidungchuongtrinh1 ">
+                                                                    <div style="text-align: justify;">
+                                                                        <div>Nội dung du lịch ngày 4</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row ngaytour mg-bot15">
+                                                            <div class="col-sm-10">
+                                                                <div>
+                                                                    <div class="date-num col-md-2 col-sm-2 col-xs-12 mg-bot5">Ngày 5</div>
+                                                                    <div class="tenchuongtrinh col-md-10 col-sm-10 col-xs-12">ĐÀ NẴNG – BÀ NÀ - TP.HCM</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <div class="text-right toggle-div" style="padding: 5px; color: #4c3cdd">
+                                                                    <span class="thugon5 hidden" onclick="ThuGon('5')">Thu gọn &nbsp;
+                                                                        <i class="fa fa-arrow-up"></i>
+                                                                    </span>
+                                                                    <span class="morong5 " onclick="MoRong('5')">Mở rộng &nbsp;
+                                                                        <i class="fa fa-arrow-down"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12">
+                                                                <p class="line"></p>
+                                                            </div>
+                                                            <div class="col-xs-12 item-noidungchuongtrinh5 hidden">
+                                                                <div class="noidungchuongtrinh1 ">
+
+
+
+
+
+                                                                    <div style="text-align: justify;">
+                                                                        <div>
+                                                                            Nội dung du lịch ngày 5...</div>
+
+                                                                    </div>
+
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="diadiemthamquan">Trải nghiệm du lịch với hình ảnh 360°</p>
+                                                        <div style="background: #fff;padding:25px;" class="hinh360 frame-diemthamquan mg-bot20">
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/da-nang/bien-my-khe/')">Biển Mỹ Khê</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/da-nang/cau-rong/')">Cầu Rồng</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/da-nang/chua-linh-ung/')">Chùa Linh Ứng</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/da-nang/ngu-hanh-son/')">Ngũ Hành Sơn</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/hue/an-hien-garden/')">An Hien Garden</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/hue/cau-truong-tien/')">Cầu Trường Tiền</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/hue/chua-thien-mu/')">Chùa Thiên Mụ</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/hue/dai-noi-kinh-thanh-hue/')">Đại nội kinh thành Huế</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/hue/khu-pho-tay/')">Khu phố Tây</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/hue/lang-co/')">Lăng Cô</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/hue/lang-khai-dinh/')">Lăng Khải Định</a>
+                                                            <a style="cursor:pointer;" onclick="LoadImage360('https://vr360.vietravel.net/vietnam/hue/lang-tu-duc/')">Lăng Tự Đức</a>
+
+                                                            <div id="divImage360Url" style="display:none;padding-top:10px">
+                                                                <span id="spanImage360Url"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                            <div class="frame-diemthamquan mg-bot20" id="diadiemdiqua">
+                                                <div style="margin-bottom: 30px;margin-top: 20px">
+                                                    <div class="text-center">
+                                                        <span class="title">ĐỊA ĐIỂM ĐI QUA</span>
+                                                    </div>
+                                                </div>
+                                                <div id="myCarousel" class="carousel slide">
+                                                    <div class="carousel-inner">
+                                                        <div class="item item-tuyendiem active">
+                                                            <div class="row" style="text-align: center">
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 mg-bot15" style="position:relative;">
+                                                                    <a href="/mien-trung/tour-hue.aspx" title="Huế" target="_blank">
+                                                                        <div style="position:relative;">
+                                                                            <img src="https://travel.com.vn/Images/destination/dc_150909_136899_ngomonhue1967jpg.jpg" alt="Huế" class="img-responsive">
+                                                                            <div class="tentuyendiem">Huế</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 mg-bot15" style="position:relative;">
+                                                                    <a href="/mien-trung/tour-chua-thien-mu.aspx" title="Chùa Thiên Mụ" target="_blank">
+                                                                        <div style="position:relative;">
+                                                                            <img src="https://travel.com.vn/Images/destination/dc_150909_chuaThienMu.jpg" alt="Chùa Thiên Mụ" class="img-responsive">
+                                                                            <div class="tentuyendiem">Chùa Thiên Mụ</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 mg-bot15" style="position:relative;">
+                                                                    <a href="/mien-trung/tour-song-huong.aspx" title="Sông Hương" target="_blank">
+                                                                        <div style="position:relative;">
+                                                                            <img src="https://travel.com.vn/Images/destination/dc_150909_songHuong.jpg" alt="Sông Hương" class="img-responsive">
+                                                                            <div class="tentuyendiem">Sông Hương</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 mg-bot15" style="position:relative;">
+                                                                    <a href="/mien-trung/tour-dong-thien-duong.aspx" title="Động Thiên Đường" target="_blank">
+                                                                        <div style="position:relative;">
+                                                                            <img src="https://travel.com.vn/Images/destination/dc_150909_ThienDuong.jpg" alt="Động Thiên Đường" class="img-responsive">
+                                                                            <div class="tentuyendiem">Động Thiên Đường</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 mg-bot15" style="position:relative;">
+                                                                    <a href="/mien-trung/tour-quang-tri.aspx" title="Quảng Trị" target="_blank">
+                                                                        <div style="position:relative;">
+                                                                            <img src="https://travel.com.vn/Images/destination/dc_150909_ThanhCoQT.jpg" alt="Quảng Trị" class="img-responsive">
+                                                                            <div class="tentuyendiem">Quảng Trị</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 mg-bot15" style="position:relative;">
+                                                                    <a href="/mien-trung/tour-bien-lang-co.aspx" title="Biển Lăng Cô" target="_blank">
+                                                                        <div style="position:relative;">
+                                                                            <img src="https://travel.com.vn/Images/destination/dc_150909_LangCo.jpg" alt="Biển Lăng Cô" class="img-responsive">
+                                                                            <div class="tentuyendiem">Biển Lăng Cô</div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-3 col-xs-12 mg-bot15" style="position:relative;">
+                                                                    <a href="/mien-trung/tour-son-tra-.aspx" title="Sơn Trà " target="_blank">
+                                                                        <div style="position:relative;">
+                                                                            <img src="https://travel.com.vn/Images/destination/dc_150910_SonTra.jpg" alt="Sơn Trà " class="img-responsive">
+                                                                            <div class="tentuyendiem">Sơn Trà </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <section class="chitiettour item-tour-title align-cc" id="chitiettour">
+                                                <div style="margin-bottom: 30px;margin-top: 20px">
+                                                        <div class="text-center">
+                                                            <span class="title">THÔNG TIN HỖ TRỢ</span>
+                                                        </div>
+                                                    </div>
+                                                <div class="col-xs-12 main-content">
+                                                    <p style="text-transform: uppercase; color: #333; font-weight: bold; font-size: 15px; margin-bottom: 15px; margin-top: 10px">
+                                                        <i class="fa fa-plane" aria-hidden="true"></i>&nbsp;&nbsp;Thông tin chuyến bay</p>
+                                                    <table class="table table-bordered">
+                                                        <tbody style="font-size: 15px;">
+                                                            <tr>
+                                                                <td>Ngày đi: 29/05/2018 09:55</td>
+                                                                <td>Đến: 29/05/2018 11:45</td>
+                                                                <td>Chuyến bay: BL570</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Ngày về: 02/06/2018 15:45</td>
+                                                                <td>Đến: 02/06/2018 17:05</td>
+                                                                <td>Chuyến bay: BL587</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <div id="divThongTinKhachSan">
+                                                        <p style="text-transform: uppercase; color: #333; font-weight: bold; font-size: 15px; margin-bottom: 15px; margin-top: 10px">
+                                                            <i class="fa fa-building" aria-hidden="true"></i>&nbsp;&nbsp;Thông tin khách sạn</p>
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr style="font-weight: bold; font-size: 16px;">
+                                                                    <td>Tên khách sạn</td>
+                                                                    <td>Địa chỉ</td>
+                                                                    <td>Điện thoại</td>
+                                                                    <td>Website</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Midtown</td>
+                                                                    <td>Số 29 Đội Cung, Thành phố Huế, Tỉnh Thừa Thiên Huế</td>
+                                                                    <td>02346062888</td>
+                                                                    <td>www.midtownhotelhue.com</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Mường Thanh-Quảng Bình</td>
+                                                                    <td>119 Trương Pháp, Đồng Hới, Quảng Bình</td>
+                                                                    <td>0523811666</td>
+                                                                    <td>www.muongthanh.vn</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ocean Haven - Đà Nẵng</td>
+                                                                    <td>295-297 Hồ Nghinh, Phường Phước Mỹ, Quận Sơn Trà, Thành
+                                                                        phố Đà Nẵng</td>
+                                                                    <td>05113959955</td>
+                                                                    <td>www.oceanhavenhotel.com</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div id="divThongTinHDV">
+                                                        <p style="text-transform: uppercase; color: #333; font-weight: bold; font-size: 15px; margin-bottom: 15px; margin-top: 10px">
+                                                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Địa điểm ăn uống</p>
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr style="font-weight: bold; font-size: 16px;">
+                                                                    <td>Tên địa điểm</td>
+                                                                    <td>Địa chỉ</td>
+                                                                    <td>Điện thoại</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody style="font-size: 15px;">
+                                                                <tr>
+                                                                    <td data-title="Họ tên:">Quán ăn abc xyz</td>
+                                                                    <td data-title="Địa chỉ:">190 Pasteur, Ward 6, District 3, HCM City, Viet Nam</td>
+                                                                    <td data-title="Điện thoại:">0122354987</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <p style="text-transform: uppercase; color: #333; font-weight: bold; font-size: 15px; margin-bottom: 15px; margin-top: 10px">
+                                                        <i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;&nbsp;DỊCH VỤ TAXI &amp; Phụ thu phòng đơn</p>
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr style="font-weight: bold; font-size: 16px;">
+                                                                <td>Hãng Xe</td>
+                                                                <td>Số Điện Thoại</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody style="font-size: 15px;">
+                                                            <tr>
+                                                                <td data-title="Loại khách">Mai Linh</td>
+                                                                <td data-title="Giá tour">054 385685
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td data-title="Loại khách">Vinasun</td>
+                                                                <td data-title="Giá tour">054 385685
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <section class="phanhoikhachhang item-tour-title align-cc" id="phanhoikhachhang">
+                                                <div style="margin-bottom: 30px;margin-top: 20px">
+                                                        <div class="text-center">
+                                                            <span class="title">Ý KIẾN KHÁCH HÀNG (0)</span>
+                                                        </div>
+                                                    </div>
+                                            </section>
+                                            <div id="comment-list">
+
+
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 text-center mg-bot15">
+                                                    <input type="submit" value="Gửi ý kiến" class="btn btn-md btn-default" data-popup-opencomment="popup-show-udxComment" data-id="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <form action="/Comment/Reply" id="mainform" method="post">
+                                        <input name="__RequestVerificationToken" type="hidden" value="CqeHBzpBwNsvauAJV7O32rvud_hpn6HwNA7YqAd0KJIyCDknv2LaOhho2Dl2zcpTo7LHRGm5VVj--3v1mT4KRH_uyp7vesD828I8jBl4WDLM7xTUrjIcEqtKYAFTbLbBOY0gpHlCFi-g7JVKYvcPxrp389qyRJ-RoO_LpCv_9AM1">
+                                        <input id="HeaderTour" name="HeaderTour" type="hidden" value="NDSGN307">
+
+                                        <div class="p-udx" data-popup="popup-show-udxComment" style="z-index:999999">
+                                            <div class="popup-inner">
+                                                <div class="row">
+                                                    <div class="col-xs-12" style="margin: 10px 0px 20px 0px">
+                                                        <div class="row">
+                                                            <div class="col-md-12 mg-bot15">
+                                                                <h4 class="modal-title">Gửi ý kiến</h4>
+                                                                <div style="display:none">
+                                                                    <input type="text" id="ParentId" name="ParentId">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 mg-bot15">
+                                                                <input class="form-control input-md" id="UserName" name="UserName" placeholder="Họ tên(*)" required="required" type="text"
+                                                                    value="">
+                                                            </div>
+                                                            <div class="col-md-6 mg-bot15">
+                                                                <input class="form-control input-md" id="Email" name="Email" placeholder="Email(*)" required="required" type="email" value="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mg-bot15">
+                                                            <div class="col-md-12">
+                                                                <textarea class="form-control input-md" cols="20" id="Content" name="Content" placeholder="Ý kiến của bạn(*)" required="required"
+                                                                    row="3" rows="2"></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-12 text-center mg-bot15">
+                                                                <input type="submit" value="Gửi" id="btn_submitmainform" class="btn btn-md btn-default">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="popup-close" data-popup-close="popup-show-udxComment" href="#">x</a>
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row marginfooter">
+                    <div class="col-md-4">
+                        <p style="font-weight: bold; color: black">Liên hệ</p>
+                        <ul>
+                            <li style="margin-top: 10px;color:black">
+                                <span class="glyphicon glyphicon-home">&nbsp;</span>HCMUS - 227 Nguyễn Văn Cừ
+                                <br />P4, Q5 TP. Hồ Chí Minh</span>
+                            </li>
+                            <!-- <li><span>&nbsp;</span></li> -->
+                            <li style="margin-top: 10px;color:black">
+                                <span class="glyphicon glyphicon-phone">&nbsp;</span>012.234.10987</li>
+                            <!-- <li><span>&nbsp;</span></li> -->
+                            <li style="margin-top: 10px;color:black">
+                                <span class="glyphicon glyphicon-envelope">&nbsp;</span>
+                                <a style="color:black" href="mailto:thaihoc2105@gmail.com">thaihoc2105@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4" style="border-right: 1px solid #fff; border-left: 1px solid #fff;">
+                        <p style="font-weight: bold; color: black">Liên kết</p>
+                        <div class="col-md-6">
+                            <li style="margin-top: 10px;color:black">
+                                <a style="color:black" href="#">
+                                    <span>Trang chủ</span>
+                                </a>
+                            </li>
+                            <li style="margin-top: 10px;color:black">
+                                <a style="color:black" href="#">
+                                    <span>Địa điểm</span>
+                                </a>
+                            </li>
+                            <li style="margin-top: 10px;color:black">
+                                <a style="color:black" href="#">
+                                    <span>Giới thiệu</span>
+                                </a>
+                            </li>
+                            <li style="margin-top: 10px;color:black">
+                                <a style="color:black" href="#">
+                                    <span>Liên hệ</pan>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="col-md-6">
+                            <li style="margin-top: 10px;color:black">
+                                <a style="color:black" href="#">
+                                    <span>Bản đồ</span>
+                                </a>
+                            </li>
+                            <li style="margin-top: 10px;color:black">
+                                <a style="color:black" href="#">
+                                    <span>Tin tức</span>
+                                </a>
+                            </li>
+                            <li style="margin-top: 10px;color:black">
+                                <a style="color:black" href="#">
+                                    <span>Diễn đàn</span>
+                                </a>
+                            </li>
+                            <li style="margin-top: 10px;color:black">
+                                <a style="color:black" href="#">
+                                    <span>FAQ</span>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <p style="font-weight: bold; color: black">Thống kê</p>
+
+                        <li style="color:black">
+                            <span>Lượng khách truy cập: 20000</span>
+                        </li>
+                        <li style="color:black">
+                            <span>Online: 30</span>
+                        </li>
+
+                        <ul>
+                            <li style="color:black">
+                                <a class="fb" href="http://www.facebook.com" target="_blank">
+                                    <i></i>&nbsp;</a>
+                            </li>
+                            <li style="color:black">
+                                <a class="fb1" href="https://twitter.com" target="_blank">
+                                    <i></i>&nbsp;</a>
+                            </li>
+                            <li style="color:black">
+                                <a class="fb2" href="https://plus.google.com" target="_blank">
+                                    <i></i>&nbsp;</a>
+                            </li>
+                            <li style="color:black">
+                                <a class="fb3" href="https://www.snapchat.com/" target="_blank">
+                                    <i></i>&nbsp;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- my js -->
+        <script src="myjs/myjs.js"></script>
+        <!-- slider script -->
+        <script src="js/jssor.slider-23.1.5.mini.js" type="text/javascript"></script>
+        <script src="myjs/jquery.flexslider.js"></script>
+        <script src="myjs/RateIt/jquery.rateit.js"></script>
+        <script src="css/menu/js/index.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+
+                var jssor_1_SlideoTransitions = [
+                    [{
+                        b: 900,
+                        d: 2000,
+                        x: -379,
+                        e: {
+                            x: 7
+                        }
+                    }],
+                    [{
+                        b: 900,
+                        d: 2000,
+                        x: -379,
+                        e: {
+                            x: 7
+                        }
+                    }],
+                    [{
+                        b: -1,
+                        d: 1,
+                        o: -1,
+                        sX: 2,
+                        sY: 2
+                    }, {
+                        b: 0,
+                        d: 900,
+                        x: -171,
+                        y: -341,
+                        o: 1,
+                        sX: -2,
+                        sY: -2,
+                        e: {
+                            x: 3,
+                            y: 3,
+                            sX: 3,
+                            sY: 3
+                        }
+                    }, {
+                        b: 900,
+                        d: 1600,
+                        x: -283,
+                        o: -1,
+                        e: {
+                            x: 16
+                        }
+                    }]
+                ];
+
+                var jssor_1_options = {
+                    $AutoPlay: 1,
+                    $SlideDuration: 800,
+                    $SlideEasing: $Jease$.$OutQuint,
+                    $CaptionSliderOptions: {
+                        $Class: $JssorCaptionSlideo$,
+                        $Transitions: jssor_1_SlideoTransitions
+                    },
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$
+                    }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*responsive code begin*/
+                /*remove responsive code if you don't want the slider scales while window resizing*/
+                function ScaleSlider() {
+                    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                    if (refSize) {
+                        refSize = Math.min(refSize, 1920);
+                        jssor_1_slider.$ScaleWidth(refSize);
+                    } else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+                ScaleSlider();
+                $(window).bind("load", ScaleSlider);
+                $(window).bind("resize", ScaleSlider);
+                $(window).bind("orientationchange", ScaleSlider);
+                /*responsive code end*/
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+
+                LoadCoachTransportInfo();
+                LoadHotelInfo();
+                LoadTourGuideInfo();
+                LoadTourGuideTienInfo();
+
+                TourSimilarPrice();
+                TourSimilarDepartureDate();
+                TourSimilarDayOfTour();
+
+                //Thong tin lien he
+                if ('2' == 2) {
+                    LoadContentContact('divMienNam', 'lien-he-mien-nam');
+                } else {
+                    LoadContentContact('divMienNam', 'lien-he-mien-nam-en');
+                }
+            });
+
+            function ThuGon(index) {
+                $(".morong" + index).removeClass("hidden");
+                $(".thugon" + index).addClass("hidden");
+                $(".item-noidungchuongtrinh" + index).addClass("hidden");
+
+                CaculatorPosition();
+            }
+
+            function MoRong(index) {
+                $(".morong" + index).addClass("hidden");
+                $(".thugon" + index).removeClass("hidden");
+                $(".item-noidungchuongtrinh" + index).removeClass("hidden");
+
+                CaculatorPosition();
+            }
+
+            $(window).scroll(function () {
+                var aTop = $(window).height();
+                if ($(this).scrollTop() > (aTop - 300)) {
+                    $('.thongtinchitiet .tab-menu').addClass('stuck');
+                } else {
+                    $('.thongtinchitiet .tab-menu').removeClass('stuck');
+                    $('.align-cc').removeClass('pd-top65');
+                }
+            });
+            $("#ctt").click(function (event) {
+                $('.align-cc').addClass('pd-top65');
+                $('.thongtinchitiet .tab-menu ul.nav-tabs li').removeClass('active');
+                $('#ctt ').addClass('active');
+            });
+            $("#ctiettour").click(function (event) {
+                $('.align-cc').addClass('pd-top65');
+                $('.thongtinchitiet .tab-menu ul.nav-tabs li').removeClass('active');
+                $('#ctiettour ').addClass('active');
+            });
+            $("#ly").click(function (event) {
+                $('.align-cc').addClass('pd-top65');
+                $('.thongtinchitiet .tab-menu ul.nav-tabs li').removeClass('active');
+                $('#ly').addClass('active');
+            });
+            $("#tt").click(function (event) {
+                $('.align-cc').addClass('pd-top65');
+                $('.thongtinchitiet .tab-menu ul.nav-tabs li').removeClass('active');
+                $('#tt').addClass('active');
+            });
+            $("#phkh").click(function (event) {
+                $('.align-cc').addClass('pd-top65');
+                $('.thongtinchitiet .tab-menu ul.nav-tabs li').removeClass('active');
+                $('#phkh').addClass('active');
+            });
+            $("#adk").click(function (event) {
+                $('.align-cc').addClass('pd-top65');
+                $('.thongtinchitiet .tab-menu ul.nav-tabs li').removeClass('active');
+                $('#adk').addClass('active');
+            });
+            $("#lh").click(function (event) {
+                $('.align-cc').addClass('pd-top65');
+                $('.thongtinchitiet .tab-menu ul.nav-tabs li').removeClass('active');
+                $('#lh').addClass('active');
+            });
+            $("#nk").click(function (event) {
+                $('.align-cc').addClass('pd-top65');
+                $('.thongtinchitiet .tab-menu ul.nav-tabs li').removeClass('active');
+                $('#nk').addClass('active');
+            });
+
+            function LoadImage360(Image360Url) {
+                $("#divImage360Url").show();
+                $("#spanImage360Url").html("<iframe width='780' height='400' allowfullscreen='allowfullscreen' src='" +
+                    Image360Url + "'</iframe>");
+            }
+        </script>
+        <script type="text/javascript">
+            ! function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                //----- OPEN
+                $('[data-popup-openComment]').on('click', function (
+                    e) {
+                    var id = $(this).attr('data-id');
+
+                    $('#ParentId').val(id);
+
+                    var targeted_popup_class = jQuery(this)
+                        .attr('data-popup-openComment');
+                    $('[data-popup="' +
+                        targeted_popup_class + '"]').fadeIn(
+                        350);
+
+                    e.preventDefault();
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $("#btn_submitmainform").click(function (e) {
+                $('#responseCaptcha').val(grecaptcha.getResponse());
+
+                var UserName = $('#UserName').val();
+                var Email = $('#Email').val();
+                var Content = $('#Content').val();
+                if (UserName == '' || Email == '' || Content == '') {
+                    alert('Vui lòng nhập thông tin');
+                } else {
+                    $.ajax({
+                        type: $('#mainform').attr('method'),
+                        url: $('#mainform').attr('action'),
+                        data: $('#mainform').serialize(),
+                        success: function (data) {
+
+                            appboy.getUser().setFirstName(
+                                UserName);
+                            appboy.getUser().setEmail(Email);
+
+
+                            alert(data);
+                            LoadComment('NDSGN307', 1);
+
+                            $('#UserName').val('');
+                            $('#Email').val('');
+                            $('#Content').val('');
+                        }
+                    });
+                }
+                e.preventDefault();
+                return false;
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var HeaderTour = 'NDSGN307';
+
+                LoadComment(HeaderTour, 1);
+
+                $('.pager_simple_orange a').click(function () {
+                    var page = parseInt(this.textContent);
+
+                    LoadComment(HeaderTour, page);
+
+                    $('.pager_simple_orange a').removeClass('active');
+                    $('.pager_simple_orange td').removeClass('active');
+                    $(this).addClass("active");
+                    return false;
+                });
+            });
+
+            function LoadComment(HeaderTour, page) {
+                $.ajax({
+                    url: "/Comment/_LoadComment",
+                    data: {
+                        HeaderTour: HeaderTour,
+                        page: page
+                    },
+                    success: function (response) {
+                        // Hiển thị kết quả tìm kiếm
+                        $("#comment-list").html(response);
+                    }
+                });
+            }
+        </script>
+</body>
+
+</html>

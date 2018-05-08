@@ -1,0 +1,6 @@
+Link tong hop video: https://drive.google.com/drive/folders/1sAibCeTyPfQv7DTFe0EJkF1-U5KhN-o3
+Travis CI Demo: https://tinyurl.com/yc8z22kp
+Integrate Travis CI with Coveralls: https://tinyurl.com/y93yhjkz
+Integrate Travis CI with Code Climate: https://tinyurl.com/ycawp8wx
+Integrate Travis CI with Slack: https://tinyurl.com/y9ozwfwl
+Auto deploy to heroku: https://tinyurl.com/y98z7nd9"
