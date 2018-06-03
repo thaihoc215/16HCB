@@ -5542,7 +5542,7 @@ audio {
     padding-top: 0px !important;
     border-top: 1px solid #ccc;
     padding-bottom: 15px;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
 }
 
 .thongtincoban .thongtinchung .tour-info-right-frame2 {
