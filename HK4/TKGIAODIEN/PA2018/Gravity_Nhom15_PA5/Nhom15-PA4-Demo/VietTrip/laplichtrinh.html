@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Gravity Team - Viet Trip</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+    <!-- my css -->
+    <link href="mycss/style.css" rel="stylesheet">
+    <link href="mycss/footerstyle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu/css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="container" style="width: 1500px">
+            <section id="nav-test">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="image/logo.png" align="middle" />
+                    </a>
+                </div>
+                <div id="nav-container">
+                    <ul>
+                        <li class="nav-li">
+                            <a href="./index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="./baiviet.html">Bài Viết</a>
+                        </li>
+                        <li class="nav-li active-nav">
+                            <a href="./laplichtrinh.html">Lập Lịch Trình</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="./dangky.html">Đăng Ký</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="./dangnhap.html">Đăng nhập</a>
+                        </li>
+        
+                    </ul>
+                    <div id="line"></div>
+                </div>
+                <div class="input-group" id="adv-search">
+                    <input type="text" class="form-control" placeholder="Địa điểm tìm kiếm..." style="width:100%">
+                    <div class="input-group-btn">
+                        <div class="btn-group" role="group">
+                            <div class="dropdown dropdown-lg">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-filter" aria-hidden="true"></i> &nbsp;Mở rộng
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <!-- tabs left -->
+                                    <form class="form-horizontal" role="form">
+                                        <div class="tabbable tabs-left">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active" tab_id="a">
+                                                    <a href="#a" data-toggle="tab">
+                                                        <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Đối tượng</a>
+                                                </li>
+                                                <li tab_id="b">
+                                                    <a href="#b" data-toggle="tab">
+                                                        <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Khu Vực</a>
+                                                </li>
+                                                <li tab_id="c">
+                                                    <a href="#c" data-toggle="tab">
+                                                        <i class="glyphicon glyphicon-road" aria-hidden="true"></i>&nbsp;&nbsp;Địa hình</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active col-md-12" id="a">
+                                                    <div class="checkbox checkbox-success col-md-12 listdoituong">
+                                                        <div class="col-md-12">
+                                                            <div class="col-md-4">
+                                                                <input id="checkboxphuot" type="checkbox" name="Bạn bè">
+                                                                <label for="checkboxphuot">Phượt thủ</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="checkboxcap" type="checkbox" name="Cặp đôi">
+                                                                <label for="checkboxcap">Cặp đôi</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="checkboxgiadinh" type="checkbox" name="Gia đình">
+                                                                <label for="checkboxgiadinh">Gia đình</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="col-md-4">
+                                                                <input id="checkboxbanbe" type="checkbox" name="Bạn bè">
+                                                                <label for="checkboxbanbe">Nhóm bạn bè</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane col-md-12" id="b">
+                                                    <div class="checkbox checkbox-success col-md-12 listtinhthanh">
+                                                        <div class="col-md-12">
+                                                            <div class="col-md-4">
+                                                                <input id="checkboxtphcm" type="checkbox" name="TP.HCM">
+                                                                <label for="checkboxtphcm">Miền Bắc</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="checkboxhanoi" type="checkbox" name="Hà Nội">
+                                                                <label for="checkboxhanoi">Miền Trung</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="checkboxhue" type="checkbox" name="Huế">
+                                                                <label for="checkboxhue">Miền Nam</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane col-lg-12" id="c">
+                                                    <div class="checkbox checkbox-success col-md-12 listdiahinh">
+                                                        <div class="col-md-12">
+                                                            <div class="col-md-4">
+                                                                <input id="111" type="checkbox" name="Núi">
+                                                                <label for="111">Núi</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="112" type="checkbox" name="Biển">
+                                                                <label for="112">Biển</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="113" type="checkbox" name="Đồng Bằng">
+                                                                <label for="113">Đồng Bằng</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="col-md-4">
+                                                                <input id="114" type="checkbox" name="Sa Mạc">
+                                                                <label for="114">Sa Mạc</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="115" type="checkbox" name="Thung Lũng">
+                                                                <label for="115">Thung Lũng</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input id="116" type="checkbox" name="Hang Động">
+                                                                <label for="116">Hang Động</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /tabs -->
+                                        <div class="search-action col-md-12">
+                                            <button class="btn btn-success btntimkiem" id="btnExtendSearch">Tìm kiếm</button>
+                                            <button class="btn btn-danger btnxoaboloc">Xóa tùy chọn</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--Button Search-->
+                            <button type="button" class="btn btn-default" id="btnSearch">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+    <!-- Content Section -->
+    <section>
+        <div class="container-fluid">
+            <div class="row" style="border: 1px solid #f1f1f1; height:600px; padding: 5px 0px">
+                <!-- Banner trai-->
+                <div class="col-md-2 banner-pr">
+                    <div style="vertical-align: middle;">
+                        <h3> Khu vực Banner</h3>
+                        <h3> gợi ý về các địa điểm được xem nhiều</h3>
+                        <img src="./img/Banner-1.png">
+                        <img src="./img/Banner-2.png">
+                    </div>
+                </div>
+                <!--Khu vuc tim kiem-->
+                <div class="col-md-8">
+                    <div class="filter col-md-12">
+                        <div class="head-result d_resultfilter">
+                            <div class="filter-count">
+                                Lập lịch trình
+                            </div>
+                        </div>
+                    </div>
+                    <div id="form-search" class="">
+                        <div class="form-search-frame">
+                            <div id="tabs-container">
+                                <ul class="tabs-menu">
+                                    <li>
+                                        <pclass="hidden-xs">Nhập Thông Tin Lịch Trình</p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab">
+                                <div id="tab-1" class="tab-content" style="display:block">
+                                    <!-- forn tim kiem -->
+                                    <form action="/Tour/SearchFirst" method="post">
+                                        <div class="row form-group">
+                                            <!-- Noi di  -->
+                                            <div class="col-md-6 col-sm-4 col-xs-6 mg-bot15">
+                                                <label>Nơi đi</label>
+                                                <div>
+                                                    <select class="form-control input-md" id="departureID" name="departureID">
+                                                        <option value="0">Nơi đi</option>
+                                                        <option value="1" selected> Hồ Chí Minh</option>
+                                                        <option value="3">Hà Nội</option>
+                                                        <option value="4">Đà Nẵng</option>
+                                                        <option value="5">Cần Thơ</option>
+                                                        <option value="6">Hải Phòng</option>
+                                                        <option value="7">Bình Dương</option>
+                                                        <option value="8">Nha Trang</option>
+                                                        <option value="10">Huế</option>
+                                                        <option value="11">Quy Nhơn</option>
+                                                        <option value="12">Đồng Nai</option>
+                                                        <option value="13">Phú Quốc</option>
+                                                        <option value="14">Long Xuyên</option>
+                                                        <option value="15">Quảng Ngãi</option>
+                                                        <option value="16">Vũng Tàu</option>
+                                                        <option value="17">Quảng Ninh</option>
+                                                        <option value="18">Buôn Ma Thuột</option>
+                                                        <option value="19">Vinh</option>
+                                                        <option value="20">Cà Mau</option>
+                                                        <option value="22">Rạch Giá</option>
+                                                        <option value="24">Đà Lạt</option>
+                                                        <option value="29">Thanh Hóa</option>
+                                                        <option value="30">Quảng Bình</option>
+                                                        <option value="31">Hồ Chí Minh - VSCC</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- phuong tien -->
+                                            <div class="col-md-6 col-sm-4 col-xs-6 mg-bot15">
+                                                <label>Phương tiện</label>
+                                                <div>
+                                                    <select class="form-control input-md" id="TourTypeId" name="TourTypeId">
+                                                        <option value="1">Xe máy</option>
+                                                        <option value="2">Xe Oto</option>
+                                                        <option value="1">Tàu lửa</option>
+                                                        <option value="1">Máy bay</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- Noi den -->
+                                            <div class="col-md-6 col-sm-4 col-xs-6 mg-bot15">
+                                                <label>Nơi đến</label>
+                                                <div>
+                                                    <select class="form-control input-md" id="group_id" name="group_id">
+                                                        <option value="0">Nơi đến</option>
+                                                        <option value="99">An Giang</option>
+                                                        <option value="130">Bắc Kạn</option>
+                                                        <option value="206">Bạc Liêu</option>
+                                                        <option value="33">Bắc Ninh</option>
+                                                        <option value="46">Bảo Lộc</option>
+                                                        <option value="188">Bến Tre</option>
+                                                        <option value="94">Bình Định</option>
+                                                        <option value="194">Bình Thuận</option>
+                                                        <option value="47">Buôn Ma Thuột</option>
+                                                        <option value="137">Cà Mau</option>
+                                                        <option value="212">Cam Ranh</option>
+                                                        <option value="56">Cần Thơ</option>
+                                                        <option value="129">Cao Bằng</option>
+                                                        <option value="192">Côn Đảo</option>
+                                                        <option value="45">Đà Lạt</option>
+                                                        <option value="42">Đà Nẵng</option>
+                                                        <option value="187">Điện Biên</option>
+                                                        <option value="191">Đông Bắc</option>
+                                                        <option value="52">Đồng Nai</option>
+                                                        <option value="199">Đồng Tháp</option>
+                                                        <option value="108">Nghệ An</option>
+                                                        <option value="135">Hà Giang</option>
+                                                        <option value="32">Hạ Long</option>
+                                                        <option value="29">Hà Nội</option>
+                                                        <option value="36">Hà Tây</option>
+                                                        <option value="59">Hà Tiên</option>
+                                                        <option value="229">Hà Tĩnh</option>
+                                                        <option value="30">Hải Phòng</option>
+                                                        <option value="197">Hồ Chí Minh</option>
+                                                        <option value="39" selected>Huế</option>
+                                                        <option value="193">Kiên Giang</option>
+                                                        <option value="48">Kon Tum</option>
+                                                        <option value="37">Lạng Sơn</option>
+                                                        <option value="38">Lào Cai</option>
+                                                        <option value="214">Long An</option>
+                                                        <option value="232">Nam Định</option>
+                                                        <option value="44">Nha Trang</option>
+                                                        <option value="35">Ninh Bình</option>
+                                                        <option value="106">Ninh Thuận</option>
+                                                        <option value="49">Pleiku</option>
+                                                        <option value="51">Phan Thiết</option>
+                                                        <option value="54">Phú Quốc</option>
+                                                        <option value="34">Phú Thọ</option>
+                                                        <option value="121">Phú Yên</option>
+                                                        <option value="41">Quảng Bình</option>
+                                                        <option value="198">Quảng Ngãi</option>
+                                                        <option value="43">Quảng Nam</option>
+                                                        <option value="196">Quảng Ninh</option>
+                                                        <option value="40">Quảng Trị</option>
+                                                        <option value="141">Quy Nhơn</option>
+                                                        <option value="58">Sóc Trăng</option>
+                                                        <option value="134">Sơn La</option>
+                                                        <option value="189">Tây Bắc</option>
+                                                        <option value="221">Tây Nguyên</option>
+                                                        <option value="203">Tây Ninh</option>
+                                                        <option value="55">Tiền Giang</option>
+                                                        <option value="213">Trà Vinh</option>
+                                                        <option value="233">Thái Bình</option>
+                                                        <option value="243">Thái Nguyên</option>
+                                                        <option value="133">Thanh Hóa</option>
+                                                        <option value="132">Vinh</option>
+                                                        <option value="57">Vĩnh Long</option>
+                                                        <option value="202">Vĩnh Phúc</option>
+                                                        <option value="53">Vũng Tàu</option>
+                                                        <option value="231">Yên Bái</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- Ngay khoi hanh -->
+                                            <div class="col-md-6 col-sm-4 col-xs-6 mg-bot15">
+                                                <label>Ngày khởi hành</label>
+                                                <div style="position: relative;">
+                                                    <input class="form-control hasDatepicker" id="departure_date" name="departure_date" placeholder="07/05/2018" type="text"
+                                                        value="">
+
+                                                    <span class="i-calendar">
+                                                        <i class="fa fa-calendar" style="font-size: 18px"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- Chi phi -->
+                                            <div class="col-md-6 col-sm-4 col-xs-6">
+                                                <label>Chi phí</label>
+                                                <div>
+                                                    <select class="form-control input-md" id="priceID" name="priceID">
+                                                        <option value="0">Chi phí</option>
+                                                        <option value="25">Dưới 1 Triệu</option>
+                                                        <option value="26"> 1- 2 Triệu</option>
+                                                        <option value="27" selected> 2-4 Triệu</option>
+                                                        <option value="28"> 4-6 Triệu</option>
+                                                        <option value="29"> 6-10 Triệu</option>
+                                                        <option value="30">Trên 10 Triệu</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- Ngay ve -->
+                                            <div class="col-md-6 col-sm-4 col-xs-6">
+                                                    <label>Ngày về</label>
+                                                    <div style="position: relative;">
+                                                        <input class="form-control hasDatepicker" id="departure_date" name="departure_date" placeholder="07/05/2018" type="text"
+                                                            value="">
+    
+                                                        <span class="i-calendar">
+                                                            <i class="fa fa-calendar" style="font-size: 18px"></i>
+                                                        </span>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-md-6 col-sm-4 col-xs-6">
+                                                <label>Loại hình</label>
+                                                <div>
+                                                    <select class="form-control" id="ConCho" name="ConCho">
+                                                        <option value="-1">Du lịch bụi</option>
+                                                        <option value="1">Tour</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-4 col-xs-6">
+                                                <label>&nbsp;</label>
+                                                <div>
+                                                    <button type="button" class="btn btn-md btn-default" onclick="location.href = './lictrinhresult.html';">
+                                                        <div class="f-left">
+                                                            <div class="f-left">
+                                                                <div style="width: 20px;height: 20px;background: url(./img/icon.png) -159px -12px;"></div>
+                                                            </div>
+                                                            <div class="f-left" style="margin-left:3px">
+                                                                <span>Tìm kiếm</span>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner phai-->
+                <div class="col-md-2 banner-pr">
+                    <div style="vertical-align: middle;">
+                        <h3> Khu vực Banner</h3>
+                        <h3> quảng cáo dành cho các dịch vụ</h3>
+                        <img src="./img/Banner-3.png">
+                        <img src="./img/Banner-4.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row marginfooter">
+                <div class="col-md-4">
+                    <p style="font-weight: bold; color: #f1f1f1">Liên hệ</p>
+                    <ul>
+                        <li style="margin-top: 10px">
+                            <span class="glyphicon glyphicon-home">&nbsp;</span>HCMUS - 227 Nguyễn Văn Cừ
+                            <br />P4, Q5 TP. Hồ Chí Minh</span>
+                        </li>
+                        <!-- <li><span>&nbsp;</span></li> -->
+                        <li style="margin-top: 10px">
+                            <span class="glyphicon glyphicon-phone">&nbsp;</span>012.234.10987</li>
+                        <!-- <li><span>&nbsp;</span></li> -->
+                        <li style="margin-top: 10px">
+                            <span class="glyphicon glyphicon-envelope">&nbsp;</span>
+                            <a style="color:white" href="mailto:thaihoc2105@gmail.com">thaihoc2105@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4" style="border-right: 1px solid #fff; border-left: 1px solid #fff;">
+                    <p style="font-weight: bold; color: #f1f1f1">Liên kết</p>
+                    <div class="col-md-6">
+                        <li style="margin-top: 10px">
+                            <a style="color:white" href="#">
+                                <span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li style="margin-top: 10px">
+                            <a style="color:white" href="#">
+                                <span>Địa điểm</span>
+                            </a>
+                        </li>
+                        <li style="margin-top: 10px">
+                            <a style="color:white" href="#">
+                                <span>Giới thiệu</span>
+                            </a>
+                        </li>
+                        <li style="margin-top: 10px">
+                            <a style="color:white" href="#">
+                                <span>Liên hệ</pan>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-md-6">
+                        <li style="margin-top: 10px">
+                            <a style="color:white" href="#">
+                                <span>Bản đồ</span>
+                            </a>
+                        </li>
+                        <li style="margin-top: 10px">
+                            <a style="color:white" href="#">
+                                <span>Tin tức</span>
+                            </a>
+                        </li>
+                        <li style="margin-top: 10px">
+                            <a style="color:white" href="#">
+                                <span>Diễn đàn</span>
+                            </a>
+                        </li>
+                        <li style="margin-top: 10px">
+                            <a style="color:white" href="#">
+                                <span>FAQ</span>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p style="font-weight: bold; color: #f1f1f1">Thống kê</p>
+
+                    <li>
+                        <span>Lượng khách truy cập: 20000</span>
+                    </li>
+                    <li>
+                        <span>Online: 30</span>
+                    </li>
+
+                    <ul>
+                        <li>
+                            <a class="fb" href="http://www.facebook.com" target="_blank">
+                                <i></i>&nbsp;</a>
+                        </li>
+                        <li>
+                            <a class="fb1" href="https://twitter.com" target="_blank">
+                                <i></i>&nbsp;</a>
+                        </li>
+                        <li>
+                            <a class="fb2" href="https://plus.google.com" target="_blank">
+                                <i></i>&nbsp;</a>
+                        </li>
+                        <li>
+                            <a class="fb3" href="https://www.snapchat.com/" target="_blank">
+                                <i></i>&nbsp;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p align="center" style="margin-top: 10px">@copyright Gravity Team 2018</p>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- my js -->
+    <script src="myjs/myjs.js"></script>
+    <script src="css/menu/js/index.js"></script>
+    <!-- slider script -->
+    <script src="js/jssor.slider-23.1.5.mini.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
